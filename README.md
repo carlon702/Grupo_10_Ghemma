@@ -5,9 +5,9 @@ Estara dirigido a las personas que quieran dar un salto tecnologico.
 
 
 Integrantes
-Carlos Marchal. 30 anios
-Valentino Cogo. 19 anios
-Julieta Garcia. 33 anios
+Carlos Marchal. 30 años
+Valentino Cogo. 19 años
+Julieta Garcia. 33 años
 Marcelo Hernandez. undefined
 
 Inspiraciones
