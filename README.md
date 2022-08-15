@@ -11,9 +11,9 @@ test
 -Marcelo Hernandez. undefined
 
 **Inspiraciones**
--https://ipoint.com.ar
--https://shop.samsung.com
--https://www.apple.com
--https://store.sony.com.ar/
--https://xiaomistore.com.ar
+-https://ipoint.com.ar:
+-https://shop.samsung.com:
+-https://www.apple.com:
+-https://store.sony.com.ar:
+-https://xiaomistore.com.ar:
 
