@@ -2,7 +2,7 @@
 
 Nuestro sitio se va a inspirar en ecommerce de venta de productos tecnologicos varios.
 Estara dirigido a las personas que quieran dar un salto tecnologico.
-test
+
 
 **Integrantes:**
 - Carlos Marchal. 30 años
