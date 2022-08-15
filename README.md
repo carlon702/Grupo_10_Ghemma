@@ -17,3 +17,4 @@ Estara dirigido a las personas que quieran dar un salto tecnologico.
 - https://store.sony.com.ar:
 - https://xiaomistore.com.ar:
 
+**Trello**: https://trello.com/b/BxS0uPHl/dh-project
