@@ -1,4 +1,4 @@
-# Proyecto-Integrador-Grupo-10
+# Proyecto-Integrador-Grupo-10 📱 ⌚ 🖥️
 
 Nuestro sitio se va a inspirar en ecommerce de venta de productos tecnologicos varios.
 Estara dirigido a las personas que quieran dar un salto tecnologico.
