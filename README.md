@@ -1,4 +1,4 @@
-# <ins>Proyecto-Integrador-Grupo-10</ins> 📱 ⌚ 🖥️
+# <ins>Proyecto-Integrador-Grupo-10</ins> 📱⌚🖥️
 
 Nuestro proyecto sera un ecommerce de productos tecnologicos varios inspirado en los lideres mundiales de tecnologia.
 Hoy en dia todo el mundo posee un celular o algun elemento tecnologico, pero nosotros nos enfocaremos en alta gama que normalmente no se encuentran en nuestro pais. Disponemos de stock de todos nuestros productos, pero ademas ofrecemos la posibilidad de realizar pedidos de productos proximos a ser lanzados al mercado.
