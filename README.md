@@ -6,9 +6,9 @@ Ofrecemos cualquier tipo de forma de pago, incluido cripto.
 
 
 # Integrantes:
-- Carlos Marchal. 30 años. * Git: https://github.com/carlon702 * contacto:https://www.linkedin.com/in/carlos-marchal-7483a3244/
-- Valentino Cogo. 19 años. * Git: https://github.com/valentinoCogo * contacto:
-- Julieta Garcia. 33 años  * Git: https://github.com/julietangarcia * contacto:https://www.linkedin.com/in/julieta-natalia-garcia-389773180/
+- Carlos Marchal. 30 años. *Git*: https://github.com/carlon702 *contacto*:https://www.linkedin.com/in/carlos-marchal-7483a3244/
+- Valentino Cogo. 19 años. *Git*: https://github.com/valentinoCogo *contacto*:
+- Julieta Garcia. 33 años  *Git*: https://github.com/julietangarcia *contacto*:https://www.linkedin.com/in/julieta-natalia-garcia-389773180/
 - Marcelo Hernandez. undefined 🤷‍♂️
 
 # Inspiraciones:
