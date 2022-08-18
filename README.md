@@ -9,7 +9,7 @@ Ofrecemos cualquier tipo de forma de pago, incluido cripto.
 - Carlos Marchal. 30 años
 - Valentino Cogo. 19 años
 - Julieta Garcia. 33 años
-- Marcelo Hernandez. undefined 🤷‍♂️
+- Marcelo Hernandez. undefined # 🤷‍♂️
 
 # Inspiraciones:
 - ✔️ https://www.apple.com: 
