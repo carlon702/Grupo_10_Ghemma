@@ -20,5 +20,5 @@ Ofrecemos cualquier tipo de forma de pago, incluido cripto.
 
 Nuestras inspiraciones son empresas tecnologicas con gran peso en el mercado global, y que a su vez cuentan con diseños web muy atractivos, los cuales vamos a tener en cuenta al crear nuestro proyecto.
 
-# Trello: 
+# <ins>Trello</ins>: 
 - https://trello.com/b/BxS0uPHl/dh-project
