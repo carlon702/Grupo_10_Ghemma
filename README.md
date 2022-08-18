@@ -11,10 +11,10 @@ Estara dirigido a toda persona que quiera dar un salto tecnologico.
 - Marcelo Hernandez. undefined
 
 # Inspiraciones:
-- https://ipoint.com.ar:
-- https://shop.samsung.com:
-- https://www.apple.com:
-- https://store.sony.com.ar:
-- https://xiaomistore.com.ar:
+:point_right: https://ipoint.com.ar:
+:point_right: https://shop.samsung.com:
+:point_right: https://www.apple.com:
+:point_right: https://store.sony.com.ar:
+:point_right: https://xiaomistore.com.ar:
 
 # Trello: https://trello.com/b/BxS0uPHl/dh-project
