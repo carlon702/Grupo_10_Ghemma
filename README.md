@@ -5,10 +5,10 @@ Hoy en dia todo el mundo posee un celular o algun elemento tecnologico, pero nos
 Ofrecemos cualquier tipo de forma de pago, incluido cripto.
 
 
-# Integrantes:
-- Carlos Marchal. 30 años. *Git*: https://github.com/carlon702 *contacto*:https://www.linkedin.com/in/carlos-marchal-7483a3244/
-- Valentino Cogo. 19 años. *Git*: https://github.com/valentinoCogo *contacto*:
-- Julieta Garcia. 33 años  *Git*: https://github.com/julietangarcia *contacto*:https://www.linkedin.com/in/julieta-natalia-garcia-389773180/
+<ins># Integrantes:<ins>
+- Carlos Marchal. 30 años.  <ins>Git<ins>: https://github.com/carlon702 *contacto*:https://www.linkedin.com/in/carlos-marchal-7483a3244/
+- Valentino Cogo. 19 años.  <ins>Git<ins>: https://github.com/valentinoCogo *contacto*:
+- Julieta Garcia. 33 años.  <ins>Git<ins>: https://github.com/julietangarcia *contacto*:https://www.linkedin.com/in/julieta-natalia-garcia-389773180/
 - Marcelo Hernandez. undefined 🤷‍♂️
 
 # Inspiraciones:
