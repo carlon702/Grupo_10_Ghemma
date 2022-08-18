@@ -1,4 +1,4 @@
-# Proyecto-Integrador-Grupo-10 📱 ⌚ 🖥️
+# <ins>Proyecto-Integrador-Grupo-10<ins> 📱 ⌚ 🖥️
 
 Nuestro proyecto sera un ecommerce de productos tecnologicos varios inspirado en los lideres mundiales de tecnologia.
 Hoy en dia todo el mundo posee un celular o algun elemento tecnologico, pero nosotros nos enfocaremos en alta gama que normalmente no se encuentran en nuestro pais. Disponemos de stock de todos nuestros productos, pero ademas ofrecemos la posibilidad de realizar pedidos de productos proximos a ser lanzados al mercado.
@@ -6,12 +6,12 @@ Ofrecemos cualquier tipo de forma de pago, incluido cripto.
 
 
 # <ins>Integrantes<ins>:
-- Carlos Marchal. 30 años.  <ins>Git<ins> :  https://github.com/carlon702 <ins>*contacto*<ins> : https://www.linkedin.com/in/carlos-marchal-7483a3244/
-- Valentino Cogo. 19 años.  <ins>Git:<ins> https://github.com/valentinoCogo *contacto*:
-- Julieta Garcia. 33 años.  <ins>Git:<ins> https://github.com/julietangarcia *contacto*:https://www.linkedin.com/in/julieta-natalia-garcia-389773180/
+- Carlos Marchal. 30 años.  Git: https://github.com/carlon702 *contacto*: https://www.linkedin.com/in/carlos-marchal-7483a3244/
+- Valentino Cogo. 19 años.  Git: https://github.com/valentinoCogo *contacto*:
+- Julieta Garcia. 33 años.  Git: https://github.com/julietangarcia *contacto*:https://www.linkedin.com/in/julieta-natalia-garcia-389773180/
 - Marcelo Hernandez. undefined 🤷‍♂️
 
-# Inspiraciones:
+# <ins>Inspiraciones<ins>:
 - ✔️ https://www.apple.com: 
 - ✔️ https://shop.samsung.com: 
 - ✔️ https://www.asus.com/us/:
