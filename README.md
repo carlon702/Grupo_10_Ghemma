@@ -28,4 +28,7 @@ Nuestras inspiraciones son empresas tecnologicas con gran peso en el mercado glo
 
 # <ins>Paleta de colores</ins>:
 - #253748
-- 
+- #EFF4FF
+- #2F80DE
+- #F49F0A
+- #8E99B6
