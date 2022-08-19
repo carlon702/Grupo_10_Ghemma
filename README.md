@@ -25,3 +25,7 @@ Nuestras inspiraciones son empresas tecnologicas con gran peso en el mercado glo
 
 
 # <ins>Fuente</ins>: Montserrat
+
+# <ins>Paleta de colores</ins>:
+- #253748
+- 
