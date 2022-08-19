@@ -24,7 +24,8 @@ Nuestras inspiraciones son empresas tecnologicas con gran peso en el mercado glo
 - https://trello.com/b/BxS0uPHl/dh-project
 
 
-# <ins>Fuente</ins>: Montserrat
+# <ins>Fuente</ins>: 
+- Montserrat
 
 # <ins>Paleta de colores</ins>:
 - #253748
