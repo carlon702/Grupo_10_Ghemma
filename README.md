@@ -1,7 +1,7 @@
 # <ins>Proyecto-Integrador-Grupo-10</ins> 📱⌚🖥️
 
-Nuestro proyecto sera un ecommerce de productos tecnologicos varios inspirado en los lideres mundiales de tecnologia.
-Hoy en dia todo el mundo posee un celular o algun elemento tecnologico, pero nosotros nos enfocaremos en alta gama que normalmente no se encuentran en nuestro pais. Disponemos de stock de todos nuestros productos, pero ademas ofrecemos la posibilidad de realizar pedidos de productos proximos a ser lanzados al mercado.
+Nuestro proyecto será un ecommerce de productos tecnológicos varios inspirado en los lideres mundiales de tecnologia.
+Hoy en dia ,luego de la pandemia, con el auge del home office, donde la comunicacion, el trabajo, la vida se ha transformado, queremos ofrecer a los consumidores los mejores productos del mercado tecnológico. Nos enfocaremos en alta gama de productos que normalmente no se encuentran en nuestro país. Disponemos de stock de todos nuestros productos, pero ademas ofrecemos la posibilidad de realizar pedidos de productos próximos a ser lanzados al mercado.
 Ofrecemos cualquier tipo de forma de pago, incluido cripto.
 
 
