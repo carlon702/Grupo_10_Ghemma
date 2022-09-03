@@ -6,36 +6,129 @@
 }
 
 body {
-  background-color: rgba(173, 232, 232, 0.447);
+  background-color: rgba(152, 202, 202, 0.447);
 }
+
+/*        header            */
+/*                          */
+
 header {
   background-color: #465a6c;
 }
 
-.main-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 70px;
-  align-items: center;
+.product-nav {
+  margin-left: 30px;
+  color: rgb(137, 255, 131);
+  background-color: none;
+  padding: none;
+  border-radius: none;
+  transition: all 280ms;
 }
 
-nav a {
-  margin-left: 15px;
-  color: rgb(137, 255, 131);
+.product-nav:hover {
+  padding: 6px;
+  border-radius: 10px;
+  background-color: rgb(109, 126, 222);
 }
 
 a {
   text-decoration: none;
 }
 
-.drop-icon {
-  width: 10px;
+.bars-menu {
+  height: 24px;
+  width: 24px;
+  background-color: #465a6c;
+  cursor: pointer;
 }
 
-.search-input {
+.icon-nav {
+  height: 24px;
+}
+
+.bars-menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(212, 212, 212);
+  margin-top: 4px;
+}
+
+/* .search-input {
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 16px;
   font-size: 14px;
   font-weight: bold;
+  border: 0px;
+} */
+
+/*                          */
+/*        header            */
+
+/* 
+
+
+
+
+
+
+*/
+
+/*            flex-box                   */
+/*                                       */
+.main-header {
+  display: flex;
 }
+
+/*                                       */
+/*            flex-box                   */
+
+/* 
+
+
+
+
+
+
+*/
+
+/*            media queries              */
+/*                                       */
+
+/* @media and screen (max-width: 534px)  */
+@media screen and (max-width: 534px) {
+  /*        header            */
+  /*                          */
+  .navegation-products {
+    display: none;
+  }
+
+  .main-header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bars-menu {
+  }
+
+  .main-header .logo-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .search-bar {
+  }
+
+  .user-navegation {
+  }
+
+  .bars-menu {
+  }
+
+  /*                          */
+  /*        header            */
+}
+
+/*                                       */
+/*               media queries           */
