@@ -1,79 +1,164 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
+
 body {
-    background-color: rgba(173, 232, 232, 0.447);
-  }
-  header {
-    background-color: #465a6c;
-  }
-  
-  .main-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 70px;
-    align-items: center;
-  }
-  
-  nav a {
-    margin-left: 15px;
-    color: rgb(137, 255, 131);
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .drop-icon {
-    width: 10px;
-  }
-  
-  .search-input {
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-
-body{
-    font-family: monserrat;
-    display: flex;
-    justify-content: center;
-
+  background-color: rgba(173, 232, 232, 0.447);
+}
+header {
+  background-color: #465a6c;
 }
 
-h3{
-    text-align: center;
-    margin-top: 35px;
-    margin-bottom: 30px;
-
-
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 70px;
+  align-items: center;
 }
-.login-form{
+
+nav a {
+  margin-left: 15px;
+  color: rgb(137, 255, 131);
+}
+
+a {
+  text-decoration: none;
+}
+
+.drop-icon {
+  width: 10px;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+                                         /*formulario Login*/
+
+.login-form {
+   height: 500px;
     width: 400px;
-    min-width: 300px;
-    border: solid 1px black;
-    border-radius: 10px;
-    margin-top: 50px;
-
-
-    
-
-    
+    border: solid 1px rgb(130, 131, 143, 0.07);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #5163745c;
+    box-shadow: 5px 10px 12px #444;
 }
 
 
-.login-form input{
-    display: block;
-    margin-top: 20px;
-    justify-content: center;
+.login-form h3
+{
+  text-align: center;
+  margin-top: 30px;
+  height: 50px;
+  font-size: 20px;
+} 
+
+
+.control{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: rgba(121, 139, 157, 0);
+  border: none;
+  border-bottom: solid 1px;
 
 }
+.options{
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .form{
+  text-align: start;
+  margin: 10px;
 
-        justify-items: center;
+}
 
+.ingresar , .volver{
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius:10px ;
+  font-size: 15px;
+  background-color: rgba(246, 232, 232, 1);
+}
+.no-cuenta{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.ingresar:hover{
+  background-color: rgba(38, 91, 140, 1);
+  -webkit-transition: background-color 0.10s linear;
+  transition: background-color 0.10s linear;
+  font-size: 18px;
+}
+.volver:hover{
+  background-color: rgba(221, 66, 45, 0.896);
+  -webkit-transition: background-color 0.10s linear;
+  transition: background-color 0.10s linear;
+  font-size: 18px;
+}
+
+                                               /*formulario registro*/
+.register-form {
+   height: 630px;
+   width: 400px;
+   border: solid 1px rgb(130, 131, 143, 0.07);
+   border-radius: 30px;
+   margin: auto;
+   margin-top: 90px;
+   background-color: #5163745c;
+   box-shadow: 5px 10px 12px #444;
+}
+.register-form h3
+{
+  text-align: center;
+  margin-top: 30px;
+  height: 50px;
+  font-size: 20px;
+} 
+.register{
+  text-align: start;
+  margin: 10px;
+}
+
+.aceptar , .cancelar{
+  padding: 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius:10px ;
+  font-size: 15px;
+  background-color: rgba(246, 232, 232, 1);
+}
+
+.botones{
+  display:flex;
+  justify-content: space-evenly;
+
+}
+.aceptar:hover{
+  background-color: rgba(38, 91, 140, 1);
+  -webkit-transition: background-color 0.10s linear;
+  transition: background-color 0.10s linear;
+  font-size: 18px;
+}
+.cancelar:hover{
+  background-color: rgba(221, 66, 45, 0.896);
+  -webkit-transition: background-color 0.10s linear;
+  transition: background-color 0.10s linear;
+  font-size: 18px;
 }
