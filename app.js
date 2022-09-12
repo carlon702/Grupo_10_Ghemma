@@ -15,8 +15,6 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/index.ejs"));
 });
 
-//
-
 app.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/login.html"));
 });
@@ -28,7 +26,14 @@ app.get("/register", (req, res) => {
 app.get("/cart", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/cart.html"));
 });
+  
+app.get("/cart", (req, res) => {
+    res.sendFile(path.join(__dirname, "/views/product.html"));
+  });
 
+
+<<<<<<< HEAD
+=======
 app.get("/product", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/product.html"));
 });
@@ -36,3 +41,4 @@ app.get("/product", (req, res) => {
 //
 
 //
+>>>>>>> 48ac4dde298785a5932baff533aabb30cedabd41
