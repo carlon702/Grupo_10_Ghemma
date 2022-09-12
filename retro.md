@@ -19,3 +19,20 @@ Empezar a hacer:
 - Descripcion de tareas en trello
 
 
+**SPRINT #2**
+
+Seguir haciendo:
+
+- Comunicacion constante
+- Colaboracion continua
+- Reuniones una vez por semana para revisar como estamos
+
+Dejar de hacer:
+
+- Ocuparnos de tareas que no se piden en el sprint.
+
+
+Empezar a hacer:
+
+- Agregar los tiempos estimados a las tareas definidas.
+-Focalizarnos solo en lo que solicita el sprint.
