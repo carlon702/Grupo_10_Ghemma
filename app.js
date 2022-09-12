@@ -5,10 +5,11 @@ const app = express();
 const path = require("path");
 
 //
-
 app.use(express.static(path.join(__dirname, "./public")));
 
-app.listen(3050);
+app.listen(3050, () => {
+  console.log("Marcelo esta con nosotros 👻");
+});
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/index.html"));
@@ -31,3 +32,7 @@ app.get("/cart", (req, res) => {
 app.get("/product", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/product.html"));
 });
+
+//
+
+//
