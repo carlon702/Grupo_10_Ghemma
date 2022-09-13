@@ -32,8 +32,6 @@ app.get("/cart", (req, res) => {
   });
 
 
-<<<<<<< HEAD
-=======
 app.get("/product", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/product.html"));
 });
@@ -41,4 +39,3 @@ app.get("/product", (req, res) => {
 //
 
 //
->>>>>>> 48ac4dde298785a5932baff533aabb30cedabd41
