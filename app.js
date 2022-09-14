@@ -5,12 +5,25 @@ const app = express();
 const path = require("path");
 
 //
+const mainRoutes = require("./routes/main.js");
+
+//
 app.use(express.static(path.join(__dirname, "./public")));
+app.set("view engine", "ejs");
+
+//
+
+app.use("/", mainRoutes);
 
 app.listen(3050, () => {
-  console.log("Marcelo esta con nosotros 👻");
+  console.log("Marcelo esta con nosotros 👻 3050 ");
 });
 
+//
+
+//
+
+//
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/index.ejs"));
 });
