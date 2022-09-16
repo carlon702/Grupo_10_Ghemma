@@ -6,6 +6,7 @@ const path = require("path");
 
 //
 const mainRoutes = require("./routes/main.js");
+const userRoutes = require("./routes/user.js")
 
 //
 app.use(express.static(path.join(__dirname, "./public")));
@@ -28,16 +29,13 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/index.ejs"));
 });
 
-app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/login.html"));
-});
+app.get("/login", userRoutes);
 
-app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/register.html"));
-});
+
+app.get("/register", userRoutes);
 
 app.get("/cart", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/cart.html"));
+  res.sendFile(path.join(__dirname, "/views/cart.ejs"));
 });
   
 app.get("/cart", (req, res) => {
