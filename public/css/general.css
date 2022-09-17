@@ -5,10 +5,17 @@
 
 body {
   margin: 0;
-
   height: 100vh;
   background-color: rgba(201, 189, 189, 0.086);
 }
+
+main {
+  margin-top: 50px;
+}
+
+/*  */
+
+/*  */
 
 /*        header            */
 
@@ -58,16 +65,7 @@ a {
 
 /*        header            */
 
-/*                 main                  */
-
-main {
-  margin-top: 50px;
-}
-.phones {
-  position: relative;
-}
-
-/*                 main                    */
+/*  */
 
 /*                 footer                  */
 footer {
@@ -79,8 +77,11 @@ footer {
 }
 /*                 footer                  */
 
-/*            media queries              */
-/*                                       */
+/*  */
+
+/*  */
+
+/*  */
 
 /* @media and screen (max-width: 534px)  */
 @media screen and (max-width: 534px) {
@@ -139,6 +140,12 @@ footer {
   }
   /*                 footer                  */
 }
+
+/*  */
+
+/*  */
+
+/*  */
 
 /* tablet */
 
@@ -199,6 +206,12 @@ footer {
   }
   /*                 footer                  */
 }
+
+/*  */
+
+/*  */
+
+/*  */
 
 /* desktop */
 
@@ -269,4 +282,3 @@ footer {
 }
 
 /*                 footer                  */
-/*               media queries             */

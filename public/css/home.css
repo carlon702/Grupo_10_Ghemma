@@ -1,0 +1,166 @@
+/* main */
+
+/* 
+
+
+
+
+*/
+
+@media screen and (max-width: 534px) {
+  h1 {
+    text-align: center;
+    font-size: 9.5vw;
+    max-height: 500px;
+    color: #504c4cfb;
+    margin: 50px 0;
+    font-weight: 100;
+  }
+
+  .title-product {
+    text-align: center;
+    font-size: 7.5vw;
+    color: #0e0e0ea3;
+  }
+
+  .brand-selector {
+    text-align: center;
+    margin: 6vw 0px;
+  }
+  .brand-selector span {
+    margin: 0px 5px;
+    font-size: 4.3vw;
+    padding: 2.5vw;
+    background-color: aqua;
+  }
+}
+
+/* ------- Celulares SAMSUNG -------*/
+
+/* 
+
+
+*/
+
+/* hero image */
+
+.phone-product {
+  background-color: rgb(206, 201, 201);
+}
+.hero-phone-samsung {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  height: 500px;
+
+  background-image: url(/images/banner-images/samsung-zFold-hero-banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-title,
+.hero-sub-title {
+  font-family: "Rubik";
+  color: rgba(255, 255, 255, 0.864);
+  text-align: center;
+}
+.hero-title {
+  font-size: 14vw;
+  margin: 0;
+}
+.hero-sub-title {
+  font-size: 4.9vw;
+  margin: 0;
+  margin-top: -41px;
+}
+.hero-phone-samsung img {
+  width: 100%;
+  /* height: 100%;  */
+}
+.hero-btn {
+  width: 26vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 10px;
+  border-style: none;
+  border-radius: 4px;
+
+  font-size: 4vw;
+  font-family: "Rubik";
+  background-color: rgba(219, 219, 219, 0.762);
+  color: white;
+}
+
+/* hero image */
+/* 
+
+
+
+
+*/
+.phones-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.phones-samsung-container {
+  width: 45%;
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+  border: 0.1px solid rgb(59, 58, 58);
+}
+.phone-img-samsung-container {
+  /* position: absolute; */
+  width: 75%;
+}
+.phone-img-samsung-container img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phone {
+}
+
+.phone-description {
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.phone-name {
+  font-size: 4vw;
+}
+.phone-btn {
+  font-size: 3vw;
+  background-color: #bfbfbf;
+  color: #fffefe;
+  padding: 0.4rem;
+  border-style: none;
+  border: 1px solid;
+  border-radius: 8px;
+}
+/* phones */
+
+/* 
+
+
+
+
+*/
+
+@media screen and (min-width: 535px) and (max-width: 990px) {
+}
+
+/* 
+  
+  
+  
+*/
+
+@media screen and (min-width: 991px) {
+}
