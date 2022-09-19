@@ -8,50 +8,48 @@
     <%- include('partials/header.ejs') %>
     
         <main>
-            
-            <section class="cart-products">
-                <H1 class="cart-title">Carrito de compras</H1>
-                <article class="product">
-                    <div class="image-container">
-                    <img src="/images/1366_2000.jpg" alt="Iphone 14" class="product-image">
-                </div>
-                
-                <div class="product-description">
-                <div class="cart-first-line">
-                    <a href="/product"><div class="product-name">Iphone 14</div></a>
-                    <div class="product-quantity">
+        <div class="main-wrapper">
+            <h1>Carrito de compras</h1>
+            <div class="project">
+                <div class="shop">
+                    <div class="box">
+                        <img src="\images\airpods.jpg" alt="prod">
+                        <div class="content">
+                            <h3>Apple Airpods</h3>
+                            <h4>Price: $5000</h4>
+                            <p class="quantity">Cantidad: <input  value='2' type="number"></p>
+                            <p class="button-content">
 
-                        <label for="product-quantity">Cantidad</label>
-                       <select name="product-quantity" id="product-quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                       </select>
-            
-           
-                   </div>
-                
-                </div>
-                    
-                    <div class="product-price-erase">
-                        <p class="price">300000$</p>
-                        <button type=erase class="erase-button">Eliminar</button>
+                                <span class="remove">Remove</span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="box">
+                        <img src="\images\airpods.jpg" alt="prod">
+                        <div class="content">
+                            <h3>Apple Airpods</h3>
+                            <h4>Price: $5000</h4>
+                            <p class="quantity">Cantidad: <input  value='2' type="number"></p>
+                            <p class="button-content">
+
+                                <span class="remove">Remove</span>
+                            </p>
+                        </div>
+</div>
+                    </div>
+                    <div class="subtotal-box">
+                        <p><span>Subtotal</span> <span>$10000</span></p>
+                        <hr>
+                        <p><span>Envio</span> <span>Gratis</span></p>
+                        <hr>
+                        <p><span>Total</span> <span>$10000</span></p>
+
+                        <a href="#"><i class="fa fa-shopping-cart"></i>Comprar</a>
                     </div>
                 
-             
-            </section>
-            <section class="summary">
-                <h3 class="summary-title">Resumen de compra</h3>
-                <div class="summary-info">
-                <div class="info"><p>Subtotal</p> <p class="summary-price">700000$</p></div>
-                <div class="info" id="envio"><p>Envio</p> <p class="summary-price">2200$</p></div>
-                <div class="info"><p>Total</p> <p class="summary-price">702200$</p></div>
-                </div>
-                <button class="resume">Finalizar compra</button>
-
-            </section>
+            </div>
+        </div>
         </main>
 
         <%- include('partials/footer.ejs') %>
