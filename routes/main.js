@@ -7,7 +7,7 @@ const mainRauters = require("../controllers/mainController");
 //
 
 router.get("/", mainRauters.home);
-router.get("/");
+router.get("/cart", mainRauters.cart);
 router.get("/");
 
 module.exports = router;

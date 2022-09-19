@@ -1,114 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/6f9fa3ad53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/general.css">
     <title>Formulario Registro</title>
-    </head>
+</head>
 
-    <body>
-        <div class="header-conteiner">
-
-            <header class="main-header">
-    
-                <div class="logo">
-                    logo
-                </div>
-    
-                <nav class="navegation">
-    
-                    <a href="#">Celulares</a>
-                    <img class="drop-icon" src="/icons/down-arrow-svgrepo-com.svg" alt="">
-    
-    
-                    <a href="#">Tablets</a>
-                    <img class="drop-icon" src="/icons/down-arrow-svgrepo-com.svg" alt="">
-    
-    
-                    <a href="#">Computadoras</a>
-                    <img class="drop-icon" src="/icons/down-arrow-svgrepo-com.svg" alt="">
-    
-    
-                    <a href="#">Televisores</a>
-                    <img class="drop-icon" src="/icons/down-arrow-svgrepo-com.svg" alt="">
-    
-    
-                    <a href="#">Acceorios</a>
-                    <img class="drop-icon" src="/icons/down-arrow-svgrepo-com.svg" alt="">
-    
-                </nav>
-    
-                <div class="search-bar">
-    
-                    <input class="search-input" type="text" placeholder="¿Qué estas buscando?">
-    
-                </div>
-    
-                <div class="user-navegation">
-    
-                    <a href="/login">
-    
-                        <img class="icon-login" src="/images/usuario.png" alt="usualrio logo">
-    
-                    </a>
-    
-                    <a href=" #">
-    
-                        <img class="icon-car" src="/images/shopping-bag.png" alt="">
-    
-                    </a>
-    
-                </div>
-    
-            </header>
-        </div>
+<body>
+    <%- include('partials/header.ejs') %>
         <main>
             <div class="register-form">
                 <h3>Creá tu cuenta</h3>
 
-         <form class="register" method="post">
-            <label for="Nombre">Nombre</label>
-            
-            <p><input class="control" type="text" name="nombre" required></p> 
-            
-            <label for="Apellido">Apellido</label>
-            
-            <p><input class="control" type="text" name="apellido" required></p>
-            
-            <label for="correo electronico">Corre electrónico</label>
-            
-            <p><input class="control" type="email" name="email" required ="E-mail"></p>
-            
-            <label for="contraseña">Constraseña</label>
+                <form class="register" method="post">
 
-            <p><input class="control" type="password" name="constraseña" required placeholder="Mínimo 8 caracteres, una mayúscula  un número"></p>
+                    <label for="Nombre">Nombre</label>
 
-            <p><input class="conditions" type="checkbox" name="terminos" value="terminos"> Acepto términos y condiciones</p>
-            <p><input class="suscription" type="checkbox" name="suscripcion" value="suscripcion"> Recibir novedades y ofertas especiales</p>
+                    <p><input class="control" type="text" name="nombre" required></p>
 
-            <div class="botones">
+                    <label for="Apellido">Apellido</label>
 
-                <p><button class="cancelar" type="submit">Cancelar</button></p>
-                <p><button class="aceptar" type="submit">Aceptar</button></p>
+                    <p><input class="control" type="text" name="apellido" required></p>
 
-        
-                </div>
-            </form>
+                    <label for="correo electronico">Corre electrónico</label>
 
-        </div>
-    </main>
+                    <p><input class="control" type="email" name="email" required="E-mail"></p>
 
-<footer>
+                    <label for="contraseña">Constraseña</label>
 
-</footer>
+                    <p><input class="control" type="password" name="constraseña" required
+                            placeholder="Mínimo 8 caracteres, una mayúscula y un número"></p>
 
+                    <div class="options">
+
+                        <p><input class="conditions" type="checkbox" name="terminos" value="terminos"> Acepto términos y
+                            condiciones</p>
+                        <p><input class="suscription" type="checkbox" name="suscripcion" value="suscripcion"> Recibir
+                            novedades y ofertas especiales</p>
+
+                    </div>
+
+                    <div class="botones">
+
+                        <p><button class="aceptar" type="submit">Aceptar</button></p>
+                        <p><button class="cancelar" type="submit">Cancelar</button></p>
+
+
+
+                    </div>
+                </form>
+
+            </div>
+
+            <%- include('partials/footer.ejs') %>
+        </main>
 
 
 </body>

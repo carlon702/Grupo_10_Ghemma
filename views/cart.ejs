@@ -1,137 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/css/index.css">
-
-    <link href="/css/cart.css" rel="stylesheet">
+<%- include('partials/head.ejs') %>
 
 
-    <title>Carrito Ghemma</title>
-</head>
-<body>
+    <body>
 
-        <header class="main-header">
+        <%- include('partials/header.ejs') %>
 
-            <!-- <div class="header-conteiner"> -->
-    
-    
-            <div class="bars-menu">
-    
-                <span class="line1-bars-menu"></span>
-                <span class="line2-bars-menu"></span>
-                <span class="line3-bars-menu"></span>
-    
-            </div>
-    
-            <div class="search-bar">
-    
-                <img class="search-icon icon-nav" src="icons/nav-icons/icons8-search.svg" alt="">
-    
-    
-            </div>
-    
-    
-    
-            <nav class="navegation-products">
-    
-                <a class="product-nav" href="#">Celulares</a>
-    
-                <a class="product-nav" href="#">Tablets</a>
-    
-                <a class="product-nav" href="#">Computadoras</a>
-    
-                <a class="product-nav" href="#">Televisores</a>
-    
-                <a class="product-nav" href="#">Acceorios</a>
-    
-    
-            </nav>
-    
-            <div class="logo-container">
-    
-                <span>LOGO </span>
-    
-            </div>
-    
-            <div class="user-navegation">
-    
-                <a href="/login">
-    
-                    <img class="icon-person-login icon-nav" src="/icons/nav-icons/person.svg" alt="usualrio logo">
-    
-                </a>
-    
-                <a href="/cart">
-    
-                    <img class="icon-bag icon-nav" src="/icons/nav-icons/shopping-bag.svg" alt="">
-    
-                </a>
-    
-            </div>
-    
-            <!-- </div> -->
-    
-    
-        </header>
-    
-        <main>
-            
-            <section class="cart-products">
-                <H1 class="cart-title">Mi Carrito</H1>
-                <article class="product">
-                
-                    <img src="/images/1366_2000.jpg" alt="Iphone 14" class="product-image">
-                    
-                    <a href="/product"><div class="product-name">Iphone 14</div></a>
-                    <div class="product-quantity">
-                         <input data-quantity="pop" type="submit" value="-" class="u-button-reset ui-quantity-selector__button" name="pop">
-                    <input autocomplete="off" data-quantity="input" type="tel" value="1" class="input-quantity" name="quantity">
-                <input type="submit" value="+" class="u-button-reset ui-quantity-selector__button" name="push">
-                        
-            
-                    </div>
-                    <div class="product-price-erase">
-                        <p class="price">300000$</p>
-                        <button type=erase class="erase-button">Eliminar</button>
+            <main>
+
+                <div class="main-wrapper">
+
+                    <h1>Carrito de compras</h1>
+
+                    <div class="cart-container">
+
+                        <div class="cart">
+
+                            <div class="product">
+
+                                <img src="\images\airpods.jpg" alt="prod">
+
+                                <div class="content">
+
+                                    <h3>Apple Airpods</h3>
+                                    <h4>Price: $5000</h4>
+
+                                    <p class="quantity">Cantidad: <input value='2' type="number"></p>
+                                    <p class="button-content">
+
+                                        <i class="fa fa-trash"></i>
+                                        <span class="remove">Remove</span>
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="product">
+
+                                <img src="\images\airpods.jpg" alt="prod">
+
+                                <div class="content">
+
+                                    <h3>Apple Airpods</h3>
+                                    <h4>Price: $5000</h4>
+
+                                    <p class="quantity">Cantidad: <input value='2' type="number"></p>
+                                    <p class="button-content">
+
+                                        <i class="fa fa-trash"></i>
+                                        <span class="remove">Remove</span>
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="subtotal-box">
+
+                            <p><span>Subtotal</span> <span>$10000</span></p>
+                            <hr>
+                            <p><span>Envio</span> <span>Gratis</span></p>
+                            <hr>
+                            <p><span>Total</span> <span>$10000</span></p>
+
+                            <a href="#"><i class="fa fa-shopping-cart"></i>Comprar</a>
+
+                        </div>
+
                     </div>
 
-                </article>
-                <article class="product">
-                    <img src="/images/Macbook-pro.jpg" alt="macbook pro" class="product-image">
-                    <a href="/product"><div class="product-name">Macbook Pro</div></a>
-                    <div class="product-quantity">
-                        <input data-quantity="pop" type="submit" value="-" class="u-button-reset ui-quantity-selector__button" name="pop">
-                    <input autocomplete="off" data-quantity="input" type="tel" value="1" class="input-quantity" name="quantity">
-                <input type="submit" value="+" class="u-button-reset ui-quantity-selector__button" name="push">
-                        
                 </div>
-                    
-                <div class="product-price-erase">
-                        <p class="price">400000$</p>
-                        <button type=erase class="erase-button">Eliminar</button>
-                    </div>
 
-                </article>
-            </section>
-            <section class="summary">
-                <h3 class="summary-title">Resumen de compra</h3>
-                <div class="summary-info">
-                <div class="info"><p>Subtotal</p> <p class="summary-price">700000$</p></div>
-                <div class="info" id="envio"><p>Envio</p> <p class="summary-price">2200$</p></div>
-                <div class="info"><p>Total</p> <p class="summary-price">702200$</p></div>
-                </div>
-                <button class="resume">Finalizar compra</button>
+            </main>
 
-            </section>
-        </main>
-    
-</body>
+            <%- include('partials/footer.ejs') %>
+
+    </body>
+
 </html>
