@@ -220,8 +220,15 @@ ul{
   @media (min-width: 900px) {
   .button-content span{
     display: inline;
-    font-size: 15px;
+    font-size: 9px;
 
+  }
+  .button-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 15px;
   }
 
   .product img{
