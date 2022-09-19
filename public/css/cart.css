@@ -4,44 +4,63 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
   }
+
+h1{
+  text-align: center;
+  margin: 25px auto;
+}
+
+.product{
+  display: flex;
+}
+
+.product-description{
+  display: flex;
+  flex-direction: column;
+}
+.cart-first-line{
+  display: flex;
+flex-direction: column;
+align-content: right;
+
+
+
+
+}
+
+.image-container{
+  width: 30%;
   
-  body {
-    background-color: rgba(173, 232, 232, 0.447);
-  }
-  header {
-    background-color: #465a6c;
-  }
-  
-  .main-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 70px;
-    align-items: center;
-  }
-  
-  nav a {
-    margin-left: 15px;
-    color: rgb(137, 255, 131);
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .drop-icon {
-    width: 10px;
-  }
-  
-  .search-input {
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-  }
+
+}
+
+.product-image{
+  width: 100%;
+}
+
+.product-quantity{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /*Carrito css*/
-
+/*
   main{
     margin: 0 auto;
     width: 90%;
@@ -185,3 +204,4 @@ a:visited {
     color: white;
     background-color: aqua;
 }
+*/

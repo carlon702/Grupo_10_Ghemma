@@ -10,41 +10,37 @@
         <main>
             
             <section class="cart-products">
-                <H1 class="cart-title">Mi Carrito</H1>
+                <H1 class="cart-title">Carrito de compras</H1>
                 <article class="product">
-                
+                    <div class="image-container">
                     <img src="/images/1366_2000.jpg" alt="Iphone 14" class="product-image">
-                    
+                </div>
+                
+                <div class="product-description">
+                <div class="cart-first-line">
                     <a href="/product"><div class="product-name">Iphone 14</div></a>
                     <div class="product-quantity">
-                         <input data-quantity="pop" type="submit" value="-" class="u-button-reset ui-quantity-selector__button" name="pop">
-                    <input autocomplete="off" data-quantity="input" type="tel" value="1" class="input-quantity" name="quantity">
-                <input type="submit" value="+" class="u-button-reset ui-quantity-selector__button" name="push">
-                        
+
+                        <label for="product-quantity">Cantidad</label>
+                       <select name="product-quantity" id="product-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                       </select>
             
-                    </div>
+           
+                   </div>
+                
+                </div>
+                    
                     <div class="product-price-erase">
                         <p class="price">300000$</p>
                         <button type=erase class="erase-button">Eliminar</button>
                     </div>
-
-                </article>
-                <article class="product">
-                    <img src="/images/Macbook-pro.jpg" alt="macbook pro" class="product-image">
-                    <a href="/product"><div class="product-name">Macbook Pro</div></a>
-                    <div class="product-quantity">
-                        <input data-quantity="pop" type="submit" value="-" class="u-button-reset ui-quantity-selector__button" name="pop">
-                    <input autocomplete="off" data-quantity="input" type="tel" value="1" class="input-quantity" name="quantity">
-                <input type="submit" value="+" class="u-button-reset ui-quantity-selector__button" name="push">
-                        
-                </div>
-                    
-                <div class="product-price-erase">
-                        <p class="price">400000$</p>
-                        <button type=erase class="erase-button">Eliminar</button>
-                    </div>
-
-                </article>
+                
+             
             </section>
             <section class="summary">
                 <h3 class="summary-title">Resumen de compra</h3>
