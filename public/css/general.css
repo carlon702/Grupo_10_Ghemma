@@ -5,7 +5,8 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  padding: 0;
+
   background-color: rgba(201, 189, 189, 0.086);
 }
 
