@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <%- include('partials/head.ejs') %>
+
+
+<body>
+
+
+    <%- include('partials/header.ejs') %>
+
+    
+    <main>
+<div class="product-list">
+    <h1>Listado de productos</h1>
+    <section class="product-container">
+        <% productos.forEach(function(producto) { %>
+
+       
+    <article class="main-article">
+        <div class="image-container">
+            <img src="\images\airpods.jpg" alt="producto">
+        </div>
+        <ul class="products">
+            <li class="list-none">
+                <%= producto.nombre %> 
+            </li>
+            <li class="price">
+            $<%= producto.precio %> <%= producto.descuento%> 
+            </li>
+            <div class="button-container">
+                <button type="submit">Agregar al carrito</button>
+            </div>
+            
+        </ul>
+        
+    </article>
+    <% }) %>
+</section>
+</div>
+    </main>
+
+
+    <%- include('partials/footer.ejs') %>
+
+
+</body>
+</html>
