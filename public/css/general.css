@@ -242,6 +242,11 @@ footer {
 
   /*                 footer                  */
   footer {
+    
+    
+    position: absolute;
+    bottom: 0;
+    /* este es el arreglo de footer. firma Carlos*/ 
     display: flex;
     flex-direction: column;
     justify-content: space-around;

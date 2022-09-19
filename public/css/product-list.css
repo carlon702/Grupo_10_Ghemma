@@ -119,7 +119,12 @@ button:hover{
 @media (min-width: 535px) {
     .main-article{
         width: 40%;
+        transition: all 450ms;
 
+    }
+
+    .main-article:hover{
+      scale: 1.04;
     }
    
 
