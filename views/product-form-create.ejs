@@ -2,79 +2,100 @@
 <html lang="en">
 
 
-    <%- include('partials/head.ejs') %>
+<%- include('partials/head.ejs') %>
 
 
-<body>
+    <body>
 
 
-    <%- include('partials/header.ejs') %>
-
-    
-    <main>
-
-        <section class="product-create">
-            
-            <h1>Crear Producto</h1>
-
-            <form action="/products/create" method="POST" class="product-form">
-                <div class="input-label">
-                    <div class="label">
-                        <label for="nombre">Nombre</label>
-                    </div>
-                    <input class="input" type="text" name="nombre" id="nombre" required>
-                </div>
-                 <div class="input-label">
-                    <div class="label">
-                        <label for="modelo">Modelo</label>
-                    </div>
-                    <input class="input" type="text" name="modelo" id="modelo" required>
-                </div>
-                <div class="input-label">
-                    <div class="label">
-                        <label for="marca">Marca</label>
-                    </div>
-                    <input class="input" type="text" name="marca" id="marca" required>
-                </div>
-
-             <div class="input-label">
-                    <div class="label">
-                        <label for="descripcion">Descripcion</label>
-                    </div>
-                    <input class="input" type="text" name="descripcion" id="descripcion" required>
-                </div>
-                <div class="input-label">
-                    <div class="label">
-                        <label for="color">Color</label>
-                    </div>
-                    <input class="input" type="text" name="color" id="color" required>
-                </div>
-                <div class="input-label">
-                    <div class="label">
-                        <label for="precio">Precio</label>
-                    </div>
-                    <input class="input" type="text" name="precio" id="precio" required>
-                </div>
-                <div class="product-create-img">
-                    <div>
-                        <label for="imagen">Imagen</label>
-                    </div>
-                    <input class="input-image" type="file" name="imagen" id="imagen " required>
-                </div>
-                <div class="button-container">
-                    <button type="reset">Borrar</button>
-                    <button type="submit">Crear</button>
-                    
-                </div>
-            </form>
-            
-        </section>
-
-    </main>
+        <%- include('partials/header.ejs') %>
 
 
-    <%- include('partials/footer.ejs') %>
+            <main>
+
+                <section class="product-create">
+
+                    <h1>Crear Producto</h1>
+
+                    <form action="/products/create" method="POST" class="product-form">
+
+                        <div class="input-label">
+
+                            <div class="label">
+                                <label for="nombre">Nombre</label>
+                            </div>
+                            <input class="input" type="text" name="nombre" id="nombre" required>
+
+                        </div>
+
+                        <div class="input-label">
+
+                            <div class="label">
+                                <label for="modelo">Modelo</label>
+                            </div>
+                            <input class="input" type="text" name="modelo" id="modelo" required>
+
+                        </div>
+
+                        <div class="input-label">
+
+                            <div class="label">
+                                <label for="marca">Marca</label>
+                            </div>
+                            <input class="input" type="text" name="marca" id="marca" required>
+
+                        </div>
+
+                        <div class="input-label">
+
+                            <div class="label">
+                                <label for="descripcion">Descripcion</label>
+                            </div>
+                            <input class="input" type="text" name="descripcion" id="descripcion" required>
+
+                        </div>
+                        <div class="input-label">
+
+                            <div class="label">
+                                <label for="color">Color</label>
+                            </div>
+                            <input class="input" type="text" name="color" id="color" required>
+
+                        </div>
+                        <div class="input-label">
+
+                            <div class="label">
+                                <label for="precio">Precio</label>
+                            </div>
+                            <input class="input" type="text" name="precio" id="precio" required>
+
+                        </div>
+
+                        <div class="product-create-img">
+
+                            <div>
+                                <label for="imagen">Imagen</label>
+                            </div>
+                            <input class="input-image" type="file" name="imagen" id="imagen " required>
+                        </div>
+
+                        <div class="button-container">
+
+                            <button type="reset">Borrar</button>
+                            <button type="submit">Crear</button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </main>
 
 
-</body>
+            <%- include('partials/footer.ejs') %>
+
+
+    </body>
+
 </html>

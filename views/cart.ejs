@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('partials/head.ejs') %>
+<%- include('partials/head.ejs') %>
 
-    
-<body>
 
-    <%- include('partials/header.ejs') %>
-    
-        <main>
-        <div class="main-wrapper">
-            <h1>Carrito de compras</h1>
-            <div class="cart-container">
-                <div class="cart">
-                    <div class="product">
-                        <img src="\images\airpods.jpg" alt="prod">
-                        <div class="content">
-                            <h3>Apple Airpods</h3>
-                            <h4>Price: $5000</h4>
-                            <p class="quantity">Cantidad: <input  value='2' type="number"></p>
-                            <p class="button-content">
-                                <i class="fa fa-trash"></i>
-                                <span class="remove">Remove</span>
-                            </p>
+    <body>
+
+        <%- include('partials/header.ejs') %>
+
+            <main>
+
+                <div class="main-wrapper">
+
+                    <h1>Carrito de compras</h1>
+
+                    <div class="cart-container">
+
+                        <div class="cart">
+
+                            <div class="product">
+
+                                <img src="\images\airpods.jpg" alt="prod">
+
+                                <div class="content">
+
+                                    <h3>Apple Airpods</h3>
+                                    <h4>Price: $5000</h4>
+
+                                    <p class="quantity">Cantidad: <input value='2' type="number"></p>
+                                    <p class="button-content">
+
+                                        <i class="fa fa-trash"></i>
+                                        <span class="remove">Remove</span>
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="product">
+
+                                <img src="\images\airpods.jpg" alt="prod">
+
+                                <div class="content">
+
+                                    <h3>Apple Airpods</h3>
+                                    <h4>Price: $5000</h4>
+
+                                    <p class="quantity">Cantidad: <input value='2' type="number"></p>
+                                    <p class="button-content">
+
+                                        <i class="fa fa-trash"></i>
+                                        <span class="remove">Remove</span>
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="subtotal-box">
+
+                            <p><span>Subtotal</span> <span>$10000</span></p>
+                            <hr>
+                            <p><span>Envio</span> <span>Gratis</span></p>
+                            <hr>
+                            <p><span>Total</span> <span>$10000</span></p>
+
+                            <a href="#"><i class="fa fa-shopping-cart"></i>Comprar</a>
+
                         </div>
 
                     </div>
-                    <div class="product">
-                        <img src="\images\airpods.jpg" alt="prod">
-                        <div class="content">
-                            <h3>Apple Airpods</h3>
-                            <h4>Price: $5000</h4>
-                            <p class="quantity">Cantidad: <input  value='2' type="number"></p>
-                            <p class="button-content">
-                                <i class="fa fa-trash"></i>
-                                <span class="remove">Remove</span>
-                            </p>
-                        </div>
-</div>
-                    </div>
-                    <div class="subtotal-box">
-                        <p><span>Subtotal</span> <span>$10000</span></p>
-                        <hr>
-                        <p><span>Envio</span> <span>Gratis</span></p>
-                        <hr>
-                        <p><span>Total</span> <span>$10000</span></p>
 
-                        <a href="#"><i class="fa fa-shopping-cart"></i>Comprar</a>
-                    </div>
-                
-            </div>
-        </div>
-        </main>
+                </div>
 
-        <%- include('partials/footer.ejs') %>
-    
-</body>
+            </main>
+
+            <%- include('partials/footer.ejs') %>
+
+    </body>
+
 </html>

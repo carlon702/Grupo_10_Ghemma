@@ -1,11 +1,65 @@
 /* main */
 
-/* 
+/* <!-- ACCESORIES --> */
+.headphones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* text-align: center; */
+  width: 100%;
+  margin-top: 25px;
+  padding: 1px;
+  background-color: #fdfdfd;
+}
+.cuadrado {
+  width: 100vw;
+  height: 50vh;
+  /* text-align: center; */
+}
+.cuadrado img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  /* text-align: center; */
+  /* min-height: 235px; */
+}
+.c1 img {
+  background-color: rgb(255, 255, 255);
+}
+.c2 {
+  background-color: rgb(0, 0, 0);
 
+  margin-bottom: 50px;
+}
+.c3 {
+  background-color: pink;
+}
 
+/* EJEMPLLO */
 
+.samsung-tab {
+  position: relative;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.samsung-tab img,
+.ipad-tab img {
+  max-width: 354px;
+  min-height: 523px;
+}
 
-*/
+.samsung-tab img,
+.ipad-tab img {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+}
+
+/* EJEMPLLO */
+.c4 {
+  background-color: blue;
+}
+/* <!-- accesories --> */
 
 @media screen and (max-width: 534px) {
   h1 {
@@ -33,126 +87,234 @@
     padding: 2.5vw;
     background-color: aqua;
   }
+
+  /* ------- Celulares SAMSUNG -------*/
+
+  /* 
+
+
+ */
+
+  /* hero image */
+
+  .phone-section {
+    background-color: rgb(227 227 227);
+  }
+  .hero-phone-samsung {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    height: 500px;
+
+    background-image: url(/images/banner-images/samsung-zFold-hero-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .hero-title,
+  .hero-sub-title {
+    font-family: "Rubik";
+    color: rgba(255, 255, 255, 0.864);
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 14vw;
+    margin: 0;
+  }
+  .hero-sub-title {
+    font-size: 4.9vw;
+    margin: 0;
+    margin-top: -106px;
+  }
+  .hero-phone-samsung img {
+    width: 100%;
+    /* height: 100%;  */
+  }
+  .hero-btn {
+    width: 26vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    border-style: none;
+    border-radius: 4px;
+
+    font-size: 4vw;
+    font-family: "Rubik";
+    background-color: rgba(219, 219, 219, 0.762);
+    color: white;
+  }
+
+  /* hero image */
+  /* 
+
+
+
+
+  */
+  /* PHONES */
+  .phones-card-container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    top: 35px;
+  }
+  .phones-samsung-container {
+    width: 45%;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+    border-radius: 9px;
+    border: 0.09999999999999432px solid rgb(200 200 200);
+  }
+  .phone-img-samsung-container {
+    /* position: absolute; */
+    width: 75%;
+  }
+  .phone-img-samsung-container img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .phone {
+  }
+
+  .phone-description {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .phone-name {
+    font-size: 4vw;
+  }
+  .phone-btn {
+    font-size: 3vw;
+    background-color: #bfbfbf;
+    color: #fffefe;
+    padding: 0.4rem;
+    border-style: none;
+    border: 1px solid;
+    border-radius: 8px;
+  }
+
+  .see-all-btn-container {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .see-all-btn {
+    font-size: 3.4vw;
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: 5px;
+    color: #e6e6e6;
+    background-color: #908b8b9e;
+  }
+  /* phones */
+
+  /* 
+
+
+
+
+ */
+
+  /*  TABS    */
+
+  .tabs-section {
+    width: 100vw;
+    /* height: 500px; */
+    /* overflow: hidden; */
+  }
+  .samsung-tab {
+    position: relative;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  .samsung-tab img,
+  .ipad-tab img {
+    max-width: 354px;
+    min-height: 523px;
+  }
+
+  .samsung-tab img,
+  .ipad-tab img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+  }
+  .smg-tab-bottom {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: 8px;
+    flex-direction: column;
+    font-family: "Francois One";
+    font-weight: 900;
+  }
+  .smg-tab-bottom p {
+    margin: 8px;
+    font-size: 3.5vw;
+  }
+
+  .smg-tab-bottom div {
+    margin-top: 10px;
+  }
+
+  /*            ipad        */
+
+  .ipad-tab {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Comfortaa", cursive;
+    letter-spacing: 0px;
+
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+
+  .apple-ipad-description {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+  }
+  .apple-ipad-description p {
+    text-align: center;
+  }
+  .title-ipad {
+    font-size: 11vw;
+    font-weight: bold;
+    margin: 10px;
+  }
+  .text-ipad,
+  .ipad-btn {
+    margin: 4px;
+    font-size: 3.5vw;
+    color: #c72828;
+  }
+  .ipad-btn-container {
+    margin-top: 2px;
+  }
+  .ipad-btn {
+    background-color: #adaaa9ab;
+    color: #dfd9d9;
+    margin-top: 0px;
+    padding: 7px;
+  }
+  /* tabs */
 }
-
-/* ------- Celulares SAMSUNG -------*/
-
-/* 
-
-
-*/
-
-/* hero image */
-
-.phone-product {
-  background-color: rgb(206, 201, 201);
-}
-.hero-phone-samsung {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-
-  height: 500px;
-
-  background-image: url(/images/banner-images/samsung-zFold-hero-banner.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.hero-title,
-.hero-sub-title {
-  font-family: "Rubik";
-  color: rgba(255, 255, 255, 0.864);
-  text-align: center;
-}
-.hero-title {
-  font-size: 14vw;
-  margin: 0;
-}
-.hero-sub-title {
-  font-size: 4.9vw;
-  margin: 0;
-  margin-top: -41px;
-}
-.hero-phone-samsung img {
-  width: 100%;
-  /* height: 100%;  */
-}
-.hero-btn {
-  width: 26vw;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 10px;
-  border-style: none;
-  border-radius: 4px;
-
-  font-size: 4vw;
-  font-family: "Rubik";
-  background-color: rgba(219, 219, 219, 0.762);
-  color: white;
-}
-
-/* hero image */
-/* 
-
-
-
-
-*/
-.phones-card-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.phones-samsung-container {
-  width: 45%;
-  padding: 1rem 0rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 2px;
-  border: 0.1px solid rgb(59, 58, 58);
-}
-.phone-img-samsung-container {
-  /* position: absolute; */
-  width: 75%;
-}
-.phone-img-samsung-container img {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.phone {
-}
-
-.phone-description {
-  width: 100%;
-  margin-top: 5px;
-  text-align: center;
-}
-
-.phone-name {
-  font-size: 4vw;
-}
-.phone-btn {
-  font-size: 3vw;
-  background-color: #bfbfbf;
-  color: #fffefe;
-  padding: 0.4rem;
-  border-style: none;
-  border: 1px solid;
-  border-radius: 8px;
-}
-/* phones */
-
-/* 
-
-
-
-
-*/
-
 @media screen and (min-width: 535px) and (max-width: 990px) {
 }
 
