@@ -5,22 +5,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/6f9fa3ad53.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/general.css">
     <title>Formulario Login</title>
 </head>
 
 <body>
 
-    <div class="header-conteiner">
+
 
         <%- include('partials/header.ejs') %>
-    </div>
     <main>
         <div class="login-form">
             <h3>Iniciar Sesión</h3>
@@ -38,11 +37,12 @@
 
                     <p><input class="button-recordar" type="checkbox" name="recor" value="Recordar mi usuario"> Recordar
                         mi usuario</p>
+                        <br>
                     <a href="#">¿Olvidaste la contraseña?</a>
 
 
                 </div>
-                <div>
+                <div class="botones">
 
                     <p><button class="ingresar" type="submit">Ingresar</button></p>
                     <p><button class="volver" type="submit">Volver</button><a></a></p>
@@ -55,11 +55,8 @@
             </form>
 
         </div>
+        <%- include('partials/footer.ejs') %>
     </main>
-
-    <%- include('partials/footer.ejs') %>
-
-
 
 </body>
 

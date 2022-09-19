@@ -42,18 +42,12 @@ a {
 
                                          /*formulario Login*/
 
+
 .login-form {
-   height: 500px;
-    width: 400px;
-    border: solid 1px rgb(130, 131, 143, 0.07);
-    border-radius: 30px;
-    margin: auto;
-    margin-top: 100px;
-    background-color: #5163745c;
-    box-shadow: 5px 10px 12px #444;
+
+   border: solid 1px rgb(130, 131, 143, 0.07);
+
 }
-
-
 .login-form h3
 {
   text-align: center;
@@ -62,22 +56,6 @@ a {
   font-size: 20px;
 } 
 
-
-.control{
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 10px;
-  background-color: rgba(121, 139, 157, 0);
-  border: none;
-  border-bottom: solid 1px;
-
-
-}
-.options{
-  display: flex;
-  justify-content: space-between;
-}
 
 
 .form{
@@ -102,64 +80,117 @@ a {
 
 
 .ingresar:hover{
-  background-color: rgba(38, 91, 140, 1);
+  background-color: rgba(38, 70, 140, 0.592);
+  -webkit-transition: background-color 0.10s linear;
+  transition: background-color 0.10s linear;
+  
+}
+.volver:hover{
+  background-color: rgba(221, 45, 118, 0.334);
+  -webkit-transition: background-color 0.10s linear;
+  transition: background-color 0.10s linear;
+  
+}
+footer {
+  background-color: blanchedalmond;
+}
+.logo-container,
+.social-media {
+  text-align: center;
+}
+
+
+
+/* medias queries*/
+@media screen and (max-width: 534px){
+
+  .options{
+    text-align: center;
+  }
+
+.control{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+  
+}
+
+
+@media screen and (min-width: 535px) and (max-width: 990px){
+
+
+
+
+.control{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+
+.options{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+  
+ 
+}
+
+
+
+@media screen and (min-width: 991px){
+.login-form{
+  width: 400px;
+  height: 500px;
+  border: solid 1px rgb(130, 131, 143, 0.07);
+  border-radius: 30px;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  background-color: #51637427;
+  box-shadow: 1px 1px 12px #444;
+}
+
+.options{
+  display: flex;
+  justify-content: space-between;
+}
+.control{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.ingresar:hover{
+  background-color: rgba(38, 70, 140, 0.592);
   -webkit-transition: background-color 0.10s linear;
   transition: background-color 0.10s linear;
   font-size: 18px;
 }
 .volver:hover{
-  background-color: rgba(221, 66, 45, 0.896);
+  background-color: rgba(221, 45, 118, 0.334);
   -webkit-transition: background-color 0.10s linear;
   transition: background-color 0.10s linear;
   font-size: 18px;
 }
 
-                                               /*formulario registro*/
-.register-form {
-   height: 630px;
-   width: 400px;
-   border: solid 1px rgb(130, 131, 143, 0.07);
-   border-radius: 30px;
-   margin: auto;
-   margin-top: 90px;
-   background-color: #5163745c;
-   box-shadow: 5px 10px 12px #444;
-}
-.register-form h3
-{
-  text-align: center;
-  margin-top: 30px;
-  height: 50px;
-  font-size: 20px;
-} 
-.register{
-  text-align: start;
-  margin: 10px;
-}
 
-.aceptar , .cancelar{
-  padding: 15px;
-  margin-top: 15px;
-  border: none;
-  border-radius:10px ;
-  font-size: 15px;
-  background-color: rgba(246, 232, 232, 1);
-}
 
-.botones{
-  display:flex;
-  justify-content: space-evenly;
-
-}
-.aceptar:hover{
-  background-color: rgba(38, 91, 140, 1);
-  -webkit-transition: background-color 0.10s linear;
-  transition: background-color 0.10s linear;
-  font-size: 18px;
-}
-.cancelar:hover{
-  background-color: rgba(221, 66, 45, 0.896);
-  -webkit-transition: background-color 0.10s linear;
-  transition: background-color 0.10s linear;
-  font-size: 18px;
 }
