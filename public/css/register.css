@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  
+    height: 100vh;
+    background-color: rgba(201, 189, 189, 0.086);
+  }
+  
+  /*        header            */
+  
+  header {
+    background-color: #ddddddb4;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  .product-nav {
+    color: rgb(137, 255, 131);
+    background-color: none;
+    padding: none;
+    border-radius: none;
+    padding: 6px;
+    transition: all 280ms;
+  }
+  
+  .product-nav:hover {
+    border-radius: 10px;
+    background-color: rgb(109, 126, 222);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .bars-menu {
+    height: 32px;
+    width: 26px;
+    background-color: #e8e8e8;
+    cursor: pointer;
+  }
+  
+  .icon-nav {
+    height: 24px;
+  }
+  
+  .bars-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin-top: 5px;
+  }
+  
+  /*        header            */
+  
+  /*                 main                  */
+  
+  main {
+    margin-top: 50px;
+  }
+  .phones {
+    position: relative;
+  }
+
+
+/*formulario registro*/
+
+.register-form h3
+{
+  text-align: center;
+  margin-top: 30px;
+  height: 50px;
+  font-size: 20px;
+} 
+.register{
+  text-align: start;
+  margin: 10px;
+}
+.botones{
+    display: block;
+
+}
+
+.aceptar , .cancelar{
+width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius:10px ;
+  font-size: 15px;
+  background-color: rgba(246, 232, 232, 1);
+}
+
+
+
+.aceptar:hover{
+  background-color: rgba(38, 70, 140, 0.592);
+  -webkit-transition: background-color 0.10s linear;
+  transition: background-color 0.10s linear;
+ 
+}
+.cancelar:hover{
+  background-color: rgba(221, 45, 118, 0.334);
+  -webkit-transition: background-color 0.10s linear;
+  transition: background-color 0.10s linear;
+  
+}
+
+
+@media screen and (max-width: 534px){
+
+    .register-form {
+
+        border: solid 1px rgb(130, 131, 143, 0.07);
+        
+        
+     }
+     .control{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+      }
+      .options{
+        text-align: left;
+
+      }
+    }
+
+
+@media screen and (min-width: 535px) and (max-width: 990px){
+    .register-form {
+
+        border: solid 1px rgb(130, 131, 143, 0.07);
+        
+        
+     }
+     .control{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+
+     }
+
+    .options{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    
+    }
+    @media screen and (min-width: 991px){
+
+        .register-form {
+            width: 400px;
+            border: solid 1px rgb(130, 131, 143, 0.07);
+            border-radius: 30px;
+            margin: auto;
+            margin-bottom: 100px;
+            margin-top: 100px;
+            background-color: #51637427;
+            box-shadow: 1px 1px 12px #444;
+         }
+
+          .control{
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+    
+         }
+         .aceptar:hover{
+            background-color: rgba(38, 70, 140, 0.592);
+            -webkit-transition: background-color 0.10s linear;
+            transition: background-color 0.10s linear;
+            font-size: 18px;
+          }
+          .cancelar:hover{
+            background-color: rgba(221, 45, 118, 0.334);
+            -webkit-transition: background-color 0.10s linear;
+            transition: background-color 0.10s linear;
+            font-size: 18px;
+          }
+          
+
+
+
+
+         
+    }
