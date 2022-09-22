@@ -13,5 +13,13 @@ Realizamos y comentamos la division de tareas, detallarnos con lo que vamos a es
 -Pendiente:
 Diseño adaptativo de login, registro, carrito y formulario de productos.
 
+22-09-2022
+
+*Arreglamos CSS de login, register y footer
+*Repasamos sprint 4
+*Agregamos tareas en trello
+
+
+
 
 
