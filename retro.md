@@ -36,3 +36,21 @@ Empezar a hacer:
 
 - Agregar los tiempos estimados a las tareas definidas.
 -Focalizarnos solo en lo que solicita el sprint.
+
+**SPRINT #3**
+
+Seguir haciendo:
+
+- Comunicacion constante
+- Colaboracion continua
+- Estar alineados
+- Reuniones una vez por semana para revisar como estamos
+
+Dejar de hacer:
+
+-Dejar de esperar a Marce
+
+Empezar a hacer:
+-Sincronizar el uso de la paleta de colores en todas las vistas.
+-Definir Logo
+

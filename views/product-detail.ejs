@@ -11,99 +11,61 @@
         <%- include('partials/header.ejs') %>
 
 
-            <main>
-
-                <section class="product-main">
-
-                    <img src="./images/Macbook-Pro.jpg" alt="macbook pro" class="image-main">
-
-                    <div class="product-description">
-
-                        <h3 class="product-name">Macbook PRO</h3>
-
-                        <div class="price-quantity">
-
-                            <p id="price">400000$</p>
-                            <a href="#">
-                                <p>Ver los medios de pago</p>
-                            </a>
-
-                            <select id="select-qty">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
-
+    <main>
+        <div class="main-wrapper">
+            <h1>Detalle Producto</h1>
+            <div class="product-container">
+                <div class="box">
+                    <div class="product">
+                        <img src="\images\airpods.jpg" alt="prod">
+                        <div class="content">
+                            <h3>Apple Airpods</h3>
+                            <h4 class="price">Price: $5000</h4>
+                            <h4>Caracteristicas:</h4>
+                            <ul class="description">
+                                <li>Pantalla retina 13.3"</li>
+                                <li>Chip M2 de Apple</li>
+                                <li>GPU de 10 nucleos</li>
+                            </ul>
+                            <p class="quantity">Cantidad: <input  value='2' type="number"></p>
+                            
                         </div>
+            
+                <div class="buttons">
+                    <p class="button-content">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-button">Agregar al Carrito</span>
+                    </p>
+                </div>
 
-                        <p class="char-p">Caracteristicas del producto</p>
-
-                        <ul class="description">
-                            <li>Pantalla retina 13.3"</li>
-                            <li>Chip M2 de Apple</li>
-                            <li>GPU de 10 nucleos</li>
-                        </ul>
-
-                        <a href="#" class="characteristics">
-                            <p>Ver mas caracteristicas</p>
-                        </a>
-
-                        <div class="buttons">
-                            <button class="buy-add" type="input">Anadir al carrito </button>
-                            <button class="buy-add" type="input">Comprar </button>
-                        </div>
-
-                    </div>
-
-                </section>
-
-                <h2 class="bottom-title">Productos que podrian interesarte</h2>
-                <section class="bottom">
-
-                    <a href="#">
-
-                        <div class="related-product">
-
-                            <img src="./images/airpods.jpg" alt="airpods" class="related-image">
-                            <p class="price-related">25000$</p>
-                            <p class="name-related">Airpods</p>
-
-                        </div>
-
-                    </a>
-                    <a href="#">
-
-                        <div class="related-product">
-
-                            <img src="./images/applewatch.jpg" alt="applewatch" class="related-image">
-                            <p class="price-related">80000$</p>
-                            <p class="name-related">Applewatch</p>
-
-                        </div>
-
-                    </a>
-
-                    <a href="#">
-
-                        <div class="related-product">
-
-                            <img src="./images/1366_2000.jpg" alt="iphone" class="related-image">
-                            <p class="price-related">300000$</p>
-                            <p class="name-related">Iphone 14</p>
-
-                        </div>
-
-                    </a>
-
-                </section>
+            </div>
+        
+    </div>
+        <h2 class="bottom-title">Productos que podrian interesarte</h2>
+        <section class="bottom">
+            
+            <a href="#"><div class="related-product">
+                <img src="\images\airpods.jpg" alt="airpods" class="related-image">
+                <p class="price-related">25000$</p>
+                <p class="name-related">Airpods</p>
+            </div></a>
+            <a href="#"><div class="related-product">
+                <img src="\images\applewatch.jpg" alt="applewatch" class="related-image">
+                <p class="price-related">80000$</p>
+                <p class="name-related">Applewatch</p></a>
+            </div>
+            <a href="#"><div class="related-product">
+                <img src="\images\1366_2000.jpg" alt="iphone" class="related-image">
+                <p class="price-related">300000$</p>
+                <p class="name-related">Iphone 14</p></a>
+            
+        </section>
 
 
 
-            </main>
 
-            <%- include('partials/footer.ejs') %>
 
-    </body>
+
+    </main>
 
 </html>

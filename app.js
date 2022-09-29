@@ -7,9 +7,9 @@ const path = require("path");
 //
 const mainRoutes = require("./routes/main.js");
 const userRoutes = require("./routes/user.js");
-const productsRoutes = require('./routes/products.js');
+const productsRoutes = require("./routes/products.js");
 
-//
+// view engine
 app.use(express.static(path.join(__dirname, "./public")));
 app.set("view engine", "ejs");
 
@@ -17,7 +17,7 @@ app.set("view engine", "ejs");
 
 app.use("/", mainRoutes);
 
-app.use('/products', productsRoutes);
+app.use("/products", productsRoutes);
 
 app.use("/user", userRoutes);
 
@@ -30,9 +30,3 @@ app.listen(3050, () => {
 //
 
 //
-
-
-
-
-
-

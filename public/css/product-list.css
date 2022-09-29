@@ -85,7 +85,7 @@ main {
   }
 
   button {
-    background-color: #f3d4f1;
+    background-color: rgba(246, 232, 232, 1);
     border: #ddddddb4;
     color: white;
     border-radius: 10px;
@@ -99,8 +99,12 @@ main {
     
 }
 
+  
+
 button:hover{
-    background-color: pink;
+  background-color: rgba(38, 70, 140, 0.592);
+  -webkit-transition: background-color 0.10s linear;
+  transition: background-color 0.10s linear;;
 }
 
 
@@ -115,7 +119,12 @@ button:hover{
 @media (min-width: 535px) {
     .main-article{
         width: 40%;
+        transition: all 450ms;
 
+    }
+
+    .main-article:hover{
+      scale: 1.04;
     }
    
 
