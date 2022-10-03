@@ -19,23 +19,23 @@
 
                     <section class="product-container">
 
-                        <% productos.forEach(function(producto) { %>
+                        <% products.forEach(function(product) { %>
 
                             <article class="main-article">
 
                                 <div class="image-container">
-                                    <img src="\images\airpods.jpg" alt="producto">
+                                    <img src="\images\<%= product.image || 'airpods.jpg' %>" alt="producto">
                                 </div>
 
                                 <ul class="products">
 
                                     <li class="list-none">
-                                        <%= producto.nombre %>
+                                        <%= product.name %>
                                     </li>
 
                                     <li class="price">
-                                        $<%= producto.precio %>
-                                            <%= producto.descuento%>
+                                        $<%= product.price %>
+                                            <%= product.discount %>%
                                     </li>
 
                                     <div class="button-container">

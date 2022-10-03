@@ -17,59 +17,59 @@
 
                     <h1>Editar Producto</h1>
 
-                    <form action="/products/edit" method="POST" class="product-form">
+                    <form action="/products/edit/<%= product.id %>?_method=PUT" enctype="multipart/form-data" method="POST" class="product-form">
 
                         <div class="input-label">
 
                             <div class="label">
-                                <label for="nombre">Nombre</label>
+                                <label for="name">Nombre</label>
                             </div>
-                            <input class="input" type="text" name="nombre" id="nombre" required>
+                            <input class="input" type="text" value="<%= product.name %>" name="name" id="name" required>
 
                         </div>
 
-                        <div class="input-label">
+                        <!-- <div class="input-label">
 
                             <div class="label">
                                 <label for="modelo">Modelo</label>
                             </div>
                             <input class="input" type="text" name="modelo" id="modelo" required>
 
-                        </div>
+                        </div> -->
 
-                        <div class="input-label">
+                        <!-- <div class="input-label">
 
                             <div class="label">
                                 <label for="marca">Marca</label>
                             </div>
                             <input class="input" type="text" name="marca" id="marca" required>
 
-                        </div>
+                        </div> -->
 
                         <div class="input-label">
 
                             <div class="label">
-                                <label for="descripcion">Descripcion</label>
+                                <label for="description">Descripcion</label>
                             </div>
-                            <input class="input" type="text" name="descripcion" id="descripcion" required>
+                            <input class="input" type="text" value="<%= product.description %>" name="description" id="description" required>
 
                         </div>
 
-                        <div class="input-label">
+                         <div class="input-label">
 
                             <div class="label">
                                 <label for="color">Color</label>
                             </div>
-                            <input class="input" type="text" name="color" id="color" required>
+                            <input class="input" type="text" value="<%= product.color %>" name="color" id="color" required>
 
-                        </div>
+                        </div> 
 
                         <div class="input-label">
 
                             <div class="label">
-                                <label for="precio">Precio</label>
+                                <label for="price">Precio</label>
                             </div>
-                            <input class="input" type="text" name="precio" id="precio" required>
+                            <input class="input" type="text" value="<%= product.price %>" name="price" id="price" required>
 
                         </div>
 
@@ -78,18 +78,25 @@
                             <div>
                                 <label for="imagen">Imagen</label>
                             </div>
-                            <input class="input-image" type="file" name="imagen" id="imagen " required>
+                            <input class="input-image" type="file" name="imagen" id="imagen " >
 
                         </div>
 
                         <div class="button-container">
 
                             <button type="reset">Borrar</button>
-                            <button type="submit">Crear</button>
+                            <button type="submit">Editar</button>
 
                         </div>
 
+
                     </form>
+
+                    <div class="button-container">
+                        <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+                            <button type="submit">Eliminar Producto</button>
+                        </form>
+                    </div>
 
                 </section>
 

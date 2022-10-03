@@ -3,6 +3,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const methodOverride = require('method-override');
 
 //
 const mainRoutes = require("./routes/main.js");
@@ -10,8 +11,13 @@ const userRoutes = require("./routes/user.js");
 const productsRoutes = require("./routes/products.js");
 
 // view engine
-app.use(express.static(path.join(__dirname, "./public")));
+
 app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, '/views'));
+app.use(methodOverride('_method'));
+app.use(express.static(path.join(__dirname, "./public")));
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 //
 

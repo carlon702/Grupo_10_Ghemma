@@ -1,0 +1,104 @@
+[
+     {
+          "id": 1,
+          "name": "celular6",
+          "description": "vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum",
+          "price": 334570.14,
+          "discount": 21,
+          "category": "celulares"
+          
+     },
+     {
+          "id": 2,
+          "name": "celular creo 4",
+          "description": "holaholaholaholaholaholaholahola",
+          "price": "345831.69",
+          "discount": 11,
+          "category": "celulares",
+          "color": "violeta"
+     },
+     {
+          "id": 3,
+          "name": "celular8",
+          "description": "aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in",
+          "price": 255474.3,
+          "discount": 16,
+          "category": "celulares"
+         
+     },
+     {
+          "id": 4,
+          "name": "celular6",
+          "description": "sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh",
+          "price": 201219.28,
+          "discount": 18,
+          "category": "celulares"
+     },
+     {
+          "id": 5,
+          "name": "celular1",
+          "description": "orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum",
+          "price": 287929.1,
+          "discount": 7,
+          "category": "celulares"
+     },
+     {
+          "id": 6,
+          "name": "celular2",
+          "description": "ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+          "price": 202148.37,
+          "discount": 12,
+          "category": "celulares"
+     },
+     {
+          "id": 7,
+          "name": "celular4",
+          "description": "tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent",
+          "price": 399501.5,
+          "discount": 34,
+          "category": "celulares"
+     },
+     {
+          "id": 8,
+          "name": "celular8",
+          "description": "in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non",
+          "price": 347437.23,
+          "discount": 11,
+          "category": "celulares"
+     },
+     {
+          "id": 9,
+          "name": "celular8",
+          "description": "morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla",
+          "price": 356097.24,
+          "discount": 6,
+          "category": "celulares"
+     },
+     {
+          "id": 10,
+          "name": "celular6",
+          "description": "mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus",
+          "price": 256142.96,
+          "discount": 19,
+          "category": "celulares"
+     },
+     {
+          "id": 11,
+          "name": "macaco",
+          "price": 19999999,
+          "color": "azul"
+     },
+     {
+          "id": 12,
+          "name": "macaco",
+          "price": 19999999,
+          "color": "azul"
+     },
+     {
+          "id": 13,
+          "name": "macaco",
+          "price": 19999999,
+          "color": "azul",
+          "description": "uma delicia"
+     }
+]

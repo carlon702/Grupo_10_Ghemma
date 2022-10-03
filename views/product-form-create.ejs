@@ -17,26 +17,26 @@
 
                     <h1>Crear Producto</h1>
 
-                    <form action="/products/create" method="POST" class="product-form">
+                    <form action="/products/create" method="POST" enctype="multipart/form-data" class="product-form">
 
                         <div class="input-label">
 
                             <div class="label">
-                                <label for="nombre">Nombre</label>
+                                <label for="name">Nombre</label>
                             </div>
-                            <input class="input" type="text" name="nombre" id="nombre" required>
+                            <input class="input" type="text" name="name" id="name" required>
 
                         </div>
 
-                        <div class="input-label">
+                        <!-- <div class="input-label">
 
                             <div class="label">
                                 <label for="modelo">Modelo</label>
                             </div>
                             <input class="input" type="text" name="modelo" id="modelo" required>
 
-                        </div>
-
+                        </div> -->
+<!-- 
                         <div class="input-label">
 
                             <div class="label">
@@ -44,14 +44,14 @@
                             </div>
                             <input class="input" type="text" name="marca" id="marca" required>
 
-                        </div>
+                        </div> -->
 
                         <div class="input-label">
 
                             <div class="label">
-                                <label for="descripcion">Descripcion</label>
+                                <label for="description">Descripcion</label>
                             </div>
-                            <input class="input" type="text" name="descripcion" id="descripcion" required>
+                            <input class="input" type="textArea" name="description" id="description" required>
 
                         </div>
                         <div class="input-label">
@@ -65,18 +65,18 @@
                         <div class="input-label">
 
                             <div class="label">
-                                <label for="precio">Precio</label>
+                                <label for="price">Precio</label>
                             </div>
-                            <input class="input" type="text" name="precio" id="precio" required>
+                            <input class="input" type="text" name="price" id="price" required>
 
                         </div>
 
                         <div class="product-create-img">
 
                             <div>
-                                <label for="imagen">Imagen</label>
+                                <label for="image">Imagen</label>
                             </div>
-                            <input class="input-image" type="file" name="imagen" id="imagen " required>
+                            <input class="input-image" type="file" name="image" id="image" >
                         </div>
 
                         <div class="button-container">
