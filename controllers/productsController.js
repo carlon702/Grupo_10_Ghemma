@@ -17,12 +17,6 @@ function writeFile(data){
 
 
 
-
-
-
-
-
-
 const controller = {
 
     detail: function(req, res) {
@@ -47,7 +41,7 @@ const controller = {
             price: Number(req.body.price),
             color: req.body.color,
             description: req.body.description,
-            image: req.body.image? req.file.filename : "airpods.jpg",
+            image: req.body.image ? req.file.filename : "airpods.jpg",
         };
 
             data.push(newProduct);

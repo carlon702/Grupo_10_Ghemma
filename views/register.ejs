@@ -9,15 +9,15 @@
             <div class="register-form">
                 <h3>Creá tu cuenta</h3>
 
-                <form class="register" method="post">
+                <form action="/user/register" class="register" method="post" enctype="multipart/form-data" >
 
                     <label for="Nombre">Nombre</label>
 
-                    <p><input class="control" type="text" name="nombre" required></p>
+                    <p><input class="control" type="text" name="name" required></p>
 
                     <label for="Apellido">Apellido</label>
 
-                    <p><input class="control" type="text" name="apellido" required></p>
+                    <p><input class="control" type="text" name="lastName" required></p>
 
                     <label for="correo electronico">Corre electrónico</label>
 
@@ -25,21 +25,34 @@
 
                     <label for="contraseña">Constraseña</label>
 
-                    <p><input class="control" type="password" name="constraseña" required
+                    <p><input class="control" type="password" name="password" required
                             placeholder="Mínimo 8 caracteres, una mayúscula y un número"></p>
+
+                    <div>
+                        <p>Categoria</p>
+                        <input type="list" list="category" name="category">
+                        <datalist id="category">
+                            <option value="Comprador">Comprador</option>
+                            <option value="Vendedor">Vendedor</option>
+                        </datalist>
+                    </div>
+                    
+                    <div>
+                        <input type="file" value="Imagen de perfil" name="profileImg">
+                    </div>
 
                     <div class="options">
 
-                        <p><input class="conditions" type="checkbox" name="terminos" value="terminos"> Acepto términos y
+                        <p><input class="conditions" type="checkbox" name="conditions" value="conditions"> Acepto términos y
                             condiciones</p>
-                        <p><input class="suscription" type="checkbox" name="suscripcion" value="suscripcion"> Recibir
+                        <p><input class="suscription" type="checkbox" name="suscription" value="suscription"> Recibir
                             novedades y ofertas especiales</p>
 
                     </div>
 
                     <div class="botones">
 
-                        <p><button class="aceptar" type="submit">Aceptar</button></p>
+                        <p><button class="aceptar" type="submit">Enviar</button></p>
                         <p><button class="cancelar" type="submit">Cancelar</button></p>
 
 
@@ -49,9 +62,9 @@
 
             </div>
 
-            <%- include('partials/footer.ejs') %>
+            
         </main>
-
+        <%- include('partials/footer.ejs') %>
 
 </body>
 
