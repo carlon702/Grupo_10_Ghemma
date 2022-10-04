@@ -1,14 +1,5 @@
 [
      {
-          "id": 1,
-          "name": "celular6",
-          "description": "vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum",
-          "price": 334570.14,
-          "discount": 21,
-          "category": "celulares"
-          
-     },
-     {
           "id": 2,
           "name": "celular creo 4",
           "description": "holaholaholaholaholaholaholahola",
@@ -24,7 +15,6 @@
           "price": 255474.3,
           "discount": 16,
           "category": "celulares"
-         
      },
      {
           "id": 4,
@@ -32,14 +22,6 @@
           "description": "sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh",
           "price": 201219.28,
           "discount": 18,
-          "category": "celulares"
-     },
-     {
-          "id": 5,
-          "name": "celular1",
-          "description": "orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum",
-          "price": 287929.1,
-          "discount": 7,
           "category": "celulares"
      },
      {
@@ -100,5 +82,21 @@
           "price": 19999999,
           "color": "azul",
           "description": "uma delicia"
+     },
+     {
+          "id": 12,
+          "name": "xxxx",
+          "price": null,
+          "color": "xxxx",
+          "description": "xxxx",
+          "image": "image-1664840706258.jpg"
+     },
+     {
+          "id": 13,
+          "name": "asdfasf",
+          "price": 235235235,
+          "color": "asgasg",
+          "description": "asdfasfa",
+          "image": "airpods.jpg"
      }
 ]

@@ -47,7 +47,7 @@ const controller = {
             price: Number(req.body.price),
             color: req.body.color,
             description: req.body.description,
-            image: req.file.filename, 
+            image: req.body.image? req.file.filename : "airpods.jpg",
         };
 
             data.push(newProduct);
@@ -88,9 +88,13 @@ const controller = {
         const product = data.find(function(product){
             return product.id == req.params.id;
         });
-        data.splice(product, 1);
+
+        const productDelete = data.indexOf(product);
+
+        data.splice(productDelete, 1);
 
         writeFile(data);
+        
 
         res.redirect('/products/list');
 
