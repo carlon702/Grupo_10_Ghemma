@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const bcryptjs = require('bcryptjs')
 
 function findAll(){
     const data = fs.readFileSync(path.join(__dirname, "../data/user.json"));
@@ -8,7 +9,7 @@ function findAll(){
 };
 
 function writeFile(data){  
-       const jsonStringed =  JSON.stringify(data, null, 5);
+       const jsonStringed =  JSON.stringify(data, null, 6);
        fs.writeFileSync(path.join(__dirname, '../data/user.json'), jsonStringed)
 
 }
@@ -28,21 +29,26 @@ const controller ={
     },
     createRegister: (req, res)=>{
     const data = findAll();
+    console.log(data)
 
         const newUser = {
             id: data.length + 1,
             name: req.body.name,
             lastName: req.body.lastName,
-            password: req.body.password,
+            password: bcryptjs.hashSync(req.body.password, 10),
             category: req.body.category,
             profileImage: req.body.profileImage ? req.file.filename : "ImgPerfilDefault.png",
+        
         };
+        console.log(newUser)
+        console.log(data)
+
 
             data.push(newUser);
 
             writeFile(data);
 
-            res.redirect('/')
+            res.redirect("/user/register")
 }
 }
-module.exports = controller
+module.exports = controller;
