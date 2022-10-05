@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('partials/head.ejs') %>
+<%- include('partials/head.ejs') %>
 
-<body>
-    <%- include('partials/header.ejs') %>
-        <main>
-            <div class="register-form">
-                <h3>Creá tu cuenta</h3>
+    <body>
+        <%- include('partials/header.ejs') %>
+            <main>
+                <div class="register-form">
+                    <h3>Creá tu cuenta</h3>
 
-                <form class="register" method="post">
+                    <form class="register" method="post">
 
-                    <label for="Nombre">Nombre</label>
+                        <label for="Nombre">Nombre</label>
 
-                    <p><input class="control" type="text" name="nombre" required></p>
+                        <p><input class="control" type="text" name="nombre" required></p>
 
-                    <label for="Apellido">Apellido</label>
+                        <label for="Apellido">Apellido</label>
 
-                    <p><input class="control" type="text" name="apellido" required></p>
+                        <p><input class="control" type="text" name="apellido" required></p>
 
-                    <label for="correo electronico">Corre electrónico</label>
+                        <label for="correo electronico">Corre electrónico</label>
 
-                    <p><input class="control" type="email" name="email" required="E-mail"></p>
+                        <p><input class="control" type="email" name="email" required="E-mail"></p>
 
-                    <label for="contraseña">Constraseña</label>
+                        <label for="contraseña">Constraseña</label>
 
-                    <p><input class="control" type="password" name="constraseña" required
-                            placeholder="Mínimo 8 caracteres, una mayúscula y un número"></p>
+                        <p><input class="control" type="password" name="constraseña" required
+                                placeholder="Mínimo 8 caracteres, una mayúscula y un número"></p>
 
-                    <div class="options">
+                        <div class="options">
 
-                        <p><input class="conditions" type="checkbox" name="terminos" value="terminos"> Acepto términos y
-                            condiciones</p>
-                        <p><input class="suscription" type="checkbox" name="suscripcion" value="suscripcion"> Recibir
-                            novedades y ofertas especiales</p>
+                            <p><input class="conditions" type="checkbox" name="terminos" value="terminos"> Acepto
+                                términos y
+                                condiciones</p>
+                            <p><input class="suscription" type="checkbox" name="suscripcion" value="suscripcion">
+                                Recibir
+                                novedades y ofertas especiales</p>
 
-                    </div>
+                        </div>
 
-                    <div class="botones">
+                        <div class="botones">
 
-                        <p><button class="aceptar" type="submit">Aceptar</button></p>
-                        <p><button class="cancelar" type="submit">Cancelar</button></p>
-
-
-
-                    </div>
-                </form>
-
-            </div>
-
-            <%- include('partials/footer.ejs') %>
-        </main>
+                            <p><button class="aceptar" type="submit">Aceptar</button></p>
+                            <p><button class="cancelar" type="submit">Cancelar</button></p>
 
 
-</body>
+
+                        </div>
+                    </form>
+
+                </div>
+
+                <%- include('partials/footer.ejs') %>
+            </main>
+
+
+    </body>
 
 </html>

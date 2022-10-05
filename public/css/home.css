@@ -458,3 +458,24 @@ h1 {
   font-size: 3vw;
 }
 /* <!-- computers --> */
+
+/* <!-- WATCHES --> */
+
+.watches-section {
+  width: 100vw;
+  height: 140vw;
+
+  position: relative;
+
+  background-color: #c72828;
+}
+.watches-container img {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+
+  object-fit: cover;
+}
+
+/* <!-- watches --> */
