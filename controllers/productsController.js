@@ -41,11 +41,10 @@ const controller = {
       price: Number(req.body.price),
       color: req.body.color,
       description: req.body.description,
-      image: req.file.filename,
+      image: req.body.image ? req.file.filename : "airpods.jpg",
     };
 
     data.push(newProduct);
-
     writeFile(data);
 
     res.redirect("/products/list");
@@ -94,6 +93,7 @@ const controller = {
 
   list: function (req, res) {
     const data = findAll();
+
     res.render("product-list", {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-list.css",
