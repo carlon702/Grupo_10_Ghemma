@@ -54,3 +54,22 @@ Empezar a hacer:
 -Sincronizar el uso de la paleta de colores en todas las vistas.
 -Definir Logo
 
+
+**SPRINT #4**
+
+Seguir haciendo:
+
+- Comunicacion constante
+- Colaboracion continua
+- Estar alineados
+- Reuniones una vez por semana para revisar como estamos
+
+Dejar de hacer:
+
+-Dejar de finalizar sprint a ultimo momento
+-Dejar de llorar por marce
+
+Empezar a hacer:
+
+-Sincronizar el uso de la paleta de colores en todas las vistas.
+-Definir Logo
