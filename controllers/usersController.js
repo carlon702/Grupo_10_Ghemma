@@ -5,6 +5,7 @@ const bcryptjs = require('bcryptjs')
 function findAll(){
     const data = fs.readFileSync(path.join(__dirname, "../data/user.json"));
     const jsonParsed = JSON.parse(data);
+    console.log("data", data)
     return jsonParsed;
 };
 
@@ -25,25 +26,21 @@ const controller ={
     sendLogin: (req, res)=>{
 
         res.redirect("/")
-
     },
     createRegister: (req, res)=>{
     const data = findAll();
-    console.log(data)
+    console.log(req.body)
 
         const newUser = {
             id: data.length + 1,
-            name: req.body.name,
-            lastName: req.body.lastName,
-            password: bcryptjs.hashSync(req.body.password, 10),
-            category: req.body.category,
+            name: req.body.nombre,
+            lastName: req.body.apellido,
+            password: req.body.constraseña,//bcryptjs.hashSync(req.body.password, 10),
+            //category: req.body.category,
             profileImage: req.body.profileImage ? req.file.filename : "ImgPerfilDefault.png",
         
         };
-        console.log(newUser)
-        console.log(data)
-
-
+        
             data.push(newUser);
 
             writeFile(data);
