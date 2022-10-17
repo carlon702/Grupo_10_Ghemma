@@ -23,3 +23,16 @@ Diseño adaptativo de login, registro, carrito y formulario de productos.
 *marce no da signos vitales
 *asignamos tareas
 \*repasamos CRUD
+
+6-10-2022
+
+*agregamos tareas del sprint 5 a trello
+*hicimos retrospectiva del sprint 4
+*revisamos vistas del proyecto
+
+13-10-2022
+
+*Asignamos tareas
+*Repasamos los temas del sprint
+*Definimos algunos colores pendientes
+*Nos falta decidir el Logo

@@ -95,13 +95,10 @@ width: 100%;
 
         .register-form {
             width: 400px;
-            border: solid 1px rgb(130, 131, 143, 0.07);
-            border-radius: 30px;
             margin: auto;
             margin-bottom: 100px;
             margin-top: 100px;
-            background-color: #51637427;
-            box-shadow: 1px 1px 12px #444;
+            
          }
 
           .control{

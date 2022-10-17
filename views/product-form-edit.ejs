@@ -72,6 +72,15 @@
                             <input class="input" type="text" value="<%= product.price %>" name="price" id="price" required>
 
                         </div>
+                        
+                        <div class="input-label">
+
+                            <div class="label">
+                                <label for="discount">Descuento</label>
+                            </div>
+                            <input class="input" type="text" value="<%= product.discount %>" name="discount" id="discount" required>
+
+                        </div>
 
                         <div class="product-create-img">
 
@@ -92,7 +101,7 @@
 
                     </form>
 
-                    <div class="button-container">
+                    <div class="button-erase-container">
                         <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
                             <button type="submit">Eliminar Producto</button>
                         </form>

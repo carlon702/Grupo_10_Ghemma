@@ -12,7 +12,7 @@ main{
 }
 body{
   font-family: "Montserrat", sans-serif;
-  background-color: rgba(173, 232, 232, 0.447);
+  background-color: white;
 }
 
 .main-wrapper{
@@ -77,7 +77,7 @@ flex: 75%;
   background-color:rgba(246, 232, 232, 1);
   border-radius: 10px;
   cursor: pointer;
-  color: #fff;
+  color: black;
   font-weight: 600;
 }
 .button-content span{
@@ -122,7 +122,7 @@ flex: 75%;
 
 .subtotal-box a{
   background-color: rgba(246, 232, 232, 1);
-  color: #fff;
+  color: black;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -174,7 +174,10 @@ flex: 75%;
   .cart-container{
     flex-direction: row;
   }
- 
+  footer{
+    position: absolute;
+    bottom: 0%;
+  }
 
 }
 
