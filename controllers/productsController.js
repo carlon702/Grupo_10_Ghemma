@@ -39,6 +39,7 @@ const controller = {
       id: data.length + 1,
       name: req.body.name,
       price: Number(req.body.price),
+      discount: Number(req.body.discount),
       color: req.body.color,
       description: req.body.description,
       image: req.body.image ? req.file.filename : "airpods.jpg",

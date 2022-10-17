@@ -13,5 +13,12 @@
             "lastName": "probando",
             "password": "erkfjirfj",
             "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 4,
+            "name": "carlos",
+            "lastName": "marchal",
+            "password": "22222222222",
+            "profileImage": "ImgPerfilDefault.png"
       }
 ]
