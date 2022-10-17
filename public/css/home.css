@@ -35,7 +35,7 @@ body {
 }
 
 .all-products article {
-  margin-top: 30%;
+  margin-top: 14%;
 }
 /* ------- Celulares SAMSUNG -------*/
 
@@ -47,7 +47,7 @@ body {
 /* PHONE HERO-IMAGE */
 
 .phone-section {
-  background-color: rgb(227 227 227);
+  background-color: #e8e8e8;
   position: relative;
 }
 .hero-phone-samsung {
@@ -285,6 +285,9 @@ body {
   margin: 4px;
   color: #ffffff;
 }
+.center {
+  text-align: center;
+}
 
 .ipad-btn-container {
   margin-top: 2px;
@@ -292,6 +295,7 @@ body {
 .white-btn {
   margin-top: 0px;
   padding: 3vw;
+  font-weight: 600;
   border-radius: 153px;
   border: 1px solid #544949;
   background-color: #f7f6f6;
@@ -355,6 +359,7 @@ body {
 
 .computers-section {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,7 +367,7 @@ body {
 
   width: 100vw;
   height: 100vw;
-  margin-top: 15%;
+  bottom: 9%;
 }
 
 .computers-section .title-product {
@@ -370,7 +375,7 @@ body {
   align-self: flex-start;
 
   margin: 0;
-  bottom: 13%;
+  bottom: 9%;
 }
 
 .computers-container {
@@ -378,6 +383,8 @@ body {
 
   width: 96%;
   height: inherit;
+
+  margin-top: 18%;
 }
 
 .computer-box {
@@ -483,22 +490,23 @@ body {
 
 .watches-section {
   width: 100vw;
-  height: 105vh;
+  height: 157vw;
 
   position: relative;
-
-  background-color: #c72828;
 }
 .top-watches-section {
   position: absolute;
-  display: flex;
   z-index: 10;
+
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
   color: #9d9d9d;
+
   width: 100%;
-  height: 63%;
+  height: 58%;
 }
 .top-watches-section a {
   position: relative;
@@ -508,6 +516,7 @@ body {
   color: whitesmoke;
 
   font-weight: 500;
+  font-size: 8.5vw;
   margin: 0;
 }
 .watches-brand {
@@ -603,7 +612,7 @@ body {
 .tvs-nav a,
 .tv-text {
   color: #ffffffde;
-  font-size: 6vw;
+  font-size: 5.5vw;
   list-style: none;
   font-weight: 900;
   margin: 0 4vw;
@@ -625,3 +634,164 @@ body {
   padding: 3vw;
 }
 /* <!-- tvs --> */
+
+/* media queries */
+
+@media screen and (min-width: 535px) and (max-width: 990px) {
+  h1 {
+    font-size: 3.5vw;
+  }
+
+  .title-product {
+    font-size: 5vw;
+  }
+  .brand-selector {
+    margin: 7vw 0px;
+  }
+  .brand-selector span {
+    margin: 0px 18px;
+    padding: 2vw;
+    font-size: 2.5vw;
+    font-weight: 500;
+    font-family: "Rubik";
+  }
+
+  /*  */
+
+  .white-btn,
+  .black-btn {
+    padding: 1vw;
+    font-size: 2vw;
+  }
+
+  /*  */
+
+  /* PHONES */
+
+  .hero-phone-samsung {
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 8.5vw;
+    position: relative;
+    top: 8%;
+  }
+
+  .hero-title,
+  .hero-sub-title {
+    text-shadow: 1px 0px 0px #000000, 0px 1px 0px black, -1px 0px 0px black,
+      0px -1px 0px black;
+  }
+
+  .hero-sub-title {
+    margin-top: 0;
+    font-size: 3.9vw;
+    position: relative;
+    top: 12%;
+  }
+
+  .hero-btn {
+    width: 13vw;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 2vw;
+    position: relative;
+    top: 29%;
+  }
+
+  /*  */
+  .phones-samsung-container {
+    width: 37%;
+    padding: 2rem 0rem;
+    border-radius: 26px;
+    border: 0.09999999999999432px solid rgb(218 218 218);
+  }
+  .phone-btn {
+    font-size: 2vw;
+    padding: 0.4rem;
+    border-style: none;
+    border-radius: 16px;
+    background-color: #a1a1a1b0;
+    color: #ffffffbd;
+  }
+  /* phones */
+
+  /*  TABS */
+
+  .smg-tab-bottom p {
+    font-size: 2.5vw;
+    position: relative;
+
+    font-weight: bold;
+    bottom: 12px;
+  }
+  /* sms-tab */
+
+  .tabs-section {
+    width: 50vw;
+    height: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .samsung-tab img,
+  .ipad-tab img {
+    width: 50vw;
+    height: 60vw;
+  }
+
+  /* ipag */
+  .ipad-tab {
+    width: 50vw;
+  }
+  .apple-ipad-description p {
+    font-size: 2.8vw;
+    position: relative;
+    top: 90%;
+  }
+  /*  tabs */
+  /* HEADPHONES */
+  /*  headphones */
+
+  /* WATCHES */
+  .watches-section {
+    height: 100vw;
+  }
+  .top-watches-section a {
+    font-size: 2.4vw;
+  }
+  /* watches */
+
+  /* TV */
+
+  .tvs-section {
+    width: 100vw;
+    height: 89vw;
+  }
+
+  .title-product {
+    font-size: 5vw;
+  }
+
+  .tv-title {
+    font-size: 6vw;
+    top: 5vw;
+  }
+
+  .tvs-nav a,
+  .tv-text {
+    font-size: 4vw;
+    margin: 0 4vw;
+    bottom: 11vw;
+  }
+
+  .tv-btn {
+    bottom: 5vw;
+    border-radius: 2vw;
+    padding: 2vw;
+    font-size: 2vw;
+  }
+  /* tv */
+}
