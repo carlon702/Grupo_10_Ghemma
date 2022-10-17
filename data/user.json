@@ -1,0 +1,24 @@
+[
+      {
+            "id": 1,
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 2,
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 3,
+            "name": "juli",
+            "lastName": "probando",
+            "password": "erkfjirfj",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 4,
+            "name": "carlos",
+            "lastName": "marchal",
+            "password": "22222222222",
+            "profileImage": "ImgPerfilDefault.png"
+      }
+]

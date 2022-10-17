@@ -28,7 +28,7 @@ header {
 }
 
 .product-nav {
-  color: rgb(137, 255, 131);
+  color: black;
   background-color: none;
   padding: none;
   border-radius: none;
@@ -38,7 +38,7 @@ header {
 
 .product-nav:hover {
   border-radius: 10px;
-  background-color: rgb(109, 126, 222);
+  background-color: rgba(128, 128, 128, 0.57);
 }
 
 a {
@@ -118,7 +118,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     padding: 15px;
-    background-color: aquamarine;
+    background-color: #dddddd87;
   }
   footer div {
     padding: 10px;
@@ -183,7 +183,8 @@ a {
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
-    background-color: aquamarine;
+    background-color: #dddddd87;
+  
   }
   footer div {
     padding: 10px;
@@ -251,7 +252,8 @@ a {
     flex-wrap: wrap;
     padding: 5px;
     width: 100%;
-    background-color: rgb(220, 89, 128);
+    background-color: #dddddd87;
+   
   }
   footer div {
     padding: 5px;

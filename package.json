@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/carlon702/Grupo_10_Ghemma/issues"
   },
-  "homepage": "https://github.com/carlon702/Grupo_10_Ghemma#readme",
+  "homepage": "httnpmps://github.com/carlon702/Grupo_10_Ghemma#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "ejs": "^3.1.8",

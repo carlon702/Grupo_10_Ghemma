@@ -98,5 +98,30 @@
           "color": "asgasg",
           "description": "asdfasfa",
           "image": "airpods.jpg"
+     },
+     {
+          "id": 14,
+          "name": "juli",
+          "price": 1000000,
+          "color": "negro obvio",
+          "description": "probando",
+          "image": "airpods.jpg"
+     },
+     {
+          "id": 15,
+          "name": "lucas",
+          "price": 100,
+          "color": "azul",
+          "description": "hola",
+          "image": "airpods.jpg"
+     },
+     {
+          "id": 16,
+          "name": "hola",
+          "price": 19999,
+          "discount": 19,
+          "color": "azul",
+          "description": "holala",
+          "image": "airpods.jpg"
      }
 ]

@@ -20,7 +20,7 @@
                         <img src="\images\<%= product.image || 'airpods.jpg' %>" alt="prod">
                         <div class="content">
                             <h3><%= product.name %></h3>
-                            <h4 class="price"><%= product.price %></h4>
+                            <h4 class="price"><%= product.price %><%="  "%> <%= product.discount %>% OFF</h4>
                             <h4>Caracteristicas:</h4>
                             <p class="description">
                                <%= product.description %>
@@ -38,6 +38,7 @@
 
             </div>
         
+    </div>
     </div>
         <h2 class="bottom-title">Productos que podrian interesarte</h2>
         <section class="bottom">
@@ -61,9 +62,11 @@
 
 
 
-
+        
 
 
     </main>
+    <%- include('partials/footer.ejs') %>
 
+</body>
 </html>
