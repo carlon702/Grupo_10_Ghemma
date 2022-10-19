@@ -68,6 +68,9 @@ body {
   font-family: "Rubik";
 
   color: rgba(255, 255, 255, 0.864);
+
+  text-shadow: 1px 0px 0px #000000, 0px 1px 0px black, -1px 0px 0px black,
+    0px -1px 0px black;
 }
 
 .hero-title {
@@ -113,7 +116,7 @@ body {
   position: relative;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 
   top: 35px;
   width: 100%;
@@ -123,23 +126,21 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  width: 45%;
-  padding: 1rem 0rem;
-
-  margin-bottom: 45px;
-  border-radius: 9px;
-  border: 0.09999999999999432px solid rgb(200 200 200);
+  width: 40%;
+  padding: 2vw 0vw;
+  border-radius: 16px;
+  background-color: rgb(186 186 186 / 57%);
+  margin: 0px 1vw;
 }
 
 .phone-img-samsung-container {
-  width: 75%;
+  width: 70%;
+  text-align: center;
+  margin: 16px 0px;
 }
 
 .phone-img-samsung-container img {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .phone-description {
@@ -148,25 +149,24 @@ body {
   text-align: center;
 }
 
-.phone-name {
-  font-size: 4vw;
+.brand-name {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.6vw;
+  margin: 0;
+  color: #898989;
+  padding-top: 2vw;
 }
 
-.phone-btn {
-  font-size: 3vw;
-  padding: 0.4rem;
-
-  border-style: none;
-  border: 1px solid;
-  border-radius: 8px;
-
-  background-color: #bfbfbf;
-  color: #fffefe;
+.phone-name {
+  font-size: 4vw;
+  font-weight: bolder;
+  margin: 0;
+  padding: 3vw 0;
 }
 
 .see-all-btn-container {
   margin-top: 50px;
-  text-align: center;
 }
 .see-all-btn {
   font-size: 3.4vw;
@@ -307,7 +307,8 @@ body {
 
 /* <!-- HEADPHONES --> */
 
-.headphones-section {
+/* .headphones-section */
+.all-headphones {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -324,7 +325,6 @@ body {
 
 .headphone {
   width: 100vw;
-  /* height: calc(50vh + 100px); */
   text-align: center;
 }
 .headphone img {
@@ -332,9 +332,6 @@ body {
   height: 90vw;
   object-fit: cover;
   margin-bottom: 20px;
-
-  /* text-align: center; */
-  /* min-height: 235px; */
 }
 .box1 {
   background-color: #f4f4f4;
@@ -359,15 +356,16 @@ body {
 
 .computers-section {
   position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
   width: 100vw;
-  height: 100vw;
-  bottom: 9%;
+  height: 129vw;
+}
+
+.main-computer-container {
+  height: inherit;
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .computers-section .title-product {
@@ -375,16 +373,25 @@ body {
   align-self: flex-start;
 
   margin: 0;
-  bottom: 9%;
+  bottom: 5%;
 }
 
 .computers-container {
   position: absolute;
 
-  width: 96%;
+  width: 100vw;
   height: inherit;
 
-  margin-top: 18%;
+  display: flex;
+  flex-direction: column;
+}
+
+.computers-left-side {
+  width: 52%;
+  height: 121vw;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
 }
 
 .computer-box {
@@ -392,17 +399,9 @@ body {
 
   height: 100%;
 
-  border-radius: 8px;
+  border-radius: 4px;
   backdrop-filter: blur(15px);
-  background-color: rgba(220, 220, 220, 0.784);
-}
-
-.computers-bottom {
-  display: flex;
-  justify-content: flex-end;
-
-  width: 100%;
-  height: 100%;
+  background-color: rgb(186 186 186 / 57%);
 }
 
 .computer-1,
@@ -414,8 +413,8 @@ body {
   justify-content: space-evenly;
 }
 .computer-1 {
-  width: 47%;
-  height: 100%;
+  width: 48.6%;
+  height: 93.9%;
 }
 .computer-1 .computer-title {
   width: 85%;
@@ -459,7 +458,7 @@ body {
 .computer-2,
 .computer-3 {
   width: 50%;
-  height: 48%;
+  height: 46.8%;
 }
 .computer-3 {
   align-self: flex-end;
@@ -523,6 +522,10 @@ body {
   position: relative;
   margin: 0;
   bottom: 16%;
+}
+.watch-btb {
+  position: relative;
+  top: 21%;
 }
 
 .watches-image-container,
@@ -598,28 +601,28 @@ body {
 }
 
 .tv-title {
-  color: #ffffff;
   font-size: 12vw;
   font-weight: 100;
   margin: 0px;
   width: 100vw;
   top: 7vw;
+}
 
+.tvs-nav a,
+.tv-text,
+.tv-title {
+  color: #ffffff;
   text-shadow: 1px 0px 0px #000000, 0px 1px 0px black, -1px 0px 0px black,
     0px -1px 0px black;
 }
 
 .tvs-nav a,
 .tv-text {
-  color: #ffffffde;
   font-size: 5.5vw;
   list-style: none;
   font-weight: 900;
   margin: 0 4vw;
   bottom: 23vw;
-
-  text-shadow: 1px 0px 0px #000000, 0px 1px 0px black, -1px 0px 0px black,
-    0px -1px 0px black;
 }
 
 .tv-text {
@@ -678,12 +681,6 @@ body {
     top: 8%;
   }
 
-  .hero-title,
-  .hero-sub-title {
-    text-shadow: 1px 0px 0px #000000, 0px 1px 0px black, -1px 0px 0px black,
-      0px -1px 0px black;
-  }
-
   .hero-sub-title {
     margin-top: 0;
     font-size: 3.9vw;
@@ -702,19 +699,38 @@ body {
 
   /*  */
   .phones-samsung-container {
-    width: 37%;
+    width: 31%;
     padding: 2rem 0rem;
-    border-radius: 26px;
-    border: 0.09999999999999432px solid rgb(218 218 218);
+    border-radius: 5px;
   }
-  .phone-btn {
+  .phone {
+    margin: 0 1vw;
+  }
+
+  .phone-img-samsung-container {
+    width: 65%;
+    text-align: center;
+    margin: 4vw 0px;
+  }
+  .phone-img-samsung-container img {
+    width: 100%;
+  }
+  .phone-name {
     font-size: 2vw;
-    padding: 0.4rem;
-    border-style: none;
-    border-radius: 16px;
-    background-color: #a1a1a1b0;
-    color: #ffffffbd;
+    padding: 6vw 0;
   }
+  .brand-name {
+    font-size: 1.3vw;
+    padding-top: 0vw;
+  }
+  .phones-card-container {
+    justify-content: center;
+  }
+
+  .see-all-btn-container {
+    margin-top: 10vw;
+  }
+
   /* phones */
 
   /*  TABS */
@@ -727,7 +743,7 @@ body {
     bottom: 12px;
   }
   /* sms-tab */
-
+  /*  */
   .tabs-section {
     width: 50vw;
     height: 70vw;
@@ -741,8 +757,8 @@ body {
     width: 50vw;
     height: 60vw;
   }
-
-  /* ipag */
+  /*  */
+  /* ipad */
   .ipad-tab {
     width: 50vw;
   }
@@ -752,8 +768,72 @@ body {
     top: 90%;
   }
   /*  tabs */
+
   /* HEADPHONES */
+  .all-headphones {
+    position: relative;
+
+    width: 100vw;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    background-color: #f4f4f4;
+  }
+  .headphone {
+    width: 48.9vw;
+    height: 37vw;
+
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  .headphone img {
+    width: inherit;
+    height: inherit;
+
+    object-fit: cover;
+
+    margin-bottom: 20px;
+  }
+
+  .box3 {
+    order: 3;
+  }
   /*  headphones */
+
+  /* COMPUTERS */
+
+  .computers-section {
+    width: 99vw;
+    height: 88vw;
+  }
+
+  .computers-container {
+    width: inherit;
+    height: inherit;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .computer-1,
+  .computer-2,
+  .computer-3 {
+    width: 31%;
+    height: 100%;
+  }
+
+  .computers-left-side {
+    width: 63%;
+
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-content: space;
+  }
+
+  /* computers */
 
   /* WATCHES */
   .watches-section {
@@ -794,4 +874,124 @@ body {
     font-size: 2vw;
   }
   /* tv */
+}
+
+/* 
+
+*/
+
+@media screen and (min-width: 991px) {
+  h1 {
+    font-size: 4.5vw;
+  }
+  .title-product {
+    font-size: 2.5vw;
+  }
+
+  .brand-selector {
+    margin: 3vw 0px;
+  }
+
+  .brand-selector span {
+    margin: 0px 5px;
+    padding: 1vw;
+    font-size: 1.6vw;
+  }
+
+  .hero-phone-samsung {
+    justify-content: space-evenly;
+  }
+
+  .hero-btn {
+    width: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    border-style: none;
+    border-radius: 11px;
+    font-size: 1.2vw;
+    font-family: "Rubik";
+    background-color: rgba(219, 219, 219, 0.762);
+    color: white;
+  }
+
+  .hero-title,
+  .hero-sub-title {
+    text-align: center;
+  }
+
+  .hero-title {
+    margin: 0;
+    font-size: 5vw;
+    position: relative;
+    top: 22%;
+  }
+  .hero-sub-title {
+    margin: 0;
+    font-size: 1.9vw;
+    position: relative;
+    top: 9%;
+  }
+
+  .hero-btn {
+    width: 8vw;
+    padding: 10px;
+    border-radius: 11px;
+    font-size: 1.2vw;
+  }
+
+  /* 
+  
+  */
+
+  /* PHONE */
+  .phones-card-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 35px;
+    width: 100%;
+  }
+
+  .phones-samsung-container {
+    width: 18%;
+    padding: 1rem 0rem;
+    border-radius: 3px;
+  }
+  .phone {
+    margin: 3vw 1vw;
+  }
+
+  .phone-description {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .phone-img-samsung-container img {
+    width: 90%;
+  }
+
+  .brand-name {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 1vw;
+    margin: 0;
+    color: #898989;
+    padding-top: 1vw;
+  }
+
+  .phone-name {
+    font-size: 1.7vw;
+    font-weight: bolder;
+    margin: 0;
+    padding: 4vw 0;
+  }
+
+  .see-all-btn {
+    font-size: 1.1vw;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  /* phone */
 }
