@@ -35,8 +35,9 @@ const controller ={
             id: data.length + 1,
             name: req.body.nombre,
             lastName: req.body.apellido,
+            email: req.body.email,
             password: req.body.constraseña,//bcryptjs.hashSync(req.body.password, 10),
-            //category: req.body.category,
+            categoria: req.body.categoria,
             profileImage: req.body.profileImage ? req.file.filename : "ImgPerfilDefault.png",
         
         };
