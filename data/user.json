@@ -20,5 +20,46 @@
             "lastName": "marchal",
             "password": "22222222222",
             "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 5,
+            "name": "yhyt",
+            "lastName": "gtgtr",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "123456",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 6,
+            "name": "juliiii",
+            "lastName": "garcia",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "1234",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 7,
+            "name": "ju",
+            "lastName": "garcia",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "123",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 8,
+            "name": "123",
+            "lastName": "wsdwe",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "12344",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 9,
+            "name": "j",
+            "lastName": "g",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "hola",
+            "categoria": "Comprador",
+            "profileImage": "ImgPerfilDefault.png"
       }
 ]
