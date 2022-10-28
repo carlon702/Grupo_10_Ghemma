@@ -61,5 +61,12 @@
             "password": "hola",
             "categoria": "Comprador",
             "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 10,
+            "name": "valentino",
+            "lastName": "cogo",
+            "password": "$2a$10$Z2ogjZNl.hB62cAqJdIaU.gvTQoEYmg7Uue4frO5GK20xnSk.g336",
+            "profileImage": "ImgPerfilDefault.png"
       }
 ]

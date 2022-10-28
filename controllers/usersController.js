@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const bcryptjs = require("bcryptjs");
+const cookieParser = require("cookie-parser");
 
 function findAll() {
   const data = fs.readFileSync(path.join(__dirname, "../data/user.json"));
@@ -34,31 +35,17 @@ const controller = {
     const data = findAll();
     console.log(req.body);
 
-<<<<<<< HEAD
     const newUser = {
       id: data.length + 1,
       name: req.body.nombre,
       lastName: req.body.apellido,
       password: bcryptjs.hashSync(req.body.contraseña, 10),
-      category: req.body.category,
+      // category: req.body.category,
       profileImage: req.body.profileImage
         ? req.file.filename
         : "ImgPerfilDefault.png",
     };
-=======
-        const newUser = {
-            id: data.length + 1,
-            name: req.body.nombre,
-            lastName: req.body.apellido,
-            email: req.body.email,
-            password: req.body.constraseña,//bcryptjs.hashSync(req.body.password, 10),
-            categoria: req.body.categoria,
-            profileImage: req.body.profileImage ? req.file.filename : "ImgPerfilDefault.png",
-        
-        };
-        
-            data.push(newUser);
->>>>>>> 5eac0090a516e0b7f66ad6a5573b54e22f0479ae
+    console.log(newUser);
 
     data.push(newUser);
 

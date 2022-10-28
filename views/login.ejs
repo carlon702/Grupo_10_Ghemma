@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('partials/head.ejs') %>
-    
-<body>
+<%- include('partials/head.ejs') %>
+
+    <body>
 
 
 
-    <%- include('partials/header.ejs') %>
-        <main>
-            <div class="login-form">
-                <h3>Iniciar Sesión</h3>
-                <form class="form" method="post">
-                    <p><i class="fa-solid fa-envelope"></i>
-                        <label for="correo electronico">Corre electrónico</label>
-                        <input class="control" type="email" name="email">
-                    </p>
-                    <p><i class="fa-solid fa-lock"></i>
-                        <label for="Contraseña">Contraseña</label>
-                        <input class="control" type="password" name="contraseña">
-                    </p>
+        <%- include('partials/header.ejs') %>
+            <main>
+                <div class="login-form">
+                    <h3>Iniciar Sesión</h3>
+                    <form class="form" method="post">
+                        <p><i class="fa-solid fa-envelope"></i>
+                            <label for="correo electronico">Corre electrónico</label>
+                            <input class="control" type="email" name="email">
+                        </p>
+                        <p><i class="fa-solid fa-lock"></i>
+                            <label for="Contraseña">Contraseña</label>
+                            <input class="control" type="password" name="contraseña">
+                        </p>
 
-                    <div class="options">
+                        <div class="options">
 
-                        <p><input class="button-recordar" type="checkbox" name="recor" value="Recordar mi usuario">
-                            Recordar
-                            mi usuario</p>
-                        <br>
-                        <a href="#">¿Olvidaste la contraseña?</a>
-
-
-                    </div>
-                    <div class="botones">
-
-                        <p><button class="ingresar" type="submit">Ingresar</button></p>
-                        <p><button class="volver" type="submit">Volver</button><a></a></p>
-
-                    </div>
+                            <p><input class="button-recordar" type="checkbox" name="recor" value="Recordar mi usuario">
+                                Recordar
+                                mi usuario</p>
+                            <br>
+                            <a href="#">¿Olvidaste la contraseña?</a>
 
 
-                    <p class="no-cuenta">¿No tenés cuenta?<a href="register">Registrate acá.</a></p>
+                        </div>
+                        <div class="botones">
 
-                </form>
+                            <p><button class="ingresar" type="submit">Ingresar</button></p>
+                            <p><button class="volver" type="submit">Volver</button><a></a></p>
 
-
-            </div>
-
-            <%- include('partials/footer.ejs') %>
-        </main>
+                        </div>
 
 
+                        <p class="no-cuenta">¿No tenés cuenta?<a href="register">Registrate acá.</a></p>
 
-</body>
+                    </form>
+
+
+                </div>
+
+                <%- include('partials/footer.ejs') %>
+            </main>
+
+
+
+    </body>
 
 </html>
