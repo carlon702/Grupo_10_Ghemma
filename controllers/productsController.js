@@ -13,11 +13,13 @@ function writeFile(data) {
 }
 
 const controller = {
+  // 
   detail: function (req, res) {
     const data = findAll();
     const product = data.find(function (product) {
       return product.id == req.params.id;
     });
+
     res.render("product-detail", {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-detail.css",

@@ -379,7 +379,7 @@ body {
 .computers-container {
   position: absolute;
 
-  width: 100vw;
+  width: 96vw;
   height: inherit;
 
   display: flex;
@@ -387,7 +387,7 @@ body {
 }
 
 .computers-left-side {
-  width: 52%;
+  width: 50%;
   height: 121vw;
   align-self: flex-end;
   display: flex;
@@ -413,7 +413,7 @@ body {
   justify-content: space-evenly;
 }
 .computer-1 {
-  width: 48.6%;
+  width: 48.7%;
   height: 93.9%;
 }
 .computer-1 .computer-title {
@@ -457,7 +457,7 @@ body {
 }
 .computer-2,
 .computer-3 {
-  width: 50%;
+  width: 52%;
   height: 46.8%;
 }
 .computer-3 {
@@ -788,6 +788,7 @@ body {
     text-align: center;
     background-color: #f4f4f4;
   }
+
   .headphone img {
     width: inherit;
     height: inherit;
@@ -807,6 +808,20 @@ body {
   .computers-section {
     width: 99vw;
     height: 88vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .computers-section .title-product {
+    position: absolute;
+    top: -55px;
+    left: 35%;
+  }
+  .main-computer-container {
+    height: inherit;
+    width: 99%;
+    position: absolute;
   }
 
   .computers-container {
@@ -816,21 +831,85 @@ body {
     display: flex;
     flex-direction: column;
   }
-
+  .computer-image-container {
+    width: 90%;
+    text-align: center;
+  }
   .computer-1,
   .computer-2,
   .computer-3 {
-    width: 31%;
+    width: 31.5%;
     height: 100%;
   }
 
+  .computer-1 .text-1,
+  .computer-2 .text-1,
+  .computer-3 .text-1 {
+    font-size: 2.2vw;
+  }
+
+  .computer-1 .text-2 {
+    display: none;
+  }
+
   .computers-left-side {
-    width: 63%;
+    width: 66.2%;
 
     align-self: flex-end;
     display: flex;
     flex-direction: column;
     align-content: space;
+  }
+
+  .computer-1 .computer-title {
+    width: 111%;
+    text-align: center;
+    position: relative;
+    top: 3.7%;
+  }
+
+  .computer-1 img {
+    width: 80%;
+  }
+  .computer-1 .text-1 {
+    bottom: 1.5vw;
+  }
+  /* .computer-2 {
+    
+  } */
+  .computer-2 .computer-title {
+    width: 32%;
+    bottom: 3.4%;
+  }
+  .computer-2 .computer-image-container img {
+    position: relative;
+    top: 18%;
+    width: 95%;
+  }
+  .computer-2 .text-1 {
+    top: 2vw;
+  }
+  /* .computer-3 {
+    
+  } */
+  .computer-3 .computer-title {
+    width: 83%;
+    bottom: 2%;
+  }
+  .computer-3 .computer-image-container img {
+    width: 90%;
+    position: relative;
+    bottom: -6%;
+  }
+
+  .computer-3 .text-1 {
+    top: -1vw;
+  }
+  .computer-btn {
+    bottom: -1px;
+    padding: 0.7vw;
+    border-radius: 2px;
+    font-size: 2vw;
   }
 
   /* computers */
