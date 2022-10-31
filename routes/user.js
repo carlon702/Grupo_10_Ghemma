@@ -1,15 +1,17 @@
 const express = require("express");
 const router = express.Router();
+const path = require("path")
+const multer = require("multer");
 const controller = require("../controllers/usersController");
 
-const multer = require("multer");
 
 const storage = multer.diskStorage({
   destination: function (req, res, cb) {
-    cb(null, path.join(__dirname, "../public/images/"));
+    cb(null, path.join(__dirname, "../public/images/userImages"));
   },
   filename: function (req, file, cb) {
     const newFileName =
+    console.log(newFileName)
       file.fieldname + "-" + Date.now() + path.extname(file.originalname);
     cb(null, newFileName);
   },
@@ -21,6 +23,6 @@ router.get("/login", controller.login);
 router.post("/login", controller.sendLogin);
 
 router.get("/register", controller.register);
-router.post("/register", controller.createRegister);
+router.post("/register", upload.single('profileImage') ,controller.createRegister);
 
 module.exports = router;

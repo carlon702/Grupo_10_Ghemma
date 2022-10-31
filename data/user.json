@@ -68,5 +68,74 @@
             "lastName": "cogo",
             "password": "$2a$10$Z2ogjZNl.hB62cAqJdIaU.gvTQoEYmg7Uue4frO5GK20xnSk.g336",
             "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 11,
+            "name": "JULI",
+            "lastName": "GARCIA",
+            "password": "$2a$10$tRx0h4p9kMm2crJLUgvHleFDVFloKbhJcsO9JhTzilqW5k7N6jKuq",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 12,
+            "name": "juuuuuu",
+            "lastName": "garcia",
+            "password": "$2a$10$A17czAszDgtJ.UB2vubwTeMPpwrY.ws1E2pyrDfxGPzsCmAXvE97i",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 13,
+            "name": "hola",
+            "lastName": "chau",
+            "password": "$2a$10$R3OOAZy21S3BAzObskIkreG5zFVw5DfVqZaIQOarnANdt2ees2NAu",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 14,
+            "name": "j",
+            "lastName": "g",
+            "password": "$2a$10$KA7hWIMe0Rb5rIz8P5TNduxwGzPZOs/GtoIThYz.joLpo44VYkbF6",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 15,
+            "name": "juli",
+            "lastName": "g",
+            "password": "$2a$10$.kIPgV16h5cOSEZk4H7XLuCvecxylZNv7DCnoQkM313vPqBlVLpm2",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 16,
+            "name": "hola",
+            "lastName": "juli",
+            "password": "$2a$10$7HaY1fL.j2EmZ5PAx6hvDOMYPrQ59KOQvc8Z3zTIrjuaFnsRKk2Gm",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 17,
+            "name": "holi",
+            "lastName": "holi",
+            "password": "$2a$10$amqMHCs6O7Pz9/S.iY6Nce/si5hpAlHlW7onZvAQYaekVMV3xZrUO"
+      },
+      {
+            "id": 18,
+            "name": "hola",
+            "lastName": "gol",
+            "password": "$2a$10$at8ESPN4dANym7YtYHaX1Ogsa596OTJ03ub9JNfVBvs.xcxzY303C",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 19,
+            "name": "prueba",
+            "lastName": "prueba",
+            "password": "$2a$10$vVYl7qMbIoW6fnjr7yT3u.wor74Jl5RYhQ887rSN3SV2FDZfJZ.02",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 20,
+            "name": "aaa",
+            "lastName": "bbbb",
+            "password": "$2a$10$CmAyAs7SnTrJpbdGik8kM.J3nTqMpVN3FTopEdTwTzeNQBiBcW2f2",
+            "profileImage": "ImgPerfilDefault.png"
       }
 ]

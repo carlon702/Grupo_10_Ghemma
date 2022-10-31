@@ -24,7 +24,8 @@ app.use(express.static(path.join(__dirname, "./public")));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use(session({ secrets: "dia 153 marcelo todavia no aparece" }));
+app.use(session({ secret: "dia 153 marcelo todavia no aparece" ,resave: false, saveUninitialized: true})
+);
 app.use(cookieParser());
 
 //
