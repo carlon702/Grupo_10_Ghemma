@@ -15,20 +15,33 @@
 
                             <label for="Nombre">Nombre</label>
 
-                            <p><input class="control" type="text" name="nombre" required></p>
-
+                            <input class="control" type="text" name="nombre" required>
+                            <% if(locals.errors && locals.errors.nombre){ %>
+                            <p> <%= errors.nombre.msg  %> </p>
+                            <% } %> 
                             <label for="Apellido">Apellido</label>
 
-                            <p><input class="control" type="text" name="apellido" required></p>
+                            <p><input class="control" type="text" name="apellido" required>
+                                <% if(locals.errors && locals.errors.apellido){ %>
+                                <p> <%= errors.apellido.msg  %> </p>
+                                <% } %> </p>
 
                             <label for="correo electronico">Corre electrónico</label>
 
-                            <p><input class="control" type="email" name="email" required="E-mail"></p>
+                            <input class="control" type="email" name="email" required="E-mail">
+                                <% if(locals.errors && locals.errors.email){ %>
+                                    <p> <%= errors.email.msg  %> </p>
+                                    <% } %> 
+                            
 
                             <label for="contraseña">Contraseña</label>
 
                             <p><input class="control" type="password" name="contraseña" required
-                                    placeholder="Mínimo 8 caracteres, una mayúscula y un número"></p>
+                                    placeholder="Mínimo 8 caracteres, una mayúscula y un número">
+                                    <% if(locals.errors && locals.errors.contraseña){ %>
+                                        <p> <%= errors.contraseña.msg  %> </p>
+                                        <% } %> 
+                                </p>
 
                              <label>Categoria</label>       
                             <input  class= "control" type="list" name="categoria" list="categoria">

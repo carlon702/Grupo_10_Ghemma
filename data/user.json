@@ -137,5 +137,47 @@
             "lastName": "bbbb",
             "password": "$2a$10$CmAyAs7SnTrJpbdGik8kM.J3nTqMpVN3FTopEdTwTzeNQBiBcW2f2",
             "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 21,
+            "name": "hola",
+            "lastName": "prueba",
+            "email": "julietita.garcia@hotmail.com",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 22,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "julietita.garcia@hotmail.com",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 23,
+            "name": "e",
+            "lastName": "d",
+            "email": "julietita.garcia@hotmail.com",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 24,
+            "name": "l",
+            "lastName": "l",
+            "email": "j@hotmis.com",
+            "password": "$2a$10$2wek1nz/FdJ8o4TbeSUB3egVh.1NAjkWz/wJxHDGLPjFlE.uegahe",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 25,
+            "name": "hola",
+            "lastName": "1",
+            "email": "hola@hotmail.xom",
+            "password": "$2a$10$D2GpiCGhs0rTfu5e2Both.dJDgzATs325fmqCOJh.V.y4DmCahd/q",
+            "categoria": "Vendedor",
+            "profileImage": "ImgPerfilDefault.png"
       }
 ]

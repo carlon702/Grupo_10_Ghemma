@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const bcryptjs = require('bcryptjs')
+const {validationResult} = require('express-validator')
 
 function findAll(){
     const data = fs.readFileSync(path.join(__dirname, "../data/user.json"));
@@ -28,15 +29,22 @@ const controller ={
         res.redirect("/")
     },
     createRegister: (req, res)=>{
+        const error = validationResult(req)
+        if(!error.isEmpty()){
+            console.log(error.mapped)
+            return res.render("register", {errors: error.mapped()})
+        }
+
+
     const data = findAll();
-    console.log(req.body)
+    //console.log(req.body)
 
         const newUser = {
             id: data.length + 1,
             name: req.body.nombre,
             lastName: req.body.apellido,
             email: req.body.email,
-            password: req.body.constraseña,//bcryptjs.hashSync(req.body.password, 10),
+            password: bcryptjs.hashSync(req.body.contraseña , 10),
             categoria: req.body.categoria,
             profileImage: req.body.profileImage ? req.file.filename : "ImgPerfilDefault.png",
         
@@ -46,7 +54,7 @@ const controller ={
 
             writeFile(data);
 
-            res.redirect("/user/register")
+            res.redirect("/user/login")
 }
 }
 module.exports = controller;

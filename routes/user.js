@@ -3,6 +3,7 @@ const router = express.Router();
 const path = require("path")
 const multer = require("multer");
 const controller = require("../controllers/usersController");
+const  validation = require('../validations/userValidations')
 
 
 const storage = multer.diskStorage({
@@ -23,6 +24,6 @@ router.get("/login", controller.login);
 router.post("/login", controller.sendLogin);
 
 router.get("/register", controller.register);
-router.post("/register", upload.single('profileImage') ,controller.createRegister);
+router.post("/register", validation.registerValidation ,upload.single  ('profileImage') ,controller.createRegister);
 
 module.exports = router;
