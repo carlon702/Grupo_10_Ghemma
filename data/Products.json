@@ -123,5 +123,14 @@
           "color": "azul",
           "description": "holala",
           "image": "airpods.jpg"
+     },
+     {
+          "id": 17,
+          "name": "hola",
+          "price": 100,
+          "discount": 0,
+          "color": "blanco",
+          "description": "hola",
+          "image": "airpods.jpg"
      }
 ]

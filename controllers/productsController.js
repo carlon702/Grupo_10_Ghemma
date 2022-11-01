@@ -46,7 +46,7 @@ const controller = {
       description: req.body.description,
       image: req.body.image ? req.file.filename : "airpods.jpg",
     };
-
+    console.log(req.file)
     data.push(newProduct);
     writeFile(data);
 

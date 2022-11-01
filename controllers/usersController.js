@@ -31,25 +31,24 @@ const controller ={
     createRegister: (req, res)=>{
         const error = validationResult(req)
         if(!error.isEmpty()){
-            console.log(error.mapped)
-            return res.render("register", {errors: error.mapped()})
+            console.log(error)
+            return res.render("register", {errors: error.mapped(), title: 'Ghemma Store - Tienda Oficial' , css: '/register.css'})
         }
-
-
-    const data = findAll();
-    //console.log(req.body)
-
+        const data = findAll();
+        console.log(req.body)
+        
         const newUser = {
             id: data.length + 1,
             name: req.body.nombre,
             lastName: req.body.apellido,
             email: req.body.email,
-            password: bcryptjs.hashSync(req.body.contraseña , 10),
+            password: bcryptjs.hashSync(req.body.password , 10),
             categoria: req.body.categoria,
-            profileImage: req.body.profileImage ? req.file.filename : "ImgPerfilDefault.png",
+            profileImage: req.file ? req.file.filename : "ImgPerfilDefault.png",
         
         };
-        
+        console.log(req.file)
+
             data.push(newUser);
 
             writeFile(data);
