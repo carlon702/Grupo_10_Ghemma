@@ -41,3 +41,12 @@ Diseño adaptativo de login, registro, carrito y formulario de productos.
 
 *Seguimos viendo posibles logos
 *Revisamos las modificaciones que se realizaron en cada vista
+
+
+3-11-2022
+
+*Nos presentamos con Eze
+*Resuelto problema con subida de imagenes
+*Revisamos validaciones de usuarios
+*Nos organizamos para la presentacion del Lunes
+*Eze vino chau Marcelo
