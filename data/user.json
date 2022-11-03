@@ -323,5 +323,14 @@
             "password": "$2a$10$GhrdLJECI3VL8F.W8HXmoeVpJDLUYKv9c3SG2QtMJUMd9zvf5lAgi",
             "categoria": "",
             "profileImage": "profileImage-1667345302562.jpg"
+      },
+      {
+            "id": 42,
+            "name": "aklakk",
+            "lastName": "cafasf",
+            "email": "milanesa@gmail.com",
+            "password": "$2a$10$2uG1jdhV6.cEP9MrSh/NyOD0i0ZcKM4xywZN8WS9lwPllRTMzCl3K",
+            "categoria": "Vendedor",
+            "profileImage": "profileImage-1667512852985.png"
       }
 ]

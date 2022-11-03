@@ -50,11 +50,12 @@
      },
      {
           "id": 9,
-          "name": "celular8",
+          "name": "cambiado rey",
           "description": "morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla",
-          "price": 356097.24,
+          "price": "356097.24",
           "discount": 6,
-          "category": "celulares"
+          "category": "celulares",
+          "color": "azul"
      },
      {
           "id": 10,
@@ -124,5 +125,41 @@
           "color": "blanco",
           "description": "hola",
           "image": "airpods.jpg"
+     },
+     {
+          "id": 17,
+          "name": "milanesa",
+          "price": 9999999,
+          "discount": 99,
+          "color": "marron",
+          "description": "milanesoide",
+          "image": "image-1667513123672.png"
+     },
+     {
+          "id": 18,
+          "name": "milanesa",
+          "price": 9999999,
+          "discount": 99,
+          "color": "marron",
+          "description": "milanesoide",
+          "image": "image-1667513172039.jpg"
+     },
+     {
+          "id": 19,
+          "name": "asd",
+          "price": 1231241,
+          "discount": 241,
+          "color": "asfasf",
+          "description": "asfasf",
+          "image": "image-1667514753805.jpg"
+     },
+     {
+          "id": 20,
+          "name": "sfasf",
+          "price": 11243,
+          "discount": 1241254,
+          "color": "222",
+          "description": "asfasf",
+          "image": "image-1667514894981.jpg"
      }
 ]
