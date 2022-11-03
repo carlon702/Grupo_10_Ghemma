@@ -42,7 +42,7 @@ const controller = {
       discount: Number(req.body.discount),
       color: req.body.color,
       description: req.body.description,
-      image: req.body.image ? req.file.filename : "airpods.jpg",
+      image: req.file.filename || "airpods.jpg",
     };
 
     data.push(newProduct);

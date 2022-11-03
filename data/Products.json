@@ -93,14 +93,6 @@
      },
      {
           "id": 14,
-          "name": "asdfasf",
-          "price": 235235235,
-          "color": "asgasg",
-          "description": "asdfasfa",
-          "image": "airpods.jpg"
-     },
-     {
-          "id": 14,
           "name": "juli",
           "price": 1000000,
           "color": "negro obvio",
@@ -122,6 +114,60 @@
           "discount": 19,
           "color": "azul",
           "description": "holala",
+          "image": "airpods.jpg"
+     },
+     {
+          "id": 16,
+          "name": "ajahjaxabn",
+          "price": 99999,
+          "discount": 99,
+          "color": "ksvnsvn",
+          "description": "nsdbvbasxddvllbj",
+          "image": "airpods.jpg"
+     },
+     {
+          "id": 17,
+          "name": "milanoide",
+          "price": 99999,
+          "discount": 99,
+          "color": "ksvnsvn",
+          "description": "nsdbvbasxddvllbj",
+          "image": "airpods.jpg"
+     },
+     {
+          "id": 18,
+          "name": "xvv",
+          "price": null,
+          "discount": null,
+          "color": "sfsfs",
+          "description": "sfsfs",
+          "image": "airpods.jpg"
+     },
+     {
+          "id": 19,
+          "name": "fsfsfs",
+          "price": null,
+          "discount": null,
+          "color": "xxx",
+          "description": "csfvs",
+          "image": "airpods.jpg"
+     },
+     {
+          "id": 20,
+          "name": "adsfasf",
+          "price": null,
+          "discount": null,
+          "color": "asfasf",
+          "description": "asdfasf",
+          "image": "airpods.jpg"
+     },
+     {
+          "id": 21,
+          "name": "cfbc",
+          "price": null,
+          "discount": null,
+          "color": "dgdgd",
+          "description": "dgdgd",
           "image": "airpods.jpg"
      }
 ]
