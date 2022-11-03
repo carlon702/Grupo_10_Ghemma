@@ -20,5 +20,308 @@
             "lastName": "marchal",
             "password": "22222222222",
             "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 5,
+            "name": "yhyt",
+            "lastName": "gtgtr",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "123456",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 6,
+            "name": "juliiii",
+            "lastName": "garcia",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "1234",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 7,
+            "name": "ju",
+            "lastName": "garcia",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "123",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 8,
+            "name": "123",
+            "lastName": "wsdwe",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "12344",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 9,
+            "name": "j",
+            "lastName": "g",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "hola",
+            "categoria": "Comprador",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 10,
+            "name": "valentino",
+            "lastName": "cogo",
+            "password": "$2a$10$Z2ogjZNl.hB62cAqJdIaU.gvTQoEYmg7Uue4frO5GK20xnSk.g336",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 11,
+            "name": "JULI",
+            "lastName": "GARCIA",
+            "password": "$2a$10$tRx0h4p9kMm2crJLUgvHleFDVFloKbhJcsO9JhTzilqW5k7N6jKuq",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 12,
+            "name": "juuuuuu",
+            "lastName": "garcia",
+            "password": "$2a$10$A17czAszDgtJ.UB2vubwTeMPpwrY.ws1E2pyrDfxGPzsCmAXvE97i",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 13,
+            "name": "hola",
+            "lastName": "chau",
+            "password": "$2a$10$R3OOAZy21S3BAzObskIkreG5zFVw5DfVqZaIQOarnANdt2ees2NAu",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 14,
+            "name": "j",
+            "lastName": "g",
+            "password": "$2a$10$KA7hWIMe0Rb5rIz8P5TNduxwGzPZOs/GtoIThYz.joLpo44VYkbF6",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 15,
+            "name": "juli",
+            "lastName": "g",
+            "password": "$2a$10$.kIPgV16h5cOSEZk4H7XLuCvecxylZNv7DCnoQkM313vPqBlVLpm2",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 16,
+            "name": "hola",
+            "lastName": "juli",
+            "password": "$2a$10$7HaY1fL.j2EmZ5PAx6hvDOMYPrQ59KOQvc8Z3zTIrjuaFnsRKk2Gm",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 17,
+            "name": "holi",
+            "lastName": "holi",
+            "password": "$2a$10$amqMHCs6O7Pz9/S.iY6Nce/si5hpAlHlW7onZvAQYaekVMV3xZrUO"
+      },
+      {
+            "id": 18,
+            "name": "hola",
+            "lastName": "gol",
+            "password": "$2a$10$at8ESPN4dANym7YtYHaX1Ogsa596OTJ03ub9JNfVBvs.xcxzY303C",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 19,
+            "name": "prueba",
+            "lastName": "prueba",
+            "password": "$2a$10$vVYl7qMbIoW6fnjr7yT3u.wor74Jl5RYhQ887rSN3SV2FDZfJZ.02",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 20,
+            "name": "aaa",
+            "lastName": "bbbb",
+            "password": "$2a$10$CmAyAs7SnTrJpbdGik8kM.J3nTqMpVN3FTopEdTwTzeNQBiBcW2f2",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 21,
+            "name": "hola",
+            "lastName": "prueba",
+            "email": "julietita.garcia@hotmail.com",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 22,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "julietita.garcia@hotmail.com",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 23,
+            "name": "e",
+            "lastName": "d",
+            "email": "julietita.garcia@hotmail.com",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 24,
+            "name": "l",
+            "lastName": "l",
+            "email": "j@hotmis.com",
+            "password": "$2a$10$2wek1nz/FdJ8o4TbeSUB3egVh.1NAjkWz/wJxHDGLPjFlE.uegahe",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 25,
+            "name": "hola",
+            "lastName": "1",
+            "email": "hola@hotmail.xom",
+            "password": "$2a$10$D2GpiCGhs0rTfu5e2Both.dJDgzATs325fmqCOJh.V.y4DmCahd/q",
+            "categoria": "Vendedor",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 26,
+            "name": "j",
+            "lastName": "s",
+            "email": "s@hotmail.com",
+            "password": "$2a$10$7OqKKbIgvzkk3YD1tA1xO.EGhsFvR82r0z06ET4I9oFWD6UwnPYEK",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 27,
+            "name": "j",
+            "lastName": "j",
+            "email": "juli@hotmai.com",
+            "password": "$2a$10$rfuXKFH2fwZ9Mj1yP4FYrOlYpUxXQV3uCoPXejs66b1zDBalkmZx2",
+            "categoria": "Comprador",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 28,
+            "name": "jdodd",
+            "lastName": "jksdfn",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "$2a$10$y8iZ/lFPT8GOvTjLfwD9aObxqPeIayG7FthWVfrGowWHXgu.S8xK6",
+            "categoria": "Vendedor",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 29,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "juli@hotmail.com",
+            "password": "$2a$10$QV08qTAP3HWmyYHOC57oGuW21TwYsz/VXuFFFFb2TLd2FZ.KZSImW",
+            "categoria": "Vendedor",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 30,
+            "name": "ho",
+            "lastName": "hol",
+            "email": "julietita.garcia@hotmail.com",
+            "password": "$2a$10$BUSazi6RV760T6Cc4wYCcuaDVulRib3waCvMgfoCmLxPn0iGjZE4y",
+            "categoria": "Vendedor",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 31,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "hola@hotmail.com",
+            "password": "$2a$10$G.28I9cfaujUq5BAodb0VuohXYXMiMbmQLsrhOiZ1wE9VPYZiJNX2",
+            "categoria": "Vendedor",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 32,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "holuu@hola.com",
+            "password": "$2a$10$vCN6WBYa043PNY6JzJYOqO4I/vqWCwVMZeOUGMCiVBtwY1JKT58T6",
+            "categoria": "Vendedor",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 33,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "j@hotmail.com",
+            "password": "$2a$10$VK7AjTxqdmli/Ggiiomh.es6s6UkBIxQIMBBv.YerLsHDvVwkS8hG",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 34,
+            "name": "hiol",
+            "lastName": "hola",
+            "email": "ghol@hotmail.com",
+            "password": "$2a$10$FoRb2XzH9bww5J4RlqAxt.MQ1pPFUnIbrwPQnOvOuj5fit7Mfp9j6",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 35,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "j@hotmail.xom",
+            "password": "$2a$10$McrF2Kz.b4piiz0CNeNPmOjMT5zVROG6UkdRPV0zhM4jssASHKbdi",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 36,
+            "name": "hola",
+            "lastName": "sidjfoi",
+            "email": "j@hotmail.com",
+            "password": "$2a$10$AUlum0KjnSPeVs7Xq0yH9eW7d9QwVAi/fU6EemvOBfQ17nyi7tBZS",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 37,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "j@hotmail.com",
+            "password": "$2a$10$vGaf4IOGjkTIymqigyJgPOuQZyXcwgerXUlDUaiSGHzxKFW/YFzPG",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 38,
+            "name": "",
+            "lastName": "",
+            "email": "",
+            "password": "$2a$10$lZ.4MYE3kpMzlPsAc9r9WufZOxPWDYdM0ST4BuEX.EtE/xZejLDWq",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 39,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "j@hotmail.com",
+            "password": "$2a$10$RKzV9SiNBPSla9Jw4OrIr.KmQbH3W9jSJX6tbv.BbCLqFsFvhr5gS",
+            "categoria": "Vendedor",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 40,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "j@hotmail.com",
+            "password": "$2a$10$QbHCjtf1WcyLAUXLydC3DONtg1Idsx8aB/m9fOynDxbdzZoUuIr4m",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 41,
+            "name": "hola",
+            "lastName": "hola",
+            "email": "g@hotmail.com",
+            "password": "$2a$10$GhrdLJECI3VL8F.W8HXmoeVpJDLUYKv9c3SG2QtMJUMd9zvf5lAgi",
+            "categoria": "",
+            "profileImage": "profileImage-1667345302562.jpg"
       }
 ]

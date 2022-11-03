@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const bcryptjs = require('bcryptjs')
+const {validationResult} = require('express-validator')
 
 function findAll(){
     const data = fs.readFileSync(path.join(__dirname, "../data/user.json"));
@@ -28,24 +29,31 @@ const controller ={
         res.redirect("/")
     },
     createRegister: (req, res)=>{
-    const data = findAll();
-    console.log(req.body)
-
+        const error = validationResult(req)
+        if(!error.isEmpty()){
+            console.log(error)
+            return res.render("register", {errors: error.mapped(), title: 'Ghemma Store - Tienda Oficial' , css: '/register.css'})
+        }
+        const data = findAll();
+        console.log(req.body)
+        
         const newUser = {
             id: data.length + 1,
             name: req.body.nombre,
             lastName: req.body.apellido,
-            password: req.body.constraseña,//bcryptjs.hashSync(req.body.password, 10),
-            //category: req.body.category,
-            profileImage: req.body.profileImage ? req.file.filename : "ImgPerfilDefault.png",
+            email: req.body.email,
+            password: bcryptjs.hashSync(req.body.password , 10),
+            categoria: req.body.categoria,
+            profileImage: req.file ? req.file.filename : "ImgPerfilDefault.png",
         
         };
-        
+        console.log(req.file)
+
             data.push(newUser);
 
             writeFile(data);
 
-            res.redirect("/user/register")
+            res.redirect("/user/login")
 }
 }
 module.exports = controller;

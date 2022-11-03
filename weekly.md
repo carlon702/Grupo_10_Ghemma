@@ -36,3 +36,8 @@ Diseño adaptativo de login, registro, carrito y formulario de productos.
 *Repasamos los temas del sprint
 *Definimos algunos colores pendientes
 *Nos falta decidir el Logo
+
+20-10-2022
+
+*Seguimos viendo posibles logos
+*Revisamos las modificaciones que se realizaron en cada vista

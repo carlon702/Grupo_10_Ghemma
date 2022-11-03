@@ -10,31 +10,62 @@
                     <h3>Creá tu cuenta</h3>
 
 
-                    <form class="register" method="post">
+                
                         <form action="/user/register" class="register" method="post" enctype="multipart/form-data">
 
                             <label for="Nombre">Nombre</label>
 
-                            <p><input class="control" type="text" name="nombre" required></p>
-
+                            <input class="control" type="text" name="nombre" >
+                            <% if(locals.errors && locals.errors.nombre){ %>
+                            <p> <%= errors.nombre.msg  %> </p>
+                            <% } %> 
                             <label for="Apellido">Apellido</label>
 
-                            <p><input class="control" type="text" name="apellido" required></p>
+                            <p><input class="control" type="text" name="apellido" >
+                                <% if(locals.errors && locals.errors.apellido){ %>
+                                <p> <%= errors.apellido.msg  %> </p>
+                                <% } %> </p>
 
                             <label for="correo electronico">Corre electrónico</label>
 
-                            <p><input class="control" type="email" name="email" required="E-mail"></p>
+                            <p><input class="control" type="email" name="email" >
+                                <% if(locals.errors && locals.errors.email){ %>
+                                    <p> <%= errors.email.msg  %> </p>
+                                    <% } %> 
+                            </p>
 
-                            <label for="contraseña">Constraseña</label>
+                            <label for="contraseña">Contraseña</label>
 
-                            <p><input class="control" type="password" name="constraseña" required
-                                    placeholder="Mínimo 8 caracteres, una mayúscula y un número"></p>
+                            <p><input class="control" type="password" name="password" placeholder="Mínimo 8 caracteres, una mayúscula y un número">
+                                    <% if(locals.errors && locals.errors.password){ %>
+                                        <p> <%= errors.password.msg  %> </p>
+                                        <% } %> 
+                                </p>
+
+                             <label>Categoria</label>       
+                            <input  class= "control" type="list" name="categoria" list="categoria">
+                            <datalist id="categoria">
+                                <option>Vendedor</option>
+                                <option>Comprador</option>
+                            </datalist>
+                            <br>
+                            <br>
+                            <div class="foto">
+                            <label for="foto">Foto de perfil</label>
+                            <br>
+                            <br>
+                            <input  type="file" name="profileImage">
+                            </div>
+                            <br>
+
+
 
                             <div class="options">
 
                                 <p><input class="conditions" type="checkbox" name="terminos" value="terminos"> Acepto
                                     términos y
                                     condiciones</p>
+
                                 <p><input class="suscription" type="checkbox" name="suscripcion" value="suscripcion">
                                     Recibir
                                     novedades y ofertas especiales</p>
@@ -45,6 +76,7 @@
 
                                 <p><button class="aceptar" type="submit">Aceptar</button></p>
                                 <p><button class="cancelar" type="submit">Cancelar</button></p>
+
 
 
 
