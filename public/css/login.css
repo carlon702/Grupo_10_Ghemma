@@ -50,7 +50,9 @@
   transition: background-color 0.10s linear;
   
 }
-
+.error{
+  color: red;
+}
 
 
 

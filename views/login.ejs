@@ -16,7 +16,7 @@
                             <label for="correo electronico">Corre electrónico</label>
                             <input class="control" type="email" name="email">
                             <% if(locals.errors && locals.errors.email){ %>
-                                <p class="error"> <%= locals.errors.email.msg %> </p>
+                                <p style="font-size: small" class="error"> <%= locals.errors.email.msg %> </p>
 
                             <% } %> 
                         </p>
@@ -24,24 +24,21 @@
                             <label for="Contraseña">Contraseña</label>
                             <input class="control" type="password" name="password">
                             <% if(locals.errors && locals.errors.password){ %>
-                                <p class="error"> <%= locals.errors.password.msg %> </p>
+                                <p style="font-size: small" class="error"> <%= locals.errors.password.msg %> </p>
 
                             <% } %> 
                         </p>
                         <% if(locals.errorLogin){ %>
-                            <p> <%= errorLogin  %>  </p>
-
-                           <% } %> 
-
-
+                            <p style="font-size: small" class="error"> <%= errorLogin  %>  </p>
+                            <% } %> 
+                            <br>
                         <div class="options">
 
                             <p><input class="button-recordar" type="checkbox" name="remember" value="Recordar mi usuario">
                                 Recordar
                                 mi usuario</p>
                             <br>
-                            <a href="#">¿Olvidaste la contraseña?</a>
-
+                            <p><a href="#">¿Olvidaste la contraseña?</a></p>
                            
 
 

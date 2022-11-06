@@ -350,5 +350,23 @@
             "password": "$2a$10$9phc5IoqXtH/mGMJ/B.1cu90eRPl1KdOLTK9ZDvtOVr2L.gNmRLLO",
             "categoria": "",
             "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 45,
+            "name": "juli",
+            "lastName": "garcia",
+            "email": "river@hotmail.com",
+            "password": "$2a$10$bfbGYcV4oHN445Vd5HQZTuGquDrnmGOC1Plq06CGFlNJcrtXwcGeW",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 46,
+            "name": "hola",
+            "lastName": "hols",
+            "email": "river@hotmai.com",
+            "password": "$2a$10$oU9KMpe6QLxJzvYwlWFCHuU2EN41//eYR2C9mEW4uWxlRdmfK7NH.",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
       }
 ]
