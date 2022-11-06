@@ -18,15 +18,9 @@ function writeFile(data){
 
 
 const controller ={
-    login: (req, res)=>{
-        res.render("login", {title:'Ghemma Store - Tienda Oficial', css: '/login.css'});
-    },
     register: (req, res)=>{
         res.render("register", {title:'Ghemma Store - Tienda Oficial', css: '/register.css'})
-    },
-    sendLogin: (req, res)=>{
-
-        res.redirect("/")
+    
     },
     createRegister: (req, res)=>{
         const error = validationResult(req)
@@ -54,6 +48,40 @@ const controller ={
             writeFile(data);
 
             res.redirect("/user/login")
+    },
+    login: (req, res)=>{
+        res.render("login", {title:'Ghemma Store - Tienda Oficial', css: '/login.css'});
+    },
+    sendLogin: (req, res)=>{
+        const error = validationResult(req);
+        if(!error.isEmpty()){
+            return res.render("login", {errors: error.mapped(), title: 'Ghemma Store - Tienda Oficial' , css: '/login.css'})
+            };
+            const users = findAll();
+            const userFound = users.find(function(user){
+               return user.email == req.body.email && bcryptjs.compareSync (req.body.password, user.password)
+            })
+            if(!userFound){
+                return res.render("login", {errorLogin: 'Crendenciales invalidas', title: 'Ghemma Store - Tienda Oficial' , css: '/login.css'});
+            }else{
+                req.session.usuarioLogueado ={
+                    id: userFound.id,
+                    name: userFound.nombre,
+                    email: userFound.email,
+                };
+                if(req.body.remember){
+                    res.cookie("recordame", userFound.id)
+                }
+
+
+
+
+                res.redirect("/")
+
+            }
+        
+
+    },    
 }
-}
+
 module.exports = controller;

@@ -43,6 +43,9 @@ width: 100%;
 }
 
 
+
+
+
 @media screen and (max-width: 534px){
 
     .register-form {
@@ -100,7 +103,7 @@ width: 100%;
             margin: auto;
             margin-bottom: 100px;
             margin-top: 100px;
-            
+            border: solid 1px rgb(130, 131, 143, 0.07);
          }
 
           .control{
@@ -124,10 +127,4 @@ width: 100%;
             transition: background-color 0.10s linear;
             font-size: 18px;
           }
-          
-
-
-
-
-         
-    }
+}

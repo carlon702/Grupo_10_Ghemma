@@ -332,5 +332,23 @@
             "password": "$2a$10$2uG1jdhV6.cEP9MrSh/NyOD0i0ZcKM4xywZN8WS9lwPllRTMzCl3K",
             "categoria": "Vendedor",
             "profileImage": "profileImage-1667512852985.png"
+      },
+      {
+            "id": 43,
+            "name": "julieta natalia",
+            "lastName": "garcia",
+            "email": "jng@hotmail.com",
+            "password": "$2a$10$F0hPyQ9Lsj5QgN3eveuJtOsieHpPnsCYn5iKNz17csDhfuTXPjzCK",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 44,
+            "name": "ju",
+            "lastName": "gar",
+            "email": "garcia@hotmail.com",
+            "password": "$2a$10$9phc5IoqXtH/mGMJ/B.1cu90eRPl1KdOLTK9ZDvtOVr2L.gNmRLLO",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
       }
 ]

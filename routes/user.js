@@ -3,34 +3,7 @@ const router = express.Router();
 const path = require("path")
 const multer = require("multer");
 const controller = require("../controllers/usersController");
-//const  validation = require('../validations/userValidations')
-
-//validations
-const { body } = require("express-validator");
-
-const registerValidation = [
-  body("nombre").notEmpty().withMessage("Campo incompleto"),
-
-  body("apellido").notEmpty().withMessage("Campo incompleto"),
-
-  body("email")
-    .notEmpty()
-    .withMessage("Campo email incompleto")
-    .isEmail()
-    .withMessage("Formato de email inválido"),
-
-  body("password")
-  .notEmpty()
-  .withMessage("Campo password incompleto"),
-];
-const loginValidation = [
-  body("email").notEmpty().withMessage("Campo email incompleto"),
-
-  body("contraseña").notEmpty().withMessage("Campo password incompleto"),
-]
-
-
-
+const  validation = require('../validations/userValidations');
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -44,10 +17,14 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-router.get("/login", controller.login);
-router.post("/login",loginValidation, controller.sendLogin);
-
+//registro
 router.get("/register", controller.register);
-router.post("/register" ,upload.single('profileImage'),registerValidation  ,controller.createRegister);
+router.post("/register" ,upload.single('profileImage'), validation.registerValidation, controller.createRegister);
+
+
+//login
+router.get("/login", controller.login);
+router.post("/login", validation.loginValidation, controller.sendLogin);
+
 
 module.exports = router;

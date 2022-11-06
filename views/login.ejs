@@ -11,23 +11,38 @@
             <main>
                 <div class="login-form">
                     <h3>Iniciar Sesión</h3>
-                    <form class="form" method="post">
+                    <form action="/user/login" class="form" method="post">
                         <p><i class="fa-solid fa-envelope"></i>
                             <label for="correo electronico">Corre electrónico</label>
                             <input class="control" type="email" name="email">
+                            <% if(locals.errors && locals.errors.email){ %>
+                                <p class="error"> <%= locals.errors.email.msg %> </p>
+
+                            <% } %> 
                         </p>
                         <p><i class="fa-solid fa-lock"></i>
                             <label for="Contraseña">Contraseña</label>
-                            <input class="control" type="password" name="contraseña">
+                            <input class="control" type="password" name="password">
+                            <% if(locals.errors && locals.errors.password){ %>
+                                <p class="error"> <%= locals.errors.password.msg %> </p>
+
+                            <% } %> 
                         </p>
+                        <% if(locals.errorLogin){ %>
+                            <p> <%= errorLogin  %>  </p>
+
+                           <% } %> 
+
 
                         <div class="options">
 
-                            <p><input class="button-recordar" type="checkbox" name="recor" value="Recordar mi usuario">
+                            <p><input class="button-recordar" type="checkbox" name="remember" value="Recordar mi usuario">
                                 Recordar
                                 mi usuario</p>
                             <br>
                             <a href="#">¿Olvidaste la contraseña?</a>
+
+                           
 
 
                         </div>
