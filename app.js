@@ -37,7 +37,9 @@ app.use("/products", productsRoutes);
 app.use("/user", userRoutes);
 
 app.listen(3050, () => {
-  console.log("Marcelo esta con nosotros 👻 3050 ");
+  console.log(`
+  Marcelo esta con nosotros 👻 3050
+  http://localhost:3050`);
 });
 
 //
