@@ -24,8 +24,10 @@
                             <div class="label">
                                 <label for="name">Nombre</label>
                             </div>
-                            <input class="input" type="text" name="name" id="name" required>
-
+                            <input class="input" type="text" name="name" id="name" >
+                            <% if(locals.errors && locals.errors.name){ %>
+                                <p style="font-size: small" class="error"> <%= errors.name.msg %></p>
+                                <% } %> 
                         </div>
 
                         <!-- <div class="input-label">
@@ -44,7 +46,10 @@
                             <div class="label">
                                 <label for="description">Descripcion</label>
                             </div>
-                            <input class="input" type="textArea" name="description" id="description" required>
+                            <input class="input" type="textArea" name="description" id="description">
+                            <% if(locals.errors && locals.errors.description){ %>
+                                <p style="font-size: small" class="error"> <%= errors.description.msg %></p>
+                                <% } %> 
 
                         </div>
                         <div class="input-label">
@@ -52,7 +57,10 @@
                             <div class="label">
                                 <label for="color">Color</label>
                             </div>
-                            <input class="input" type="text" name="color" id="color" required>
+                            <input class="input" type="text" name="color" id="color" >
+                            <% if(locals.errors && locals.errors.color){ %>
+                                <p style="font-size: small" class="error"> <%= errors.color.msg %></p>
+                                <% } %> 
 
                         </div>
                         <div class="input-label">
@@ -60,7 +68,10 @@
                             <div class="label">
                                 <label for="price">Precio</label>
                             </div>
-                            <input class="input" type="text" name="price" id="price" required>
+                            <input class="input" type="text" name="price" id="price">
+                            <% if(locals.errors && locals.errors.price){ %>
+                                <p style="font-size: small" class="error"> <%= errors.price.msg %></p>
+                                <% } %> 
 
                         </div>
                         <div class="input-label">
@@ -68,7 +79,10 @@
                             <div class="label">
                                 <label for="discount">Descuento</label>
                             </div>
-                            <input class="input" type="text" name="discount" id="discount" required>
+                            <input class="input" type="text" name="discount" id="discount" >
+                            <% if(locals.errors && locals.errors.discount){ %>
+                                <p style="font-size: small" class="error"> <%= errors.discount.msg %></p>
+                                <% } %> 
 
                         </div>
 
