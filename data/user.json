@@ -368,5 +368,59 @@
             "password": "$2a$10$oU9KMpe6QLxJzvYwlWFCHuU2EN41//eYR2C9mEW4uWxlRdmfK7NH.",
             "categoria": "",
             "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 47,
+            "name": "valentino",
+            "lastName": "cogo",
+            "email": "valentinocogo91@gmail.com",
+            "password": "$2a$10$OBjX4f2yxWY8/O3tfUjHk..2rCXpaRypZrNJJhTd51X.R3M/JgNPm",
+            "categoria": "Vendedor",
+            "profileImage": "ImgPerfilDefault.png"
+      },
+      {
+            "id": 48,
+            "name": "valentino",
+            "lastName": "yyyyy",
+            "email": "valekogo90@gmial.com",
+            "password": "$2a$10$af618oEf.UQNCinMFuH..ukRjHg4mU2gWj8V3gHntRSIstYLnhG.O",
+            "categoria": "Comprador",
+            "profileImage": "profileImage-1667844495391.jpg"
+      },
+      {
+            "id": 49,
+            "name": "valentino",
+            "lastName": "cogo",
+            "email": "919@gmail.com",
+            "password": "$2a$10$01JpN.33gfvOvQjyvtatkOLQWdmq76IRWKaKxhBH31qPVYjCmZCxK",
+            "categoria": "Vendedor",
+            "profileImage": "profileImage-1667847280234.jpg"
+      },
+      {
+            "id": 50,
+            "name": "WERWE",
+            "lastName": "yyyyy",
+            "email": "991@gmail.com",
+            "password": "$2a$10$hpGXFH6gQyh3ETklXUhTGea5nrjNcwFeAbpUR9ol41LGgUVfl.ZEO",
+            "categoria": "Vendedor",
+            "profileImage": "profileImage-1667847386661.jpg"
+      },
+      {
+            "id": 51,
+            "name": "valentino",
+            "lastName": "cogo",
+            "email": "916@gmail.com",
+            "password": "$2a$10$OlEAU4yOe.jpaAu3xH/e/.E/hokwyvBxhxkFohGMd7vYpjw0aDNWC",
+            "categoria": "Vendedor",
+            "profileImage": "profileImage-1667854699733.webp"
+      },
+      {
+            "id": 52,
+            "name": "valentino",
+            "lastName": "cogo",
+            "email": "111@gmail.com",
+            "password": "$2a$10$x1TsnFDdg7c89/gnKkOzM.mcGh1P2YbY9sPWNO0D7u8s8l4NIhk3e",
+            "categoria": "Vendedor",
+            "profileImage": "profileImage-1667855914364.jpg"
       }
 ]

@@ -43,20 +43,39 @@
         <span>LOGO </span>
 
     </div>
-
     <div class="user-navegation">
 
-        <a href="/user/login">
+        <% if(!locals.usuario) {%>
+            <a href="/user/login">
 
-            <img class="icon-person-login icon-nav" src="/icons/nav-icons/person.svg" alt="usualrio logo">
+                <img class="icon-person-login icon-nav" src="/icons/nav-icons/person.svg" alt="usualrio logo">
 
-        </a>
+            </a>
 
-        <a href="/cart">
 
-            <img class="icon-bag icon-nav" src="/icons/nav-icons/shopping-bag.svg" alt="carrito">
 
-        </a>
+            <%}else{ %>
+
+                <div class="profile-img">
+
+                    <img src="/images/userImages/<%= locals.usuario.profileImage  %>" alt="imagen de perfil de usuario">
+
+                    <div class="image-hover">
+                        <form action="/user/logout" method="POST">
+                            <input class="logout" type="submit" value="Cerrar sesion">
+                        </form>
+                    </div>
+
+                </div>
+
+
+                <% } %>
+
+                    <a href="/cart">
+
+                        <img class="icon-bag icon-nav" src="/icons/nav-icons/shopping-bag.svg" alt="carrito">
+
+                    </a>
 
     </div>
 

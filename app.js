@@ -12,6 +12,11 @@ const mainRoutes = require("./routes/main.js");
 const userRoutes = require("./routes/user.js");
 const productsRoutes = require("./routes/products.js");
 
+//  require gloval middleweres
+const profileImageLocals = require("./middleware/profileImageLocals");
+
+//
+
 // view engine
 
 app.set("view engine", "ejs");
@@ -28,9 +33,15 @@ app.use(express.json());
 
 app.use(cookieParser());
 
-app.use(session({ secret: "dia 153 marcelo todavia no aparece" ,resave: false, saveUninitialized: true}));
+app.use(
+  session({
+    secret: "dia 153 marcelo todavia no aparece",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 
-
+app.use(profileImageLocals);
 //
 
 app.use("/", mainRoutes);

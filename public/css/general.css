@@ -24,6 +24,7 @@ header {
   background-color: #ddddddb4;
   position: fixed;
   width: 100%;
+  z-index: 233;
   top: 0;
 }
 
@@ -62,6 +63,38 @@ a {
   height: 4px;
   background-color: black;
   margin-top: 5px;
+}
+
+.user-navegation {
+  display: flex;
+  align-items: center;
+  width: 24%;
+  justify-content: space-evenly;
+}
+.profile-img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 33px;
+  border: 1px solid black;
+}
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+.logout {
+  position: relative;
+  right: 2rem;
+  border: none;
+  padding: 0.5rem;
+  background-color: #8c96fc;
+  border-radius: 20px;
+  color: #eff8ff;
+}
+.logout:hover {
+  color: #ffffff;
+  background-color: #ff7777;
 }
 
 /*        header            */
@@ -160,6 +193,10 @@ a {
     justify-content: space-between;
     align-items: center;
   }
+  .user-navegation {
+    width: 17%;
+    justify-content: space-evenly;
+  }
 
   .main-header div {
     margin: 0.6rem 0.5rem;
@@ -184,7 +221,6 @@ a {
     flex-wrap: wrap;
     padding: 10px;
     background-color: #dddddd87;
-  
   }
   footer div {
     padding: 10px;
@@ -232,19 +268,20 @@ a {
   }
   .navegation-products {
     order: -1;
-    margin-right: 29%;
+    margin-right: 10%;
   }
 
   .main-header div {
     margin: 0.6rem 0.5rem;
   }
+  .user-navegation {
+    width: 17%;
+  }
 
   /*                 footer                  */
   footer {
-    
-    
     position: absolute;
-    /* este es el arreglo de footer. firma Carlos*/ 
+    /* este es el arreglo de footer. firma Carlos*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -253,7 +290,6 @@ a {
     padding: 5px;
     width: 100%;
     background-color: #dddddd87;
-   
   }
   footer div {
     padding: 5px;
@@ -285,6 +321,5 @@ a {
     width: 16px;
   }
 }
-
 
 /*                 footer                  */
