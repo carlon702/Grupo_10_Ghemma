@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const path = require("path");
-
+const  validation = require('../validations/productsValidations');
 const controller = require("../controllers/productsController");
 
 const multer = require("multer");
@@ -22,10 +22,10 @@ const upload = multer({ storage: storage });
 router.get("/detail/:id", controller.detail);
 
 router.get("/create", controller.create);
-router.post("/create", upload.single("image"), controller.store);
+router.post("/create", upload.single("image"), validation.createValidation, controller.store);
 
 router.get("/edit/:id", controller.edit);
-router.put("/edit/:id", upload.single("image"), controller.update);
+router.put("/edit/:id", upload.single("image"), validation.editValidation, controller.update);
 
 router.delete("/delete/:id", controller.delete);
 

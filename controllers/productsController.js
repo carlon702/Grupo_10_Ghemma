@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const {validationResult} = require('express-validator')
 
 function findAll() {
   const data = fs.readFileSync(path.join(__dirname, "../data/products.json"));
@@ -35,7 +36,17 @@ const controller = {
   },
 
   store: function (req, res) {
+    
+    const error = validationResult(req)
+        if(!error.isEmpty()){
+            console.log(error)
+            return res.render("product-form-create", {errors: error.mapped(), title: 'Ghemma Store - Tienda Oficial' , css: '/product-form.css'})
+        }
+    
+    
     const data = findAll();
+
+    
 
     const newProduct = {
       id: data.length + 1,
@@ -54,6 +65,7 @@ const controller = {
   },
 
   edit: function (req, res) {
+
     const data = findAll();
     const product = data.find(function (product) {
       return product.id == req.params.id;
@@ -67,6 +79,10 @@ const controller = {
   },
 
   update: function (req, res) {
+    if(!error.isEmpty()){
+      console.log(error)
+      return res.render("product-form-create", {errors: error.mapped(), title: 'Ghemma Store - Tienda Oficial' , css: '/product-form.css'})
+  }
     const data = findAll();
     const product = data.find(function (product) {
       return product.id == req.params.id;
@@ -96,7 +112,6 @@ const controller = {
 
   list: function (req, res) {
     const data = findAll();
-    console.log(data);
     res.render("product-list", {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-list.css",

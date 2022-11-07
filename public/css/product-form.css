@@ -41,6 +41,10 @@
  
 
 }
+.error{
+    color: red;
+}
+
 
 
 
@@ -110,6 +114,7 @@ button:hover.erase-button{
         justify-content: flex-start;
         margin-left: 0;
     }
+
     .input{
         flex-grow: 0;
         width: 70%;
