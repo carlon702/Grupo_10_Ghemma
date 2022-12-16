@@ -50,3 +50,7 @@ Diseño adaptativo de login, registro, carrito y formulario de productos.
 *Revisamos validaciones de usuarios
 *Nos organizamos para la presentacion del Lunes
 *Eze vino chau Marcelo
+
+10-11-2022
+
+*Agreagamos y asignamos tareas del nuevo Sprint

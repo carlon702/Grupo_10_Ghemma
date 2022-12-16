@@ -73,3 +73,15 @@ Empezar a hacer:
 
 -Sincronizar el uso de la paleta de colores en todas las vistas.
 -Definir Logo
+
+**SPRINT #5**
+
+Seguir haciendo:
+
+- Comunicacion constante
+- Colaboracion continua
+- Weeklys
+
+Empezar a hacer:
+
+- Decision de Logo Obligatoria!
