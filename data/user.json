@@ -422,5 +422,23 @@
             "password": "$2a$10$x1TsnFDdg7c89/gnKkOzM.mcGh1P2YbY9sPWNO0D7u8s8l4NIhk3e",
             "categoria": "Vendedor",
             "profileImage": "profileImage-1667855914364.jpg"
+      },
+      {
+            "id": 53,
+            "name": "222",
+            "lastName": "222",
+            "email": "222@gmial.com",
+            "password": "$2a$10$NCmmfNhI/REmwg3WiuzUmOTEOVIyTP1Uu3y21zWYQOtng8wMYN35y",
+            "categoria": "Vendedor",
+            "profileImage": "profileImage-1667858207660.jpg"
+      },
+      {
+            "id": 54,
+            "name": "wwewewewe",
+            "lastName": "wewewqeqw",
+            "email": "q@fmial.com",
+            "password": "$2a$10$SzS8Pn0kBx3nysGSNFY.a.1ccLnGT3s3QfaYUZXaqWWsZBPAxii8W",
+            "categoria": "",
+            "profileImage": "ImgPerfilDefault.png"
       }
 ]
