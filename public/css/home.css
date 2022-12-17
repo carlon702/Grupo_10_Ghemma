@@ -11,7 +11,7 @@ h1 {
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #e8e8e8;
 }
 
 .title-product {
@@ -34,9 +34,9 @@ body {
   font-size: 4vw;
 }
 
-.all-products article {
-  margin-top: 14%;
-}
+/* .all-products article {
+  margin-top: 1%;
+} */
 
 /* <!-- CAROUSEL -->    */
 .carousel-section {
@@ -407,7 +407,7 @@ body {
 
 /*  <!-- COMPUTERS --> */
 
-.computers-section {
+/* .computers-section {
   position: relative;
   width: 100vw;
   height: 129vw;
@@ -415,7 +415,7 @@ body {
 
 .main-computer-container {
   height: inherit;
-  width: 97%;
+  width: 99%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -469,9 +469,6 @@ body {
   width: 48.7%;
   height: 93.9%;
 }
-.computer-1 .computer-title {
-  width: 85%;
-}
 
 .computer-box img {
   width: 100%;
@@ -492,22 +489,17 @@ body {
   font-size: 3.4vw;
   bottom: 7px;
 }
+
 .computer-1 .text-2 {
   font-size: 3vw;
   top: 7px;
 }
+
 .computer-1 .computers-btn {
   padding: 0.4rem;
   border-radius: 3px;
 }
 
-.computer-2 .computer-title,
-.computer-3 .computer-title {
-  width: 30%;
-
-  margin-right: auto;
-  margin-left: auto;
-}
 .computer-2,
 .computer-3 {
   width: 52%;
@@ -516,9 +508,7 @@ body {
 .computer-3 {
   align-self: flex-end;
 }
-.computer-3 .computer-title {
-  width: 73%;
-}
+
 .computer-3 .computer-image-container {
   width: 73%;
   margin-left: auto;
@@ -535,8 +525,53 @@ body {
   padding: 0.3rem;
   border-radius: 3px;
   font-size: 3vw;
+} */
+
+/* <!-- computers 1 (default) --> */
+
+/*  */
+
+/* <!-- computers 2 (swiper) --> */
+/* <!-- COMPUTERS 2 --> */
+
+.computers-section {
+  background: #87d9d9;
+  height: 125vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-/* <!-- computers --> */
+.sliders-container {
+  height: 85%;
+  width: 300vw;
+  background-color: blueviolet;
+}
+
+.sliders {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+}
+
+.navegation-slider {
+  width: 32%;
+  background-color: beige;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.point-nav {
+  width: 17%;
+  height: 47%;
+  background-color: #46acac;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+/* <!-- computers 2  --> */
 
 /* <!-- WATCHES --> */
 
@@ -857,23 +892,37 @@ body {
   /*  tabs */
 
   /* HEADPHONES */
+
+  .headphones-section {
+    background-color: #e8e8e8;
+    position: relative;
+    width: 100vw;
+    height: 125vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .all-headphones {
     position: relative;
 
-    width: 100vw;
+    width: 97%;
+    height: 80%;
 
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
 
-    background-color: #f4f4f4;
+    background-color: #e2e2e2;
+    margin-top: 0;
+    border-radius: 20px;
   }
   .headphone {
-    width: 49.8vw;
-    height: 37vw;
-
+    width: 43.8vw;
+    height: 43vw;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #e2e2e2;
   }
 
   .headphone img {
@@ -881,20 +930,26 @@ body {
     height: inherit;
 
     object-fit: cover;
-
-    margin-bottom: 20px;
+    border-radius: 37px;
+    margin-bottom: 30px;
   }
 
+  .box1 {
+    order: -1;
+  }
+  .box2 {
+    order: 2;
+  }
   .box3 {
-    order: 3;
+    order: 4;
   }
   /*  headphones */
 
   /* COMPUTERS */
 
   .computers-section {
-    width: 99vw;
-    height: 88vw;
+    width: 100vw;
+    height: 90vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -902,89 +957,86 @@ body {
 
   .computers-section .title-product {
     position: absolute;
+
     top: -55px;
     left: 35%;
+    display: none;
   }
   .main-computer-container {
-    height: inherit;
-    width: 99%;
+    max-width: 950px;
     position: absolute;
   }
 
   .computers-container {
     width: inherit;
     height: inherit;
-
     display: flex;
+    justify-content: space-evenly;
+    background-color: #e8e8e8;
     flex-direction: column;
   }
-  .computer-image-container {
-    width: 90%;
-    text-align: center;
+
+  .computer-right-side {
+    height: 40%;
   }
-  .computer-1,
+
+  .computer-1 {
+    width: 100%;
+    height: inherit;
+  }
+
   .computer-2,
   .computer-3 {
-    width: 31.5%;
-    height: 100%;
+    width: 49.6%;
+    height: inherit;
   }
 
   .computer-1 .text-1,
   .computer-2 .text-1,
   .computer-3 .text-1 {
-    font-size: 2.2vw;
+    font-size: 2vw;
+    font-weight: initial;
   }
 
   .computer-1 .text-2 {
     display: none;
   }
-
+  .computers-right-side {
+    height: 48.5%;
+  }
   .computers-left-side {
-    width: 66.2%;
-
-    align-self: flex-end;
+    width: 100%;
+    height: 49%;
     display: flex;
+    align-self: flex-end;
     flex-direction: column;
-    align-content: space;
   }
 
-  .computer-1 .computer-title {
-    width: 111%;
+  .computer-box .computer-image-container {
+    width: 55%;
     text-align: center;
-    position: relative;
-    top: 3.7%;
   }
 
   .computer-1 img {
-    width: 80%;
+    width: 40%;
   }
   .computer-1 .text-1 {
-    bottom: 1.5vw;
+    bottom: 1vw;
   }
   /* .computer-2 {
-    
   } */
-  .computer-2 .computer-title {
-    width: 32%;
-    bottom: 3.4%;
-  }
+
   .computer-2 .computer-image-container img {
     position: relative;
     top: 18%;
-    width: 95%;
+    width: 100%;
   }
   .computer-2 .text-1 {
     top: 2vw;
   }
-  /* .computer-3 {
-    
-  } */
-  .computer-3 .computer-title {
-    width: 83%;
-    bottom: 2%;
-  }
+
   .computer-3 .computer-image-container img {
-    width: 90%;
+    width: 100%;
     position: relative;
     bottom: -6%;
   }
@@ -1045,6 +1097,26 @@ body {
 /* 
 
 */
+@media screen and (min-width: 765px) and (max-width: 990px) {
+  /* COMPUTERS */
+  .computers-section {
+    height: 80vw;
+  }
+  /* competers */
+
+  /*WATCHES  */
+
+  .watches-section {
+    height: 70vw;
+  }
+  /*watches  */
+
+  /* TV'S */
+  .tvs-section {
+    height: 70vw;
+  }
+  /* tv's */
+}
 
 @media screen and (min-width: 991px) {
   .carousel-section {
@@ -1225,4 +1297,177 @@ body {
     font-size: 2.3vw;
   }
   /* tabs */
+
+  /* HEADPHONES */
+
+  .headphones-section {
+    height: 77vw;
+    max-height: 934px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background-color: #cdcdcd;
+    margin-top: 122px;
+  }
+  .headphones-section .title-product {
+    display: none;
+  }
+  .all-headphones {
+    width: 77vw;
+    max-width: 974px;
+    max-height: 794px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+
+    margin-top: 0px;
+    background-color: #cdcdcd;
+  }
+
+  .headphone {
+    width: 34.8vw;
+    height: 30vw;
+    max-width: 454px;
+    max-height: 391px;
+
+    position: relative;
+
+    margin-bottom: 18px;
+    text-align: center;
+    background-color: #cdcdcd;
+  }
+
+  .headphone img {
+    width: inherit;
+    height: inherit;
+    max-width: 454px;
+    max-height: 391px;
+
+    border-radius: 10px;
+  }
+  .box3 {
+    order: 3;
+  }
+
+  .headphone-btn {
+    display: none;
+  }
+  /*  headphones */
+
+  /* COMPUTERS */
+
+  .computers-section {
+    width: 100vw;
+    height: 90vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .computers-section .title-product {
+    position: absolute;
+
+    top: -55px;
+    left: 35%;
+    display: none;
+  }
+  .main-computer-container {
+    max-width: 950px;
+    position: absolute;
+  }
+
+  .computers-container {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f5f5;
+    flex-direction: column;
+  }
+  .computer-box .computer-image-container {
+    width: 60%;
+    text-align: center;
+  }
+
+  .computer-right-side {
+    height: 40%;
+  }
+
+  .computer-1 {
+    width: 100%;
+    height: inherit;
+  }
+
+  .computer-2,
+  .computer-3 {
+    width: 49.8%;
+    height: inherit;
+  }
+
+  .computer-1 .text-1,
+  .computer-2 .text-1,
+  .computer-3 .text-1 {
+    font-size: 2.2vw;
+  }
+
+  .computer-1 .text-2 {
+    display: none;
+  }
+  .computers-right-side {
+    height: 49.5%;
+  }
+  .computers-left-side {
+    width: 100%;
+    height: 49%;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+  }
+
+  .computer-1 img {
+    width: 26%;
+  }
+  .computer-1 .text-1 {
+    bottom: 1.5vw;
+  }
+  /* .computer-2 {
+    
+  } */
+
+  .computer-2 .computer-image-container img {
+    position: relative;
+    top: 18%;
+    width: 100%;
+  }
+  .computer-2 .text-1 {
+    top: 2vw;
+  }
+
+  .computer-3 .computer-image-container img {
+    width: 100%;
+    position: relative;
+    bottom: -6%;
+  }
+
+  .computer-3 .text-1 {
+    top: -1vw;
+  }
+  .computer-btn {
+    bottom: -1px;
+    padding: 0.7vw;
+    border-radius: 2px;
+    font-size: 2vw;
+  }
+
+  /* computers */
 }
