@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    
+
+    <body>
+
+
+
+        <main>
+            
+            <section class="shop">
+                <h3>Usuarios</h3>
+                <div>
+
+                    <% for (let i=0; i<users.length; i++) {  %>    
+                        <div>
+                                                               
+                                <img src=<%= users[i].profileImage %> alt="planta1" class="users_img">
+                                <span class="name"><%= users[i].name %></span>
+                                <span class="apellido"><%= users[i].lastName %></span>
+                                <span class="categoria"><%= users[i].admin %></span>
+                                <span class="email"><%= users[i].email %></span>
+                                
+                        </div>
+                    <% }  %> 
+
+                </div>  
+
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </section>
+            
+        </main>
+
+        
+    </body>
+</html>

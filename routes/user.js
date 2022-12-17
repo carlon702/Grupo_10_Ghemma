@@ -32,4 +32,12 @@ router.get("/login", controller.login);
 router.post("/login", validation.loginValidation, controller.sendLogin);
 router.post("/logout", controller.logout);
 
+
+//list
+router.get("/list", controller.list);
+
+
+//profile
+router.get("/profile/:id", controller.profile);
+
 module.exports = router;

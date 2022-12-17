@@ -13,7 +13,8 @@ module.exports = (sequelize, dataTypes) => {
     };
     let config = {
         tableName: "cart",
-        timestamps: false
+        timestamps: false,
+        underscored: true
     };
 
     const Cart = sequelize.define(alias, cols, config);
@@ -24,11 +25,13 @@ module.exports = (sequelize, dataTypes) => {
             foreignKey: "user_id"
         });
         Cart.belongsToMany(models.Product, {
-            as: "products",
+            as: "cart",
             through: "cart_product",
             foreignKey: "cart_id",
             otherKey: "product_id",
             timestamps: false,
           });
     }
+
+    return Cart;
 }

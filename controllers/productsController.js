@@ -1,6 +1,11 @@
 const fs = require("fs");
 const path = require("path");
-const {validationResult} = require('express-validator')
+const {validationResult} = require('express-validator');
+const db = require('../database/models');
+const Product = db.Product;
+
+
+
 
 function findAll() {
   const data = fs.readFileSync(path.join(__dirname, "../data/products.json"));
@@ -59,9 +64,25 @@ const controller = {
     };
     console.log(req.file)
     data.push(newProduct);
-    writeFile(data);
+    writeFile(data); 
 
-    res.redirect("/products/list");
+    db.Product.create({
+
+      name: req.body.nombre,
+      color:req.body.color,
+      description: req.body.descripcion,
+      price: req.body.precio,
+      category_id: req.body.categoria,
+      image: req.file.filename,
+      discount_id: require.body.discount
+      
+  })
+  .then(function(){
+
+      res.redirect("/products/list");
+    
+
+  })
   },
 
   edit: function (req, res) {
@@ -110,12 +131,14 @@ const controller = {
     res.redirect("/products/list");
   },
 
-  list: function (req, res) {
-    const data = findAll();
+  list: async function (req, res) {
+
+    const products = await Product.findAll();
+
     res.render("product-list", {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-list.css",
-      products: data,
+      products: products,
     });
 
   },

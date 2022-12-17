@@ -2,6 +2,13 @@ const fs = require("fs");
 const path = require("path");
 const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
+const db = require('../database/models');
+const User = db.User;
+
+const users = async function() {
+  await User.findAll()
+};
+
 
 function findAll() {
   const data = fs.readFileSync(path.join(__dirname, "../data/user.json"));
@@ -33,23 +40,14 @@ const controller = {
         css: "/register.css",
       });
     }
-    const data = findAll();
-    console.log(req.body);
-
-    const newUser = {
-      id: data.length + 1,
+    User.create({
       name: req.body.nombre,
       lastName: req.body.apellido,
       email: req.body.email,
       password: bcryptjs.hashSync(req.body.password, 10),
-      categoria: req.body.categoria,
+      admin: 0,
       profileImage: req.file ? req.file.filename : "ImgPerfilDefault.png",
-    };
-    console.log(req.file);
-
-    data.push(newUser);
-
-    writeFile(data);
+    });
 
     res.redirect("/user/login");
   },
@@ -60,7 +58,7 @@ const controller = {
     });
   },
 
-  sendLogin: (req, res) => {
+  sendLogin: async (req, res) => {
     const error = validationResult(req);
 
     if (!error.isEmpty()) {
@@ -69,39 +67,68 @@ const controller = {
         title: "Ghemma Store - Tienda Oficial",
         css: "/login.css",
       });
-    }
+    };
 
-    const users = findAll();
-    const userFound = users.find(function (user) {
-      return (
-        user.email == req.body.email &&
-        bcryptjs.compareSync(req.body.password, user.password)
-      );
-    });
+    // const users = findAll();
+    // const userFound = users.find(function (user) {
+    //   return (
+    //     user.email == req.body.email &&
+    //     bcryptjs.compareSync(req.body.password, user.password)
+    //   );
+    // });
 
-    if (!userFound) {
-      return res.render("login", {
-        errorLogin: "Crendenciales invalidas",
-        title: "Ghemma Store - Tienda Oficial",
-        css: "/login.css",
-      });
-    } else {
-      req.session.usuarioLogueado = {
-        id: userFound.id,
-        name: userFound.name,
-        email: userFound.email,
-        profileImage: userFound.profileImage,
-      };
+    // if (!userFound) {
+    //   return res.render("login", {
+    //     errorLogin: "Crendenciales invalidas",
+    //     title: "Ghemma Store - Tienda Oficial",
+    //     css: "/login.css",
+    //   });
+    // } else {
+    //   req.session.usuarioLogueado = {
+    //     id: userFound.id,
+    //     name: userFound.name,
+    //     email: userFound.email,
+    //     profileImage: userFound.profileImage,
+    //   };
 
-      console.log(req.session.usuarioLogueado);
+      // console.log(req.session.usuarioLogueado);
 
-      if (req.body.remember) {
-        res.cookie("recordame", userFound.id);
-      }
+      // if (req.body.remember) {
+      //   res.cookie("recordame", userFound.id);
+      // }
+
+    const userFound = await User.findOne({where:{email:req.body.email}})
+    
+
+    const user = userFound.dataValues
+    
+
+
+    
+
+    console.log(user);
+
+    
+   
+    
+       if(bcryptjs.compareSync(req.body.password, user.password))
+            {
+                req.session.usuarioLogeado = {
+                  id: user.id,
+                  name: user.name,
+                  lastName: user.lastName,
+                  email: user.email,
+                  admin: user.admin,
+                  profileImage: user.profileImage
+                  
+                }
+        
+                if (req.body.remember) {
+                     res.cookie("recordame", user.id);   // cookie por 5 minutos
+                }
 
       res.redirect("/");
-    }
-  },
+             }},
 
   logout: function (req, res) {
     req.session.destroy();
@@ -109,6 +136,20 @@ const controller = {
 
     res.redirect("/");
   },
+
+
+  list: async function(req, res) {
+
+    const users = await User.findAll();
+    res.render("userList", {users : users})
+  },
+
+  profile: async function(req, res) {
+    const user = await User.findByPk(req.params.id);
+
+    res.render("userProfile", {user})
+    
+  }
 };
 
 module.exports = controller;

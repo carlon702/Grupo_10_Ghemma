@@ -28,10 +28,11 @@ module.exports = (sequelize, dataTypes) => {
     };
     let config = {
         tableName: "cart_product",
-        timestamps: false
+        timestamps: false,
+        underscored: true
     };
 
     const cartProduct = sequelize.define(alias, cols, config);
 
-    
+    return cartProduct;
 }

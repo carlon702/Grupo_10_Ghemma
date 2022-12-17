@@ -13,7 +13,7 @@
                     <h3>Iniciar Sesión</h3>
                     <form action="/user/login" class="form" method="post">
                         <p><i class="fa-solid fa-envelope"></i>
-                            <label for="correo electronico">Corre electrónico</label>
+                            <label for="email">Corre electrónico</label>
                             <input class="control" type="email" name="email">
                             <% if(locals.errors && locals.errors.email){ %>
                                 <p style="font-size: small" class="error"> <%= locals.errors.email.msg %> </p>

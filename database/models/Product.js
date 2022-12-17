@@ -12,7 +12,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         price: {
-            type: dataTypes.DOUBLE(),
+            type: dataTypes.BIGINT(),
             allowNull: false
         },
         color: {
@@ -41,18 +41,18 @@ module.exports = (sequelize, dataTypes) => {
     };
     let config = {
         tableName: "products",
-        timestamps: false
+        timestamps: false,
+        underscored: true
     };
 
     const Product = sequelize.define(alias, cols, config);
 
 
-    Product.associate = function(models) {
+   Product.associate = function(models) {
         Product.belongsToMany(models.Cart, {
-            as: "cart",
+            as: "products",
             through: "cart_product",
             foreignKey: "product_id",
-            foreignKeyConstraint: true,
             otherKey: "cart_id",
             timestamps: false 
         });
@@ -64,5 +64,6 @@ module.exports = (sequelize, dataTypes) => {
             as: "category",
             foreignKey: "category_id"
         })
-    }
+    } 
+    return Product
 }

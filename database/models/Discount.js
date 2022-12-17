@@ -19,5 +19,13 @@ module.exports = (sequelize, dataTypes) => {
 
     const Discount = sequelize.define(alias, cols, config);
 
+    Discount.associate = function(models) {
+        Discount.hasMany(models.Product, {
+           as: "products",
+           foreignKey: "discount_id"
+        })
+    }
+    return Discount;
+
  
 }
