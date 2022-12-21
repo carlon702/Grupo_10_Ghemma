@@ -33,3 +33,6 @@ Nuestras inspiraciones son empresas tecnologicas con gran peso en el mercado glo
 - #2F80DE
 - #F49F0A
 - #8E99B6
+
+# <ins>Dashboard Ghemma</ins>: 
+https://github.com/ehgarcia/dashboard_grupo_10_ghemma
