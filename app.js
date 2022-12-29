@@ -12,7 +12,7 @@ const mainRoutes = require("./routes/main.js");
 const userRoutes = require("./routes/user.js");
 const productsRoutes = require("./routes/products.js");
 
-//  require gloval middleweres
+//  require global middlewares
 const profileImageLocals = require("./middleware/profileImageLocals");
 
 //
