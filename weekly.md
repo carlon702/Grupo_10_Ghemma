@@ -54,3 +54,7 @@ Diseño adaptativo de login, registro, carrito y formulario de productos.
 10-11-2022
 
 *Agreagamos y asignamos tareas del nuevo Sprint
+
+29/12/2022
+*Nos dividimos las tareas restantes para finalizar el proyecto
+*Actualizamos el tablero de trello
