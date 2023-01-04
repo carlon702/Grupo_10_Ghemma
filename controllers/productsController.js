@@ -97,6 +97,8 @@ const controller = {
         description: req.body.description,
         price: req.body.price,
         color: req.body.color,
+        discount_id: req.body.discount,
+        category_id: req.body.category,
         image: req.file?.filename ? req.file.filename : product.image,
       },
       {
@@ -131,7 +133,6 @@ const controller = {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-list.css",
       products: products,
-      discount : discounts,
       category : categories
     })} )
 

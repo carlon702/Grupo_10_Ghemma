@@ -40,12 +40,13 @@ const controller = {
         css: "/register.css",
       });
     }
+
     User.create({
       name: req.body.nombre,
       lastName: req.body.apellido,
       email: req.body.email,
       password: bcryptjs.hashSync(req.body.password, 10),
-      admin: 0,
+      admin: function(){if(req.body.email=== "ghemma@gmail.com"){return 1} else{return 0}},
       profileImage: req.file ? req.file.filename : "ImgPerfilDefault.png",
     });
 
@@ -73,28 +74,28 @@ const controller = {
         where: { email: req.body.email}
     })
 
-    const user = userFound.dataValues;
+    // const user = userFound.dataValues;
 
-    if (user === null) { 
+    if (userFound === null) { 
         res.render("login", 
         { title: "Ghemma Store - Tienda Oficial",
               css: "/login.css", errors: 'Email incorrecto' });
 
     } else { 
-      console.log(user)
+      console.log(userFound.dataValues)
       
-        if (bcryptjs.compareSync(req.body.password, user.password)) {
+        if (bcryptjs.compareSync(req.body.password, userFound.dataValues.password)) {
             
           req.session.loggedUser = {
-                         id: user.id,
-                         name: user.name,
-                         lastName: user.lastName,
-                         email: user.email,
-                         admin: user.admin,
-                         profileImage: user.profileImage
+                         id: userFound.dataValues.id,
+                         name: userFound.dataValues.name,
+                         lastName: userFound.dataValues.lastName,
+                         email: userFound.dataValues.email,
+                         admin: userFound.dataValues.admin,
+                         profileImage: userFound.dataValues.profileImage
                    };
             if(req.body.remember){
-                res.cookie('recordame', user.id)
+                res.cookie('recordame', userFound.dataValues.id)
             } 
         
             res.redirect("/");

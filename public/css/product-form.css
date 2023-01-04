@@ -4,7 +4,10 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
   }
-
+  main{
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
   body {
     text-align: center;
     
@@ -49,15 +52,36 @@
     color:red;
 }
 
-
-
+.select{
+    text-align: center;
+  position: relative;
+  width: 40%; 
+  padding: 7px 40px 7px 12px;
+    border: 1px solid #E8EAED;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 1px 3px -2px #9098A9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    align-self: left;
+    margin-left: 20px;
+}
+.image-label{
+    font-size: 15px ;
+    font-weight: 550;
+    margin-top: 2em;
+    
+}
 .input-label{
    display: flex;
    flex-direction: column;
    justify-content: left;
    margin-left: 10px;
+   margin-bottom: 1em;
    
 }
+
 .label{
     display: flex;
     justify-content: flex-start;
@@ -67,6 +91,16 @@
     margin-left: 20px;
 
 }
+
+.label-select{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 550;
+    margin: 5px 0px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
 
 button {
     background-color: rgba(246, 232, 232, 1);
@@ -107,6 +141,8 @@ button:hover.erase-button{
 
 @media (min-width: 535px) {
 
+
+ 
     .input-label{
         align-items: center;
 
@@ -149,9 +185,6 @@ button:hover.erase-button{
 button{
     width: 30%;
 }
-footer{
-    position: absolute;
-    bottom: 0%;
-}
+
 
 }

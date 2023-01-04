@@ -70,7 +70,7 @@
                         <div class="input-label">
 
                             <div class="label">
-                                <label for="discount">Descuento</label>
+                                <label for="discount" class="select-label">Descuento</label>
                             </div>
                             <select name="discount" id="discount" class="select">
                                 
@@ -87,6 +87,9 @@
                           
                             </div>
                             <div class="input-label">
+                                <div class="label-select">
+                                    <label for="discount" class="select-label">Categoria</label>
+                                </div>
                             <select name="category" id="category" class="select">
                                 <% category.forEach(function(category){%>
 
@@ -101,7 +104,7 @@
                         <div class="product-create-img">
 
                             <div>
-                                <label for="image">Imagen</label>
+                                <label for="image" class="image-label">Imagen</label>
                             </div>
                             <input class="input-image" type="file" name="image" id="image" >
                         </div>
