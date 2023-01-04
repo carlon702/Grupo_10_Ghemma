@@ -33,16 +33,6 @@
                                 <% } %> 
                         </div>
 
-                        <!-- <div class="input-label"> -->
-
-                            <!-- <div class="label">
-                                <label for="discount">Modelo</label>
-                            </div>
-                            <input class="input" type="text" name="discount" id="discount" required>
-
-                        </div>  -->
-<!-- 
-                         -->
 
                         <div class="input-label">
 
@@ -83,33 +73,27 @@
                                 <label for="discount">Descuento</label>
                             </div>
                             <select name="discount" id="discount" class="select">
-                                <option value="11">0</option>
-                                <option value="1">5</option>
-                                <option value="2">10</option>
-                                <option value="3">15</option>
-                                <option value="4">20</option>
-                                <option value="5">25</option>
-                                <option value="6">30</option>
-                                <option value="7">35</option>
-                                <option value="8">40</option>
-                                <option value="9">45</option>
-                                <option value="10">50</option>
+                                
+                                <% discount.forEach(function(discount){%>
+
+                                <option value="<%=discount.dataValues.id%>"><%=discount.dataValues.discount%></option>             
+
+
+                                <%})%>
+                                
+                                
                                 
                             </select>
-                            
-                            <!-- <input class="input" type="text" name="discount" id="discount" > -->
-                            <% if(locals.errors && locals.errors.discount){ %>
-                                <p style="font-size: small" class="error"> <%= errors.discount.msg %></p>
-                                <% } %> 
-
+                          
                             </div>
                             <div class="input-label">
                             <select name="category" id="category" class="select">
-                                <option value="1">Smartphones</option>
-                                <option value="2">Notebooks</option>
-                                <option value="3">Smartwatchs</option>
-                                <option value="4">Tv</option>
-                                <option value="5">Tablets</option>
+                                <% category.forEach(function(category){%>
+
+                                    <option value="<%=category.dataValues.id%>"><%=category.dataValues.name%></option>             
+    
+    
+                                    <%})%>
                             </select>
 
                         </div>

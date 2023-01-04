@@ -2,6 +2,7 @@ const { validationResult } = require("express-validator");
 const db = require("../database/models");
 const Product = db.Product;
 const Category = db.Category;
+const Discount = db.Discount;
 
 const controller = {
   
@@ -16,13 +17,18 @@ const controller = {
     });
   },
 
-  create: async function (req, res) {
-    
+  create: function (req, res) {
 
-    res.render("product-form-create", {
+    let discount = Discount.findAll();
+    let category = Category.findAll();
+
+    Promise.all([discount, category])
+    .then(([discount, category]) => {
+      res.render('product-form-create', {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-form.css",
-      categories: categories
+      discount: discount, 
+      category: category})
     });
   },
 
@@ -51,19 +57,23 @@ const controller = {
     
   }},
 
-  edit: async function (req, res) {
+  edit: function (req, res) {
 
-    let categories = await Category.findAll();
-    
-    const product = Product.findByPk(req.params.id).then((element) => {
-      return element;
-    });
+    let category = Category.findAll();
+    let discount = Discount.findAll();
+    let product = Product.findByPk(req.params.id);
 
-    res.render("product-form-edit", {
+    Promise.all([product,discount, category])
+    .then(([product,discount, category]) => {
+
+      console.log(product.dataValues)
+      res.render('product-form-edit', {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-form.css",
-      product: product,
-      categories: categories
+      discount: discount, 
+      category: category,
+      product:product
+    })
     });
   },
 
