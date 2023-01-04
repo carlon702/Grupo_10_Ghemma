@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `users` (
     `name` VARCHAR(30) NOT NULL,
     `lastName` VARCHAR(30) NOT NULL,
     `email` VARCHAR(30) NOT NULL UNIQUE,
-    `password` VARCHAR(40) NOT NULL,
+    `password` VARCHAR(100) NOT NULL,
     `admin` TINYINT NOT NULL,
     `profileImage` VARCHAR(250) NOT NULL,
     PRIMARY KEY(`id`)

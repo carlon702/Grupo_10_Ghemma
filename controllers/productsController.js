@@ -118,16 +118,25 @@ const controller = {
     })
   },
 
-  list: async function (req, res) {
-    const products = await Product.findAll({include:['discount']});
+  list: function (req, res) {
+    let categories = Category.findAll();
+    let discounts = Discount.findAll();
+    let products = Product.findAll();
 
-    console.log(products.discount)
-
-    res.render("product-list", {
+    Promise.all([products,discounts, categories])
+    .then(([products,discounts, categories]) =>  {
+      
+      console.log(discounts)
+      res.render("product-list", {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-list.css",
       products: products,
-    });
+      discount : discounts,
+      category : categories
+    })} )
+
+
+   
   },
 };
 module.exports = controller;

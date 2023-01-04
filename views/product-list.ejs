@@ -35,7 +35,7 @@
 
                                     <li class="price">
                                         $<%= product.price %>
-                                          <div> <%= "  "%> <%= product.discount %>% OFF </div>
+                                          <div> <%= discount.filter(discount => {discount.id === product.discount_id})%> </div>
                                     </li>
 
                                     <div class="button-container">
