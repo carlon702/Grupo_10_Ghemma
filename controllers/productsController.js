@@ -1,6 +1,7 @@
 const { validationResult } = require("express-validator");
 const db = require("../database/models");
 const Product = db.Product;
+const Category = db.Category;
 
 const controller = {
   
@@ -15,10 +16,13 @@ const controller = {
     });
   },
 
-  create: function (req, res) {
+  create: async function (req, res) {
+    
+
     res.render("product-form-create", {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-form.css",
+      categories: categories
     });
   },
 
@@ -47,7 +51,9 @@ const controller = {
     
   }},
 
-  edit: function (req, res) {
+  edit: async function (req, res) {
+
+    let categories = await Category.findAll();
     
     const product = Product.findByPk(req.params.id).then((element) => {
       return element;
@@ -57,6 +63,7 @@ const controller = {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-form.css",
       product: product,
+      categories: categories
     });
   },
 
