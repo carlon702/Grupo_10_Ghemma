@@ -4,7 +4,6 @@ window.onload = function(){
     //form.nombre.focus();
 
     let nombre = document.querySelector("#name");
-    let modelo = document.querySelector('#discount');
     let descripcion = document.querySelector('#description');
     let color = document.querySelector('#color');
 
@@ -19,27 +18,6 @@ window.onload = function(){
         }else{
             nombre.classList.add("is-valid");
             nombre.classList.remove("is-invalid");
-        }
-        if(errores.length > 0){
-            let ulError = document.querySelector(".errores");
-            ulError.innerHTML = "";
-            for (let i = 0; i < errores.length; i++) {
-                ulError.innerHTML += "<li>" + errores[i] + "</li>"   
-            }
-        } else {
-            let ulError = document.querySelector(".errores");
-            ulError.innerHTML = "";
-        }
-    })
-    modelo.addEventListener("blur", (e) =>{
-        let errores = [];
-        if(modelo.value.length<3){
-            errores.push("Modelo debe tener al menos 3 caracteres");
-            modelo.classList.add("is-invalid");
-            modelo.classList.remove("is-valid");
-        }else{
-            modelo.classList.add("is-valid");
-            modelo.classList.remove("is-invalid");
         }
         if(errores.length > 0){
             let ulError = document.querySelector(".errores");
@@ -99,7 +77,6 @@ window.onload = function(){
     form.addEventListener("submit", (evento) => {
         let errores =[];
         let nombre = document.querySelector("#name");
-        //let modelo = document.querySelector('#discount');
         let descripcion = document.querySelector('#description');
         let color = document.querySelector('#color');
         let precio = document.querySelector('#price');
