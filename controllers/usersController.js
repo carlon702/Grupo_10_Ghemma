@@ -2,13 +2,13 @@ const fs = require("fs");
 const path = require("path");
 const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
-const db = require('../database/models');
+const sequelize = require("sequelize");
+const db = require("../database/models");
 const User = db.User;
 
-const users = async function() {
-  await User.findAll()
+const users = async function () {
+  await User.findAll();
 };
-
 
 function findAll() {
   const data = fs.readFileSync(path.join(__dirname, "../data/user.json"));
@@ -67,7 +67,7 @@ const controller = {
         title: "Ghemma Store - Tienda Oficial",
         css: "/login.css",
       });
-    };
+    }
 
     // const users = findAll();
     // const userFound = users.find(function (user) {
@@ -91,44 +91,35 @@ const controller = {
     //     profileImage: userFound.profileImage,
     //   };
 
-      // console.log(req.session.usuarioLogueado);
+    // console.log(req.session.usuarioLogueado);
 
-      // if (req.body.remember) {
-      //   res.cookie("recordame", userFound.id);
-      // }
+    // if (req.body.remember) {
+    //   res.cookie("recordame", userFound.id);
+    // }
 
-    const userFound = await User.findOne({where:{email:req.body.email}})
-    
+    const userFound = await User.findOne({ where: { email: req.body.email } });
 
-    const user = userFound.dataValues
-    
+    const user = userFound.dataValues;
 
+    // console.log(user);
 
-    
+    if (bcryptjs.compareSync(req.body.password, user.password)) {
+      req.session.usuarioLogeado = {
+        id: user.id,
+        name: user.name,
+        lastName: user.lastName,
+        email: user.email,
+        admin: user.admin,
+        profileImage: user.profileImage,
+      };
 
-    console.log(user);
-
-    
-   
-    
-       if(bcryptjs.compareSync(req.body.password, user.password))
-            {
-                req.session.usuarioLogeado = {
-                  id: user.id,
-                  name: user.name,
-                  lastName: user.lastName,
-                  email: user.email,
-                  admin: user.admin,
-                  profileImage: user.profileImage
-                  
-                }
-        
-                if (req.body.remember) {
-                     res.cookie("recordame", user.id);   // cookie por 5 minutos
-                }
+      if (req.body.remember) {
+        res.cookie("recordame", user.id); // cookie por 5 minutos
+      }
 
       res.redirect("/");
-             }},
+    }
+  },
 
   logout: function (req, res) {
     req.session.destroy();
@@ -137,19 +128,16 @@ const controller = {
     res.redirect("/");
   },
 
-
-  list: async function(req, res) {
-
+  list: async function (req, res) {
     const users = await User.findAll();
-    res.render("userList", {users : users})
+    res.render("userList", { users: users });
   },
 
-  profile: async function(req, res) {
+  profile: async function (req, res) {
     const user = await User.findByPk(req.params.id);
 
-    res.render("userProfile", {user})
-    
-  }
+    res.render("userProfile", { user });
+  },
 };
 
 module.exports = controller;
