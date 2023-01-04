@@ -11,10 +11,13 @@
             <main>
                 <div class="login-form">
                     <h3>Iniciar Sesión</h3>
+                    <ul class="errores">
+                        
+                    </ul>
                     <form action="/user/login" class="form" method="post">
                         <p><i class="fa-solid fa-envelope"></i>
                             <label for="email">Corre electrónico</label>
-                            <input class="control" type="email" name="email">
+                            <input class="control" type="email" name="email" id="email">
                             <% if(locals.errors && locals.errors.email){ %>
                                 <p style="font-size: small" class="error"> <%= locals.errors.email.msg %> </p>
 
@@ -22,7 +25,7 @@
                         </p>
                         <p><i class="fa-solid fa-lock"></i>
                             <label for="Contraseña">Contraseña</label>
-                            <input class="control" type="password" name="password">
+                            <input class="control" type="password" name="password" id="password">
                             <% if(locals.errors && locals.errors.password){ %>
                                 <p style="font-size: small" class="error"> <%= locals.errors.password.msg %> </p>
 
@@ -64,5 +67,5 @@
 
 
     </body>
-
+    <script type="text/javascript" src="../js/loginValidator.js"></script>
 </html>

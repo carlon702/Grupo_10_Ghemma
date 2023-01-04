@@ -58,79 +58,46 @@ const controller = {
     });
   },
 
-  sendLogin: async (req, res) => {
+  sendLogin: (req, res) => {
     const error = validationResult(req);
 
-    if (!error.isEmpty()) {
-      return res.render("login", {
-        errors: error.mapped(),
-        title: "Ghemma Store - Tienda Oficial",
-        css: "/login.css",
-      });
-    };
+    const userFound = User.findOne({where:{email:req.body.email}})
 
-    // const users = findAll();
-    // const userFound = users.find(function (user) {
-    //   return (
-    //     user.email == req.body.email &&
-    //     bcryptjs.compareSync(req.body.password, user.password)
-    //   );
-    // });
+    .then(data=> {
+      
 
-    // if (!userFound) {
-    //   return res.render("login", {
-    //     errorLogin: "Crendenciales invalidas",
-    //     title: "Ghemma Store - Tienda Oficial",
-    //     css: "/login.css",
-    //   });
-    // } else {
-    //   req.session.usuarioLogueado = {
-    //     id: userFound.id,
-    //     name: userFound.name,
-    //     email: userFound.email,
-    //     profileImage: userFound.profileImage,
-    //   };
-
-      // console.log(req.session.usuarioLogueado);
-
-      // if (req.body.remember) {
-      //   res.cookie("recordame", userFound.id);
-      // }
-
-    const userFound = await User.findOne({where:{email:req.body.email}})
-    
-
-    const user = userFound.dataValues
-    
-
-
-    
-
-    console.log(user);
-
-    
-   
-    
-       if(bcryptjs.compareSync(req.body.password, user.password))
+      if (!error.isEmpty()) {
+        return res.render("login", {
+          errors: error.mapped(),
+          title: "Ghemma Store - Tienda Oficial",
+          css: "/login.css",
+        })
+      }else{
+            (bcryptjs.compareSync(req.body.password, data.password))
             {
                 req.session.usuarioLogeado = {
-                  id: user.id,
-                  name: user.name,
-                  lastName: user.lastName,
-                  email: user.email,
-                  admin: user.admin,
-                  profileImage: user.profileImage
+                  id: data.id,
+                  name: data.name,
+                  lastName: data.lastName,
+                  email: data.email,
+                  admin: data.admin,
+                  profileImage: data.profileImage
                   
-                }
+                }}}
         
                 if (req.body.remember) {
-                     res.cookie("recordame", user.id);   // cookie por 5 minutos
+                     res.cookie("recordame", data.id);   // cookie por 5 minutos
                 }
 
-      res.redirect("/");
-             }},
+      
+             
+    })
+    .then(data => res.redirect("/"))
+  
+  },
 
   logout: function (req, res) {
+
     req.session.destroy();
     res.clearCookie("recordame");
 
