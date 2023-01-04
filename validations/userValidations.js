@@ -1,14 +1,11 @@
 const { body } = require("express-validator");
 const fs = require('fs');
 const path = require('path');
+const db = require('../database/models');
+const User = db.User;
 
 
-function findAll(){
-  const data = fs.readFileSync(path.join(__dirname, "../data/user.json"));
-  const jsonParsed = JSON.parse(data);
-  console.log("data", data)
-  return jsonParsed;
-};
+
 
 module.exports= {
 registerValidation : [
@@ -24,20 +21,12 @@ registerValidation : [
     .withMessage("Campo email incompleto")
     .isEmail()
     .withMessage("Formato de email inválido")
-    .custom(function(value, req){
-      const users = findAll()
-
-    const usuarioEncontrado =  users.find(function(user){
-        return user.email == value
-      })
-      if(usuarioEncontrado){
-        return false
-      }else{
-        return true
+    .custom(async function (value, { req }) {
+      const user = await User.findOne({ where: { email: value } });
+      if (user) {
+        return Promise.reject(new Error('Email ya registrado'));
       }
-      
-    }).withMessage('Email registrado'),
-
+    }).withMessage('Email ya registrado'),
   body("password")
   .notEmpty()
   .withMessage("Campo password incompleto"),
