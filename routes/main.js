@@ -2,12 +2,13 @@
 
 const express = require("express");
 const router = express.Router();
-const mainRauters = require("../controllers/mainController");
+const mainRouters = require("../controllers/mainController");
+const userMiddleware = require("../middleware/userMiddleware");
 
 //
 
-router.get("/", mainRauters.home);
-router.get("/cart", mainRauters.cart);
+router.get("/", mainRouters.home);
+router.get("/cart", userMiddleware, mainRouters.cart);
 router.get("/", );
 
 module.exports = router;

@@ -74,9 +74,10 @@ main {
   .price{
     color: green;
     font-size:17px;
+    text-align: center;
   }
   .list-none{
-    font-size: 19px;
+    font-size: 18px;
     transition: all 450ms;
   }
 
@@ -98,6 +99,16 @@ main {
     align-self: center;
     
 }
+
+.list-none{
+  display: none;
+  transition: all 450ms;
+}
+
+.main-article:hover .list-none{
+  display: block;
+}
+
 
   
 
@@ -151,7 +162,7 @@ button:hover{
     }
 
     .list-none{
-        display: none;
+        display: block;
         transition: all 450ms;
     }
 

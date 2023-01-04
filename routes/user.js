@@ -4,6 +4,8 @@ const path = require("path");
 const multer = require("multer");
 const controller = require("../controllers/usersController");
 const validation = require("../validations/userValidations");
+const userMiddleware = require("../middleware/userMiddleware");
+const guestMiddleware = require("../middleware/guestMiddleware");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -19,7 +21,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 //registro
-router.get("/register", controller.register);
+router.get("/register", guestMiddleware, controller.register);
 router.post(
   "/register",
   upload.single("profileImage"),
@@ -28,7 +30,7 @@ router.post(
 );
 
 //login
-router.get("/login", controller.login);
+router.get("/login",guestMiddleware, controller.login);
 router.post("/login", validation.loginValidation, controller.sendLogin);
 router.post("/logout", controller.logout);
 
@@ -38,6 +40,6 @@ router.get("/list", controller.list);
 
 
 //profile
-router.get("/profile/:id", controller.profile);
+router.get("/profile/:id", userMiddleware, controller.profile);
 
 module.exports = router;

@@ -4,7 +4,7 @@ module.exports =
   "development": {
     "username": "root",
     "password": null,
-    "database": "ghemmadb",
+    "database": "GhemmaDB",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

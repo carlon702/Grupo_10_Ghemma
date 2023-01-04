@@ -16,6 +16,9 @@
                 <section class="product-create">
 
                     <h1>Crear Producto</h1>
+                    <ul class="errores">
+                        
+                    </ul>
 
                     <form action="/products/create" method="POST" enctype="multipart/form-data" class="product-form">
 
@@ -30,16 +33,6 @@
                                 <% } %> 
                         </div>
 
-                        <div class="input-label">
-
-                            <div class="label">
-                                <label for="discount">Modelo</label>
-                            </div>
-                            <input class="input" type="text" name="discount" id="discount" required>
-
-                        </div> 
-<!-- 
-                         -->
 
                         <div class="input-label">
 
@@ -76,20 +69,42 @@
                         </div>
                         <div class="input-label">
 
-                            <div class="label">
-                                <label for="discount">Descuento</label>
+                            <div class="label-select">
+                                <label for="discount" class="select-label">Descuento</label>
                             </div>
-                            <input class="input" type="text" name="discount" id="discount" >
-                            <% if(locals.errors && locals.errors.discount){ %>
-                                <p style="font-size: small" class="error"> <%= errors.discount.msg %></p>
-                                <% } %> 
+                            <select name="discount" id="discount" class="select">
+                                
+                                <% discount.forEach(function(discount){%>
+
+                                <option value="<%=discount.dataValues.id%>"><%=discount.dataValues.discount%></option>             
+
+
+                                <%})%>
+                                
+                                
+                                
+                            </select>
+                          
+                            </div>
+                            <div class="input-label">
+                                <div class="label-select">
+                                    <label for="discount" class="select-label">Categoria</label>
+                                </div>
+                            <select name="category" id="category" class="select">
+                                <% category.forEach(function(category){%>
+
+                                    <option value="<%=category.dataValues.id%>"><%=category.dataValues.name%></option>             
+    
+    
+                                    <%})%>
+                            </select>
 
                         </div>
 
                         <div class="product-create-img">
 
                             <div>
-                                <label for="image">Imagen</label>
+                                <label for="image" class="image-label">Imagen</label>
                             </div>
                             <input class="input-image" type="file" name="image" id="image" >
                         </div>
@@ -112,5 +127,5 @@
 
 
     </body>
-
+    <script type="text/javascript" src="../js/productValidator.js"></script>
 </html>

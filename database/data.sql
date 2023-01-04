@@ -1,63 +1,3 @@
-DROP DATABASE IF EXISTS `GhemmaDB`;
-
-CREATE DATABASE IF NOT EXISTS `GhemmaDB` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `GhemmaDB`;
-
-CREATE TABLE IF NOT EXISTS `discount`(
-    `id` INT AUTO_INCREMENT NOT NULL,
-    `discount` INT NOT NULL,
-    PRIMARY KEY(`id`)
-);
-
-CREATE TABLE IF NOT EXISTS `category`(
-    `id` INT AUTO_INCREMENT NOT NULL,
-    `name` VARCHAR(15) NOT NULL,
-    PRIMARY KEY(`id`)
-);
-
-CREATE TABLE IF NOT EXISTS `products` (
-    `id` INT AUTO_INCREMENT NOT NULL,
-    `name` VARCHAR(50) NOT NULL,
-    `price` INT NOT NULL,
-    `color` VARCHAR(30) NOT NULL,
-    `description` VARCHAR(1000) NOT NULL,
-    `image` VARCHAR(1000) NOT NULL,
-    `discount_id` INT NOT NULL,
-    `category_id` INT NOT NULL,
-    PRIMARY KEY(`id`),
-    FOREIGN KEY(`discount_id`) REFERENCES discount (`id`),
-    FOREIGN KEY(`category_id`) REFERENCES category (`id`)
-);
-
-CREATE TABLE IF NOT EXISTS `users` (
-    `id` INT AUTO_INCREMENT NOT NULL,
-    `name` VARCHAR(30) NOT NULL,
-    `lastName` VARCHAR(30) NOT NULL,
-    `email` VARCHAR(30) NOT NULL UNIQUE,
-    `password` VARCHAR(40) NOT NULL,
-    `admin` TINYINT NOT NULL,
-    `profileImage` VARCHAR(250) NOT NULL,
-    PRIMARY KEY(`id`)
-);
-
-CREATE TABLE IF NOT EXISTS `cart` (
-    `id` INT AUTO_INCREMENT NOT NULL,
-    `user_id` INT NOT NULL,
-    PRIMARY KEY(`id`),
-    FOREIGN KEY(`user_id`) REFERENCES users (`id`) 
-);
-
-CREATE TABLE IF NOT EXISTS `cart_product` (
-    `id` INT AUTO_INCREMENT NOT NULL,
-    `quantity` INT NOT NULL,
-    `price` INT NOT NULL,
-    `cart_id` INT NOT NULL,
-    `product_id` INT NOT NULL,
-    PRIMARY KEY(`id`),
-    FOREIGN KEY(`cart_id`) REFERENCES cart (`id`),
-    FOREIGN KEY(`product_id`) REFERENCES products (`id`)
-);
-
 INSERT INTO discount (id, discount) values (1, 5);
 INSERT INTO discount (id, discount) values (2, 10);
 INSERT INTO discount (id, discount) values (3, 15);
@@ -87,6 +27,3 @@ INSERT INTO products (id, name,price,color,description,image, discount_id,catego
 (6,'75" Neo QLED 8K Smart TV QN800A',748599,'Black','La poderosa evolución de Neo QLED 8K cuenta con una tecnología de atenuación de retroiluminación que controla con precisión nuestros Quantum Mini LED, que son 40 veces más pequeños que los LEDs convencionales. Serás testigo de detalles inimaginables expresados tanto en el negro más oscuro como en el blanco más puro con 1,5 veces más zonas de iluminación que la tecnología Quantum Matrix normal.','https://images.samsung.com/is/image/samsung/p6pim/ar/qn75qn85bagczb/gallery/ar-qled-tv-qn75qn85bagczb-front-silver-533402949?$1300_1038_PNG$',11,5);
 
 INSERT INTO users (id, name, lastName, email, password, admin, profileImage) values (1, "carlos", "marchal", "carlos@gmail.com", "12345", 1, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg");
-
-
-

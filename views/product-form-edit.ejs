@@ -24,18 +24,18 @@
                             <div class="label">
                                 <label for="name">Nombre</label>
                             </div>
-                            <input class="input" type="text" value="<%= product.name %>" name="name" id="name" required>
+                            <input class="input" type="text" value="<%=product.dataValues.name%>" name="name" id="name" required>
 
                         </div>
 
-                        <!-- <div class="input-label">
+                         <!-- <div class="input-label">
 
                             <div class="label">
                                 <label for="modelo">Modelo</label>
                             </div>
                             <input class="input" type="text" name="modelo" id="modelo" required>
 
-                        </div> -->
+                        </div>  -->
 
                         <!-- <div class="input-label">
 
@@ -51,7 +51,7 @@
                             <div class="label">
                                 <label for="description">Descripcion</label>
                             </div>
-                            <input class="input" type="text" value="<%= product.description %>" name="description" id="description" required>
+                            <input class="input" type="text" value="<%=product.dataValues.description%>" name="description" id="description" required>
 
                         </div>
 
@@ -60,7 +60,7 @@
                             <div class="label">
                                 <label for="color">Color</label>
                             </div>
-                            <input class="input" type="text" value="<%= product.color %>" name="color" id="color" required>
+                            <input class="input" type="text" value="<%=product.dataValues.color%>" name="color" id="color" required>
 
                         </div> 
 
@@ -69,25 +69,51 @@
                             <div class="label">
                                 <label for="price">Precio</label>
                             </div>
-                            <input class="input" type="text" value="<%= product.price %>" name="price" id="price" required>
+                            <input class="input" type="text" value="<%=product.dataValues.price%>" name="price" id="price" required>
 
                         </div>
                         
                         <div class="input-label">
 
-                            <div class="label">
-                                <label for="discount">Descuento</label>
+                            <div class="label-select">
+                                <label for="discount" class="select-label">Descuento</label>
                             </div>
-                            <input class="input" type="text" value="<%= product.discount %>" name="discount" id="discount" required>
+                            <select name="discount" id="discount" class="select">
+                           
+
+                                <% discount.forEach(function(discount){%>
+
+                                    <option <%= product.discount_id == discount.dataValues.id ? 'selected' : null %>  value="<%=discount.dataValues.id%>"><%=discount.dataValues.discount%></option>             
+    
+    
+                                    <%})%>
+                                
+                            </select>
+                            
+
+                            </div>
+                            <div class="input-label">
+
+                                <div class="label-select">
+                                    <label for="discount" class="select-label">Categoria</label>
+                                </div>
+                            <select name="category" id="category" class="select">
+                                <% category.forEach(function(category){%>
+
+                                    <option <%= product.category_id == category.dataValues.id ? 'selected' : null %>  value="<%=category.dataValues.id%>"><%=category.dataValues.name%></option>             
+    
+    
+                                    <%})%>
+                            </select>
 
                         </div>
 
                         <div class="product-create-img">
 
                             <div>
-                                <label for="image">Imagen</label>
+                                <label for="image" class="image-label">Imagen</label>
                             </div>
-                            <input class="input-image" type="file" name="image" id="image" >
+                            <input class="input-image" type="file" name="image" id="image" value="<%=product.dataValues.image%>">
 
                         </div>
 
@@ -102,7 +128,7 @@
                     </form>
 
                     <div class="button-erase-container">
-                        <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+                        <form action="/products/delete/<%= product.dataValues.id %>?_method=DELETE" method="POST">
                             <button type="submit">Eliminar Producto</button>
                         </form>
                     </div>

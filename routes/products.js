@@ -3,6 +3,7 @@ const router = express.Router();
 const path = require("path");
 const  validation = require('../validations/productsValidations');
 const controller = require("../controllers/productsController");
+const adminMiddleware = require("../middleware/adminMiddleware")
 
 const multer = require("multer");
 
@@ -21,10 +22,10 @@ const upload = multer({ storage: storage });
 
 router.get("/detail/:id", controller.detail);
 
-router.get("/create", controller.create);
+router.get("/create",adminMiddleware, controller.create);
 router.post("/create", upload.single("image"), validation.createValidation, controller.store);
 
-router.get("/edit/:id", controller.edit);
+router.get("/edit/:id",adminMiddleware, controller.edit);
 router.put("/edit/:id", upload.single("image"), validation.editValidation, controller.update);
 
 router.delete("/delete/:id", controller.delete);

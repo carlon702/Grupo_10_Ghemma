@@ -8,15 +8,15 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true
         },
         name: {
-            type: dataTypes.STRING(50),
+            type: dataTypes.STRING(500),
             allowNull: false
         },
         price: {
-            type: dataTypes.BIGINT(),
+            type: dataTypes.BIGINT(15),
             allowNull: false
         },
         color: {
-            type: dataTypes.STRING(50),
+            type: dataTypes.STRING(500),
             allowNull: false
         },
         description: {
