@@ -1,31 +1,13 @@
-const fs = require("fs");
-const path = require("path");
-const {validationResult} = require('express-validator');
-const db = require('../database/models');
+const { validationResult } = require("express-validator");
+const db = require("../database/models");
 const Product = db.Product;
 
-
-
-
-function findAll() {
-  const data = fs.readFileSync(path.join(__dirname, "../data/products.json"));
-  const jsonParsed = JSON.parse(data);
-  return jsonParsed;
-}
-
-function writeFile(data) {
-  const jsonStringed = JSON.stringify(data, null, 5);
-  fs.writeFileSync(path.join(__dirname, "../data/Products.json"), jsonStringed);
-}
-
 const controller = {
-  // 
-  detail: function (req, res) {
-    const data = findAll();
-    const product = data.find(function (product) {
-      return product.id == req.params.id;
-    });
-
+  
+  detail: async function (req, res) {
+   
+    const product = await db.Product.findByPk(req.params.id)
+    
     res.render("product-detail", {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-detail.css",
@@ -41,55 +23,34 @@ const controller = {
   },
 
   store: function (req, res) {
-    
-    const error = validationResult(req)
-        if(!error.isEmpty()){
-            console.log(error)
-            return res.render("product-form-create", {errors: error.mapped(), title: 'Ghemma Store - Tienda Oficial' , css: '/product-form.css'})
-        }
-    
-    
-    const data = findAll();
+    const error = validationResult(req);
+    if (!error.isEmpty()) {
+      console.log(error);
+      return res.render("product-form-create", {
+        errors: error.mapped(),
+        title: "Ghemma Store - Tienda Oficial",
+        css: "/product-form.css",
+      });
+    } else {
 
-    
-
-    const newProduct = {
-      id: data.length + 1,
-      name: req.body.name,
-      price: Number(req.body.price),
-      discount: Number(req.body.discount),
-      color: req.body.color,
-      description: req.body.description,
-      image: req.file ? req.file.filename : "airpods.jpg"
-    };
-    console.log(req.file)
-    data.push(newProduct);
-    writeFile(data); 
 
     db.Product.create({
-
-      name: req.body.nombre,
-      color:req.body.color,
-      description: req.body.descripcion,
-      price: req.body.precio,
-      category_id: req.body.categoria,
+      name: req.body.name,
+      color: req.body.color,
+      description: req.body.description,
+      price: req.body.price,
+      category_id: req.body.category,
       image: req.file.filename,
-      discount_id: require.body.discount
-      
-  })
-  .then(function(){
-
+      discount_id: req.body.discount,
+    })
       res.redirect("/products/list");
     
-
-  })
-  },
+  }},
 
   edit: function (req, res) {
-
-    const data = findAll();
-    const product = data.find(function (product) {
-      return product.id == req.params.id;
+    
+    const product = Product.findByPk(req.params.id).then((element) => {
+      return element;
     });
 
     res.render("product-form-edit", {
@@ -100,47 +61,56 @@ const controller = {
   },
 
   update: function (req, res) {
-    if(!error.isEmpty()){
-      console.log(error)
-      return res.render("product-form-create", {errors: error.mapped(), title: 'Ghemma Store - Tienda Oficial' , css: '/product-form.css'})
-  }
-    const data = findAll();
-    const product = data.find(function (product) {
-      return product.id == req.params.id;
+    if (!error.isEmpty()) {
+      console.log(error);
+      return res.render("product-form-create", {
+        errors: error.mapped(),
+        title: "Ghemma Store - Tienda Oficial",
+        css: "/product-form.css",
+      });
+    }
+
+    const product = Product.findByPk(req.params.id).then((element) => {
+      return element;
     });
 
-    product.name = req.body.name;
-    product.description = req.body.description;
-    product.price = req.body.price;
-    product.color = req.body.color;
-
-    writeFile(data);
-
-    res.redirect("/products/list");
+    Product.update(
+      {
+        name: req.body.product_name,
+        description: req.body.description,
+        price: req.body.price,
+        color: req.body.color,
+        image: req.file?.filename ? req.file.filename : product.image,
+      },
+      {
+        where: { id: req.params.id },
+      }
+    ).then(() => {
+      res.redirect("/products/list");
+    });
   },
 
   delete: function (req, res) {
-    const data = findAll();
-    const product = data.find(function (product) {
-      return product.id == req.params.id;
-    });
-    data.splice(product, 1);
+    Product.destroy({
 
-    writeFile(data);
+      where: {id:req.params.id}
 
-    res.redirect("/products/list");
+    })
+    .then(() => {
+      res.redirect('/products/list')
+    })
   },
 
   list: async function (req, res) {
+    const products = await Product.findAll({include:['discount']});
 
-    const products = await Product.findAll();
+    console.log(products.discount)
 
     res.render("product-list", {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-list.css",
       products: products,
     });
-
   },
 };
 module.exports = controller;

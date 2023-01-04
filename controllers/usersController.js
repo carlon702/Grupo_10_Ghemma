@@ -58,13 +58,11 @@ const controller = {
     });
   },
 
-  sendLogin: (req, res) => {
+  sendLogin: async (req, res) => {
     const error = validationResult(req);
 
-    const userFound = User.findOne({where:{email:req.body.email}})
+    const userFound = await User.findOne({where:{ email : req.body.email }})
 
-    .then(data=> {
-      
 
       if (!error.isEmpty()) {
         return res.render("login", {
@@ -73,28 +71,25 @@ const controller = {
           css: "/login.css",
         })
       }else{
-            (bcryptjs.compareSync(req.body.password, data.password))
+            (bcryptjs.compareSync(req.body.password, userFound.password))
             {
-                req.session.usuarioLogeado = {
-                  id: data.id,
-                  name: data.name,
-                  lastName: data.lastName,
-                  email: data.email,
-                  admin: data.admin,
-                  profileImage: data.profileImage
+                req.session.loggedUser = {
+                  id: userFound.id,
+                  name: userFound.name,
+                  lastName: userFound.lastName,
+                  email: userFound.email,
+                  admin: userFound.admin,
+                  profileImage: userFound.profileImage
                   
                 }}}
         
                 if (req.body.remember) {
-                     res.cookie("recordame", data.id);   // cookie por 5 minutos
+                     res.cookie("recordame", userFound.id);   // cookie por 5 minutos
                 }
 
-      
+      res.redirect("/")
              
-    })
-    .then(data => res.redirect("/"))
-  
-  },
+    },
 
   logout: function (req, res) {
 
