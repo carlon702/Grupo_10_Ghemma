@@ -13,7 +13,7 @@ const controller = {
     res.render("product-detail", {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-detail.css",
-      product: product,
+      product: product
     });
   },
 
