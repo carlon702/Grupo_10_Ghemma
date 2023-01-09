@@ -63,68 +63,6 @@ const controller = {
    sendLogin: 
    async (req,res)=>{
     const error = validationResult(req);
-<<<<<<< HEAD
-
-    if (!error.isEmpty()) {
-      return res.render("login", {
-        errors: error.mapped(),
-        title: "Ghemma Store - Tienda Oficial",
-        css: "/login.css",
-      });
-    }
-
-    // const users = findAll();
-    // const userFound = users.find(function (user) {
-    //   return (
-    //     user.email == req.body.email &&
-    //     bcryptjs.compareSync(req.body.password, user.password)
-    //   );
-    // });
-
-    // if (!userFound) {
-    //   return res.render("login", {
-    //     errorLogin: "Crendenciales invalidas",
-    //     title: "Ghemma Store - Tienda Oficial",
-    //     css: "/login.css",
-    //   });
-    // } else {
-    //   req.session.usuarioLogueado = {
-    //     id: userFound.id,
-    //     name: userFound.name,
-    //     email: userFound.email,
-    //     profileImage: userFound.profileImage,
-    //   };
-
-    // console.log(req.session.usuarioLogueado);
-
-    // if (req.body.remember) {
-    //   res.cookie("recordame", userFound.id);
-    // }
-
-    const userFound = await User.findOne({ where: { email: req.body.email } });
-
-    const user = userFound.dataValues;
-
-    // console.log(user);
-
-    if (bcryptjs.compareSync(req.body.password, user.password)) {
-      req.session.usuarioLogeado = {
-        id: user.id,
-        name: user.name,
-        lastName: user.lastName,
-        email: user.email,
-        admin: user.admin,
-        profileImage: user.profileImage,
-      };
-
-      if (req.body.remember) {
-        res.cookie("recordame", user.id); // cookie por 5 minutos
-      }
-
-      res.redirect("/");
-    }
-  },
-=======
     
     if(!error.isEmpty()){ 
         return res.render("login" , 
@@ -218,7 +156,6 @@ const controller = {
   //     }
   // }},
     
->>>>>>> 3299037a6385614382c9a4e0d6b015c364c34957
 
   logout: function (req, res) {
 
