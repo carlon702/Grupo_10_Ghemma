@@ -2,33 +2,49 @@
 
 //
 
-window.addEventListener("load", function () {
-  console.log("La página ha terminado de cargarse!!");
-  console.log("333");
+// browser code
+window.addEventListener("load", () => {
+  // Offer carrousel
 
-  const sildeContainer = document.querySelector(".sliders-container");
+  let container = document.querySelector(".carousel-images");
+  let slides = document.querySelectorAll(".offer-slide");
+  let arrows = document.querySelectorAll(".arrows");
 
-  const tocar = sildeContainer.addEventListener("touchstart", (e) => {
-    // e.preventDefault();
-    console.log("toque");
+  console.log(arrows);
+
+  arrows.forEach((arrow, i) => {
+    arrows[i].addEventListener("click", () => {
+      if (i === 0) {
+        container.style.transform = "translateX(-0%)";
+      } else if (i === 1) {
+        container.style.transform = "translateX(-50%)";
+      }
+    });
   });
-  sildeContainer.addEventListener("touchmove", (e) => {
-    // e.preventDefault();
-    console.log("moviendume");
-    // console.log("");
-  });
-  sildeContainer.addEventListener("touchend", (e) => {
-    // e.preventDefault()
-    console.log("saque");
+
+  //
+
+  // tv
+
+  let containerTv = document.querySelector(".img-tv-container");
+
+  let botones = document.querySelectorAll(".button");
+  console.log(botones);
+
+  botones.forEach((boton, i) => {
+    botones[i].addEventListener("click", () => {
+      console.log("clic");
+
+      // let position =
+      if (i === 0) {
+        containerTv.style.transform = "translateX(-0%)";
+      } else if (i === 1) {
+        containerTv.style.transform = "translate(-33.3%);";
+      } else if (i === 2) {
+        containerTv.style.transform = "translate(-66.7%);";
+      }
+    });
   });
 
-  //   sildeContainer.addEventListeer("touch", (e) => {
-  //     // e.preventDefault();
-  //     console.log("toque");
-  //   });
-
-  //   sildeContainer.addEventListener("touch", (e) => {
-  //     // e.preventDefault();
-  //     console.log("toque");
-  //   });
+  //
 });

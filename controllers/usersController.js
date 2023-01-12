@@ -2,13 +2,13 @@ const fs = require("fs");
 const path = require("path");
 const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
-const db = require('../database/models');
+const sequelize = require("sequelize");
+const db = require("../database/models");
 const User = db.User;
 
-const users = async function() {
-  await User.findAll()
+const users = async function () {
+  await User.findAll();
 };
-
 
 function findAll() {
   const data = fs.readFileSync(path.join(__dirname, "../data/user.json"));
@@ -165,19 +165,16 @@ const controller = {
     res.redirect("/");
   },
 
-
-  list: async function(req, res) {
-
+  list: async function (req, res) {
     const users = await User.findAll();
-    res.render("userList", {users : users})
+    res.render("userList", { users: users });
   },
 
-  profile: async function(req, res) {
+  profile: async function (req, res) {
     const user = await User.findByPk(req.params.id);
 
-    res.render("userProfile", {user})
-    
-  }
+    res.render("userProfile", { user });
+  },
 };
 
 module.exports = controller;
