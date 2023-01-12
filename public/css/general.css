@@ -3,6 +3,13 @@
   font-family: "Montserrat", sans-serif;
 }
 
+#logo{
+  width: 10em;
+  transition: all 200ms;
+}
+#logo:hover{
+  transform: rotate(90deg)
+}
 body {
   margin: 0;
   padding: 0;
