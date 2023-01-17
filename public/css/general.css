@@ -28,6 +28,7 @@ main {
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 8px;
+  border: none;
   border-radius: 10px;
 }
 
@@ -53,6 +54,7 @@ header {
   padding: 6px;
   transition: all 280ms;
 }
+
 
 .product-nav:hover {
   border-radius: 10px;
@@ -190,6 +192,12 @@ a {
     margin-bottom: 0px;
     padding: 5px;
     border-radius: 10px;
+    background-color: antiquewhite;
+    
+  }
+  .search:hover{
+    background-color: #ddddddb4;
+    transition: 0.3s ease all;
   }
   
   .link-item{
