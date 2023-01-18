@@ -16,17 +16,37 @@
 
                 <!-- CAROUSEL -->
 
-                <div class="carousel-section">
+                <!-- Slider main container -->
+                <div class=" offer-carrousel swiper">
 
-                    <div class="carousel-images">
+                    <!-- Additional required wrapper -->
 
-                        <div class="offer-slide">
-                            <img src="/images/banner-images/apple-banner-dk.png" alt="sale apple products"
-                                class="image-1">
+                    <div class=" offer-carrousel__slide-container swiper-wrapper">
+                        <!-- Slides -->
+
+                        <div class=" offer-carrousel__silides  swiper-slide">
+
+                            <div class="offer-carrousel__info">
+
+                                <p class="offer-carrousel__text"">Conoce nuestras ofertas en el ecosistema de Apple</p>
+                                    <button class=" black-btn">Ver mas </button>
+
+                            </div>
+
+                            <img class="apple-banner-image" src=" /images/banner-images/apple-banner-ph.png"
+                                alt="sale apple products" class="image-1">
 
                         </div>
-                        <div class="offer-slide">
-                            <img src="/images/banner-images/samsung-banner.png" alt="sale samsung products"
+
+                        <div class=" offer-carrousel__silides  swiper-slide">
+
+                            <div class="offer-carrousel__info">
+
+                                <p class="offer-carrousel__text">Ve nuestras ofertas en productos Samsung</p>
+                                <button class="black-btn">Ver mas </button>
+
+                            </div>
+                            <img src=" /images/banner-images/samsung-banner.png" alt="sale samsung products"
                                 class="image-2">
 
                         </div>
@@ -35,21 +55,17 @@
 
                     </div>
 
-                    <div class="carousel-arrows">
-
-
-                        <span class="left arrows">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </span>
-
-                        <span class="right arrows">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </span>
-
-
+                    <!-- If we need pagination -->
+                    <div class="offer-carrousel__pagination swiper-pagination">
 
                     </div>
 
+                    <!-- If we need navigation buttons -->
+                    <div class="offer-carrousel__left-arrow swiper-button-prev"></div>
+                    <div class="offer-carrousel__right-arrow swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
 
 
@@ -59,77 +75,83 @@
 
 
 
-                <section class="all-products">
+                <article class="phone-section">
 
-                    <!-- PHONE - SAMSUNG -->
+                    <header class="phone-section__top">
 
-                    <article class="phone-section">
+                        <article class="phone-section">
 
-                        <div class="phone-section-top">
-                            <h1 class="title-product">Mobile</h1>
+                            <div class="phone-section-top">
+                                <h1 class="title-product">Mobile</h1>
 
-                            <div class="brand-selector">
+                                <!-- <div class="brand-selector">
                                 <span>Apple</span>
                                 <span>Samsung</span>
-                            </div>
+                            </div> -->
 
-                        </div>
+                                <div class="phone-section__brand-selector">
+                                    <span class="phone-section__brand">Apple</span>
+                                    <span class="phone-section__brand">Samsung</span>
+                                </div>
+
+                    </header>
+
+                    <div class="phone-section__card-container">
 
 
+                        <div class="phone-section__samsung-phones phones-container">
 
-                        <div class="phones-card-container">
+                            <div class="phone-section__card phone-section__hero--card card">
 
-                            <div class="hero-phone-samsung">
-                                <div class="phone-img-samsung-container">
+                                <div class="phone-section__image-container">
 
-                                    <img src="./images/phones/samsung-phones/samsung-galaxy-z-fold-4.jpg"
-                                        alt="samsung Galaxy Z Fold 4 image">
-
+                                    <img class="phone-image"
+                                        src="./images/phones/samsung-phones/samsung-galaxy-z-fold-4.jpg"
+                                        alt="samsung Galaxy Z Fold 3 image">
 
                                 </div>
 
-                                <div class="phone-description">
+                                <div class="phone-info">
 
-                                    <p class='brand-name'>samsung</p>
-                                    <p class="phone-name ">Galaxy Z Fold 4</p>
+                                    <p class="phone-info__brand">samsung</p>
+                                    <p class="phone-info__phone-name">Galaxy Z Fold 3</p>
 
                                 </div>
 
                             </div>
 
-                            <div class="phones-samsung-container phone">
 
-                                <div class="phone-img-samsung-container">
+                            <div class="phone-section__card card card sgu22">
 
-                                    <img src="./images/phones/samsung-phones/samsung-S22_Ultra.png"
+                                <div class="phone-section__image-container">
+
+                                    <img class="phone-image" src="./images/phones/samsung-phones/samsung-S22_Ultra.png"
                                         alt="samsung S22 Ultra image">
-
-
                                 </div>
 
-                                <div class="phone-description">
 
-                                    <p class='brand-name'>samsung</p>
-                                    <p class='phone-name'>Galaxy S22 Ultra</p>
+                                <div class="phone-info">
+
+                                    <p class="phone-info__brand">samsung</p>
+                                    <p class="phone-info__phone-name">Galaxy S22 Ultra</p>
 
                                 </div>
-
 
                             </div>
 
-                            <div class="phones-samsung-container phone z-fliz">
+                            <div class="phone-section__card card">
 
-                                <div class="phone-img-samsung-container">
-
-                                    <img src="./images/phones/samsung-phones/Samsung-ZFLIP4.png"
-                                        alt="Samsung-ZFLIP4 image">
-
-
+                                <div class="phone-section__image-container "">
+                                    <img class=" phone-image" src="./images/phones/samsung-phones/Samsung-ZFLIP4.png"
+                                    alt="Samsung z flip 4 image">
                                 </div>
 
-                                <div class="phone-description ">
-                                    <p class='brand-name'>samsung</p>
-                                    <p class='phone-name'>Galaxy Z Flip4</p>
+
+
+                                <div class="phone-info">
+
+                                    <p class="phone-info__brand">samsung</p>
+                                    <p class="phone-info__phone-name">Galaxy Z Flip 4</p>
 
                                 </div>
 
@@ -138,39 +160,23 @@
 
                         </div>
 
-                        <div class="see-all-btn-container phone-see-all-btn">
-                            <a href="#" class=" see-all-btn  ">Ver todos</a>
-                        </div>
+                        <div class="phone-section__apple-phones phones-container">
 
+                            <div class="phone-section__card phone-section__hero--card iph14 card">
 
-                    </article>
+                                <div class="phone-section__card phone-section__hero--card">
 
+                                    <div class="phone-section__image-container">
 
+                                        <img class="phone-image" src="./images/phones/apple-phones/iPhone14-pro-max.png"
+                                            alt="apple iphone 14 image">
 
-                    <!-- PHONE - SAMSUNG -->
+                                    </div>
 
+                                    <div class="phone-info">
 
-                    <!-- TABS -->
-
-                    <article class="tabs-section">
-
-                        <!-- <h2 class=" title-product tab-title"> TABS</h2> -->
-                        <div class="tabs-container">
-
-                            <div class="samsung-tab">
-
-                                <img src="/images/tablets/samsung-tabs/samsung-tab-s8.png"
-                                    alt=" samsung tab s8 ultra image">
-
-                                <div class="smg-tab-bottom">
-
-                                    <p class="title-product">Galaxy Tab S8 Ultra</p>
-
-                                    <p>Espacio para posibilidades ilimitadas</p>
-
-                                    <div class="see-all-btn-container smg-tab-btn">
-
-                                        <a href="#" class=" see-all-btn  btn-tab black-btn">Comprar</a>
+                                        <p class="phone-info__brand">apple</p>
+                                        <p class="phone-info__phone-name">iPhone 14</p>
 
                                     </div>
 
@@ -178,36 +184,37 @@
 
                             </div>
 
+                            <div class="phone-section__card iph12 card">
+
+                                <div class="phone-section__image-container ">
+                                    <img class="phone-image" src="./images/phones/apple-phones/iphone-12.png"
+                                        alt=" Apple iphone 12 image">
+                                </div>
 
 
 
+                                <div class="phone-info">
 
-                            <div class="ipad-tab">
+                                    <p class="phone-info__brand">apple</p>
+                                    <p class="phone-info__phone-name">iPhone 12</p>
 
-                                <img src="/images/tablets/ipads/ipad-pro.png" alt="ipad image">
+                                </div>
 
-                                <div class="smg-tab-bottom apple-ipad-description">
+                            </div>
 
+                            <div class="phone-section__card iph13 card">
 
-
-
-                                    <p class="title-product">iPad Pro</p>
-
-                                    <div class="ipad-text">
-
-                                        <p class="text-ipad">Igual de accesible.</p>
-
-                                        <p class="text-ipad">Aún más poderoso.</p>
-                                    </div>
+                                <div class="phone-section__image-container">
+                                    <img class="phone-image" src="./images/phones/apple-phones/iphone-13-pro-max.webp"
+                                        alt="apple iphone13 image">
+                                </div>
 
 
 
-                                    <div class="ipad-btn center">
+                                <div class="phone-info">
 
-                                        <a href="#" class="white-btn ">Comprar</a>
-
-                                    </div>
-
+                                    <p class="phone-info__brand">apple</p>
+                                    <p class="phone-info__phone-name">iPhone 13</p>
 
                                 </div>
 
@@ -215,239 +222,40 @@
 
                         </div>
 
+                    </div>
 
-                    </article>
 
-                    <!-- tabs -->
 
-                    <!-- HEADPHONES -->
 
 
-                    <!-- headphones 2  -->
-                    <article class="headphones-section">
+                </article>
 
-                        <div class="hdphone-header">
 
-                            <h2 class="headphone-title title-product">Auriculares</h2>
 
-                            <div class="brand-selector">
-                                <span>Apple</span>
-                                <span>Samsung</span>
-                            </div>
+                <!-- PHONE - SAMSUNG -->
 
-                        </div>
 
-                        <div class="headphones-container ">
+                <!-- TABS -->
 
-                            <div class="sms-hdphones">
+                <article class="tabs-section">
 
-                                <div class="headphone">
+                    <!-- <h2 class=" title-product tab-title"> TABS</h2> -->
+                    <div class="tabs-container">
 
-                                    <div class="image-headphone-container ">
-                                        <img class="buds-live" src="./images/headphones/samsung/buds-live.png"
-                                            alt=" samsung galaxi buds live image">
-                                    </div>
+                        <div class="samsung-tab">
 
+                            <img src="/images/tablets/samsung-tabs/samsung-s8.png" alt=" samsung tab s8 ultra image">
 
-                                </div>
+                            <div class="smg-tab-bottom">
 
-                                <div class="headphone ">
-                                    <div class="image-headphone-container">
+                                <p class="title-product">Galaxy Tab S8 Ultra</p>
 
-                                        <img class="buds-2-pro" src="./images/headphones/samsung/buds-pro-2.png"
-                                            alt="samsung galaxi buds pro 2 image">
+                                <p>Espacio para posibilidades ilimitadas</p>
 
-                                    </div>
+                                <div class="see-all-btn-container smg-tab-btn">
 
+                                    <a href="#" class=" see-all-btn  btn-tab black-btn">Comprar</a>
 
-                                </div>
-
-                            </div>
-
-                            <div class="apple-hdphones">
-
-                                <div class="headphone">
-
-                                    <div class="image-headphone-container">
-                                        <img class="buds-2-pro" src="./images/headphones/apple/airpods-pro-2.png"
-                                            alt="apple airpods pro image">
-                                    </div>
-
-
-                                </div>
-
-
-                                <div class="headphone">
-                                    <div class="image-headphone-container">
-                                        <img class="buds-2-pro" src="./images/headphones/apple/airpods-max.png"
-                                            alt="apple airpods pro image">
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="navegation-slider">
-
-                            <span class="point-nav"></span>
-                            <span class="point-nav"></span>
-
-                        </div>
-
-
-                    </article>
-                    <!-- headphones 2  -->
-
-
-                    <!-- computers swiper  -->
-                    <article class="computers-section">
-
-                        <div class="sliders-container ">
-
-                            <div class="slide mac_book">
-
-                                <div class="image-computer-container">
-                                    <img src="./images/computers/macbook-pro.png" alt="macbook-pro image">
-                                </div>
-
-
-                                <div class="computer-text">
-
-                                    <p class="brand-name">apple</p>
-
-                                    <p class="computer-name "> MacBook Pro</p>
-
-                                    <p class="cumputer-phase">Todo el poder para los pro. </p>
-
-                                    <div class="computer-btn  ">
-                                        <p class="text-btn black-btn ">Comprar</p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            <div class="slide mac_air">
-
-                                <div class="image-computer-container">
-                                    <img src="./images/computers/mac-air.png" alt="macbook air image">
-                                </div>
-
-
-                                <div class="computer-text">
-
-                                    <p class="brand-name">apple</p>
-
-                                    <p class="computer-name "> MacBook Air</p>
-
-                                    <p class="cumputer-phase">Poder para volar alto. </p>
-
-                                    <div class="computer-btn  ">
-                                        <p class="text-btn black-btn ">Comprar</p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            <div class="slide imac">
-
-                                <div class="image-computer-container">
-                                    <img src="./images/computers/imac-24.png" alt="macbook-pro image">
-                                </div>
-
-
-                                <div class="computer-text">
-
-                                    <p class="brand-name">apple</p>
-
-                                    <p class="computer-name "> iMac 24"</p>
-
-                                    <p class="cumputer-phase">Potencia para potenciar tus ideas. </p>
-
-                                    <div class="computer-btn  ">
-                                        <p class="text-btn black-btn ">Comprar</p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-
-
-
-                        </div>
-
-
-
-
-                        </div>
-
-                        <div class="navegation-slider">
-
-
-                            <span class="point-nav"></span>
-                            <span class="point-nav"></span>
-                            <span class="point-nav"></span>
-
-                        </div>
-
-
-                    </article>
-                    <!-- computers -->
-
-                    <!-- COMPUTERS touch slide-->
-                    <!-- xxxxxxxxxxxxx -->
-                    <!-- computers -->
-
-
-
-
-                    <!-- WATCHES -->
-                    <article class="watches-section">
-
-
-                        <div class="top-watches-section">
-
-                            <h2 class=" title-product watch-title">WHATCHES</h2>
-
-                            <div class="brand-selector watches-brand">
-                                <span>Apple</span>
-                                <span>Samsung</span>
-                            </div>
-
-                        </div>
-
-
-
-
-
-                        <div class="watches-image-container">
-
-                            <div class="samsung-watch-container">
-
-                                <img src="/images/watches/samsung/samsung-watch-3.png" alt="">
-
-
-
-
-                                <div class="watch-btb">
-                                    <a href="#" class="white-btn">Comprar</a>
-                                </div>
-
-                            </div>
-
-                            <div class="apple-watch-container">
-
-                                <img src="/images/watches/apple/apple-watch-series-7.png" alt="">
-
-
-
-                                <div class="watch-btb">
-                                    <a href="#" class="white-btn">Comprar</a>
                                 </div>
 
                             </div>
@@ -458,86 +266,364 @@
 
 
 
-                    </article>
-                    <!-- watches -->
+                        <div class="ipad-tab">
 
-                    <!-- TVs -->
-                    <article class="tvs-section">
+                            <img src="/images/tablets/ipads/ipad-pro.png" alt="ipad image">
 
-
-                        <div class="content-tv-container ">
-
-                            <p class=" title-product tv-title">Tv</p>
-
-                            <div class="tvs-nav">
-                                <span class="button">UHD</span>
-                                <span class="button">Neo QLED</span>
-                                <span class="button">QLED</span>
-                            </div>
-
-                        </div>
+                            <div class="smg-tab-bottom apple-ipad-description">
 
 
 
 
-                        <div class="img-tv-container">
+                                <p class="title-product">iPad Pro</p>
+
+                                <div class="ipad-text">
+
+                                    <p class="text-ipad">Igual de accesible.</p>
+
+                                    <p class="text-ipad">Aún más poderoso.</p>
+                                </div>
 
 
-                            <div class="image-1 box ">
 
-                                <img id="lake-image" class="tv-lake-img"
-                                    src="/images/tvs/samsung/asmsung-tv-testLagp.webp" alt="">
-                                <div class="tv-bottom">
+                                <div class="ipad-btn center">
 
-                                    <p class="tv-text">
-                                        Diseño Infinity, expresión sin límites
-                                    </p>
-
-                                    <a href="#" class="white-btn">Comprar</a>
+                                    <a href="#" class="white-btn ">Comprar</a>
 
                                 </div>
 
-                            </div>
-
-                            <div class="image-3 box ">
-                                <img id="sunset-image" class="tv-sunset-img"
-                                    src="/images/tvs/samsung/samsung-tv-sunstest2.png" alt="">
-
-                                <div class="tv-bottom">
-                                    <p class="tv-text">
-                                        La grandeza nunca termina, evoluciona
-
-                                    </p>
-
-
-                                    <a href="#" class="white-btn">Comprar</a>
-
-                                </div>
-                            </div>
-
-
-                            <div class="image-2 box ">
-
-                                <img id="forest-image" class="tv-forest-img"
-                                    src="/images/tvs/samsung/samsung-tv-65-forest3.jpg" alt="">
-
-                                <div class="tv-bottom">
-
-                                    <p class="tv-text">
-                                        Potenciá tu mundo con Neo QLED
-                                    </p>
-
-                                    <a href="#" class="white-btn">Comprar</a>
-
-
-                                </div>
 
                             </div>
 
                         </div>
 
-                    </article>
-                    <!-- tvs -->
+                    </div>
+
+
+                </article>
+
+                <!-- tabs -->
+
+                <!-- HEADPHONES -->
+
+
+                <!-- headphones 2  -->
+                <article class="headphones-section">
+
+                    <div class="hdphone-header">
+
+                        <h2 class="headphone-title title-product">Auriculares</h2>
+
+                        <div class="brand-selector">
+                            <span class="headphone-brand">Apple</span>
+                            <span class="headphone-brand">Samsung</span>
+                        </div>
+
+                    </div>
+
+                    <div class="headphones-container ">
+
+                        <div class="sms-hdphones">
+
+                            <div class="headphone">
+
+                                <div class="image-headphone-container ">
+                                    <img class="buds-live" src="./images/headphones/samsung/buds-live.png"
+                                        alt=" samsung galaxi buds live image">
+                                </div>
+
+
+                            </div>
+
+                            <div class="headphone ">
+                                <div class="image-headphone-container">
+
+                                    <img class="buds-2-pro" src="./images/headphones/samsung/buds-pro-2.png"
+                                        alt="samsung galaxi buds pro 2 image">
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="apple-hdphones">
+
+                            <div class="headphone">
+
+                                <div class="image-headphone-container">
+                                    <img class="airpods-pro" src="./images/headphones/apple/airpods-pro-2.png"
+                                        alt="apple airpods pro image">
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="headphone">
+                                <div class="image-headphone-container">
+                                    <img class="buds-2-pro" src="./images/headphones/apple/airpods-max.png"
+                                        alt="apple airpods pro image">
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="navegation-slider">
+
+                        <span class="point-nav"></span>
+                        <span class="point-nav"></span>
+
+                    </div>
+
+
+                </article>
+                <!-- headphones 2  -->
+
+
+                <!-- computers swiper  -->
+                <article class="computers-section">
+
+                    <div class="sliders-container ">
+
+                        <div class="slide mac_book">
+
+                            <div class="image-computer-container">
+                                <img src="./images/computers/macbook-pro.png" alt="macbook-pro image">
+                            </div>
+
+
+                            <div class="computer-text">
+
+                                <p class="brand-name">apple</p>
+
+                                <p class="computer-name "> MacBook Pro</p>
+
+                                <p class="cumputer-phase">Todo el poder para los pro. </p>
+
+                                <div class="computer-btn  ">
+                                    <p class="text-btn black-btn ">Comprar</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="slide mac_air">
+
+                            <div class="image-computer-container">
+                                <img src="./images/computers/mac-air.png" alt="macbook air image">
+                            </div>
+
+
+                            <div class="computer-text">
+
+                                <p class="brand-name">apple</p>
+
+                                <p class="computer-name "> MacBook Air</p>
+
+                                <p class="cumputer-phase">Poder para volar alto. </p>
+
+                                <div class="computer-btn  ">
+                                    <p class="text-btn black-btn ">Comprar</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="slide imac">
+
+                            <div class="image-computer-container">
+                                <img src="./images/computers/imac-24.png" alt="macbook-pro image">
+                            </div>
+
+
+                            <div class="computer-text">
+
+                                <p class="brand-name">apple</p>
+
+                                <p class="computer-name "> iMac 24"</p>
+
+                                <p class="cumputer-phase">Potencia para potenciar tus ideas. </p>
+
+                                <div class="computer-btn  ">
+                                    <p class="text-btn black-btn ">Comprar</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                    </div>
+
+                    <div class="navegation-slider">
+
+
+                        <span class="point-nav"></span>
+                        <span class="point-nav"></span>
+                        <span class="point-nav"></span>
+
+                    </div>
+
+
+                </article>
+                <!-- computers -->
+
+                <!-- COMPUTERS touch slide-->
+                <!-- xxxxxxxxxxxxx -->
+                <!-- computers -->
+
+
+
+
+                <!-- WATCHES -->
+                <article class="watches-section">
+
+
+                    <div class="top-watches-section">
+
+                        <h2 class=" title-product watch-title">WHATCHES</h2>
+
+                        <div class="brand-selector watches-brand">
+                            <span class="brand-selector-button">Apple</span>
+                            <span class="brand-selector-button">Samsung</span>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="watches-image-container">
+
+                        <div class="samsung-watch-container">
+
+                            <img src="/images/watches/samsung/samsung-watch-3.png" alt="">
+
+
+
+
+                            <div class="watch-btb">
+                                <a href="#" class="white-btn">Comprar</a>
+                            </div>
+
+                        </div>
+
+                        <div class="apple-watch-container">
+
+                            <img src="/images/watches/apple/apple-watch-series-7.png" alt="">
+
+
+
+                            <div class="watch-btb">
+                                <a href="#" class="white-btn">Comprar</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </article>
+                <!-- watches -->
+
+                <!-- TVs -->
+                <article class="tvs-section">
+
+
+                    <div class="content-tv-container ">
+
+                        <p class=" title-product tv-title">Tv</p>
+
+                        <div class="tvs-nav">
+                            <span class="tv-button">UHD</span>
+                            <span class="tv-button">Neo QLED</span>
+                            <span class="tv-button">QLED</span>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="img-tv-container">
+
+
+                        <div class="image-1 box ">
+
+                            <img id="lake-image" class="tv-lake-img" src="/images/tvs/samsung/asmsung-tv-testLagp.webp"
+                                alt="">
+                            <div class="tv-bottom">
+
+                                <p class="tv-text">
+                                    Diseño Infinity, expresión sin límites
+                                </p>
+
+                                <a href="#" class="white-btn">Comprar</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="image-3 box ">
+                            <img id="sunset-image" class="tv-sunset-img"
+                                src="/images/tvs/samsung/samsung-tv-sunstest2.png" alt="">
+
+                            <div class="tv-bottom">
+                                <p class="tv-text">
+                                    La grandeza nunca termina, evoluciona
+
+                                </p>
+
+
+                                <a href="#" class="white-btn">Comprar</a>
+
+                            </div>
+                        </div>
+
+
+                        <div class="image-2 box ">
+
+                            <img id="forest-image" class="tv-forest-img"
+                                src="/images/tvs/samsung/samsung-tv-65-forest3.jpg" alt="">
+
+                            <div class="tv-bottom">
+
+                                <p class="tv-text">
+                                    Potenciá tu mundo con Neo QLED
+                                </p>
+
+                                <a href="#" class="white-btn">Comprar</a>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- tvs -->
 
 
                 </section>
@@ -557,7 +643,8 @@
 
                 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-                <script src="js/homeScript.js"></script>
+                <script src="../js/homeScript.js"></script>
+                <script src="../js/swiper.js"></script>
     </body>
 
 </html>
