@@ -8,6 +8,7 @@
   @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
 main {
+    
     width: 90%;
     margin: 60px auto;
     padding-bottom: 15px;
@@ -18,6 +19,8 @@ main {
 
   h1{
     text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
  
 

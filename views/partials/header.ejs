@@ -7,15 +7,34 @@
 
     <div class="bars-menu">
 
-        <span class="line1-bars-menu"></span>
-        <span class="line2-bars-menu"></span>
-        <span class="line3-bars-menu"></span>
+
+        <nav id="nav" class="main-nav" >
+            <div class="nav-links" >
+                <input class="search" type="text" name="buscar" id="buscar" placeholder="Buscar producto">
+              <a class="link-item" href="#" >Tablets</a>
+              <a class="link-item" href="#" >Computadoras</a>
+              <a class="link-item" href="#" >Televisores</a>
+              <a class="link-item" href="#" >Celulares</a>
+              
+            </div>
+        </nav>
+          <button id="button-menu" class="button-menu" >
+
+            <span class="line1-bars-menu"></span>
+            <span class="line2-bars-menu"></span>
+            <span class="line3-bars-menu"></span>
+    
+        </button>
+          
 
     </div>
+    
 
     <div class="search-bar">
-
-        <img class="search-icon icon-nav" src="icons/nav-icons/icons8-search.svg" alt="">
+        
+        <input class="search" type="search" name="buscar" id="buscar" placeholder="Buscar producto">
+       <!-- <img class="search-icon icon-nav" src="icons/nav-icons/icons8-search.svg" alt=""> -->
+        
 
 
     </div>
@@ -25,7 +44,7 @@
     <nav class="navegation-products">
 
 
-        <a class="product-nav" href="#">Celulares</a>
+      <!-- <a class="product-nav" href="/products/list">Productos</a> -->
 
         <a class="product-nav" href="#">Tablets</a>
 
@@ -33,14 +52,14 @@
 
         <a class="product-nav" href="#">Televisores</a>
 
-        <a class="product-nav" href="#">Acceorios</a>
+        <a class="product-nav" href="#">Celulares</a>
 
 
     </nav>
 
     <div class="logo-container">
 
-        <span>LOGO </span>
+        <a href="/"><img id="logo" src="/images/logo/Logo_Ghemma_alternativo.png" alt="Logo"> </a>
 
     </div>
     <div class="user-navegation">
@@ -80,6 +99,6 @@
     </div>
 
     <!-- </div> -->
-
+    <script type="text/javascript" src="../js/header.js"></script>
 
 </header>
