@@ -9,6 +9,6 @@ const userMiddleware = require("../middleware/userMiddleware");
 
 router.get("/", mainRouters.home);
 router.get("/cart", userMiddleware, mainRouters.cart);
-router.get("/", );
+router.get("/" );
 
 module.exports = router;

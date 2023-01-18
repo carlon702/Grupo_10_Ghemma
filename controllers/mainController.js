@@ -13,9 +13,8 @@ const controller = {
     res.render('cart', {title: "Ghemma Store - Tienda oficial",
     css: "/cart.css",
   });
-  }
-
-  //
+  },
+ 
 };
 
 //
