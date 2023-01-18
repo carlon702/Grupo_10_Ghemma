@@ -12,6 +12,11 @@ const mainRoutes = require("./routes/main.js");
 const userRoutes = require("./routes/user.js");
 const productsRoutes = require("./routes/products.js");
 
+// Routes API
+const usersApiRoutes = require("./routes/api/usersRoutes.js");
+const productsApiRoutes = require("./routes/api/productsRoutes.js")
+const categorysApiRoutes = require('./routes/api/categorysRoutes')
+
 //  require global middlewares
 const profileImageLocals = require("./middleware/profileImageLocals");
 
@@ -50,14 +55,18 @@ app.use("/products", productsRoutes);
 
 app.use("/user", userRoutes);
 
+
+// Rutas API
+
+app.use(usersRoutes)
+
+app.use("/api/users", usersApiRoutes);
+app.use("/api/products", productsApiRoutes);
+app.use('/api/categorys', categorysApiRoutes)
+
+
 app.listen(3050, () => {
   console.log(`
   Marcelo esta con nosotros 👻 3050
   http://localhost:3050`);
 });
-
-//
-
-//
-
-//
