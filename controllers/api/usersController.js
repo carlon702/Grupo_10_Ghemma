@@ -3,7 +3,7 @@ const User = db.User;
 
 const controller = {
   listAll: async function (req, res) {
-    const users = await User.findAll();
+    const users = await User.findAll({ attributes: { exclude: ["password","admin"] } })
     res.set('Access-Control-Allow-Origin', '*');
     res.json(users);
   },
