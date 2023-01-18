@@ -31,5 +31,11 @@ router.put("/edit/:id", upload.single("image"), validation.editValidation, contr
 router.delete("/delete/:id", controller.delete);
 
 router.get("/list", controller.list);
+router.get("/list/smartphones", controller.listSmartphones);
+router.get("/list/notebooks", controller.listNotebooks);
+router.get("/list/tvs", controller.listTvs);
+router.get("/list/tablets", controller.listTablets);
+
+
 
 module.exports = router;

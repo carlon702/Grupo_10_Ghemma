@@ -15,13 +15,13 @@
 
                 <div class="product-list">
 
-                    <h1>Nuestros productos</h1>
+                    <h1><%= title %></h1>
 
                     <section class="product-container">
 
                         <% products.forEach(function(product) { %>
 
-                            <a class="main-article" href="./detail/<%=product.id%>"><article >
+                            <a class="main-article" href="../detail/<%=product.id%>"><article >
 
                                 <div class="image-container">
                                     <img src=<%= product.image || 'airpods.jpg'%> alt="producto">
@@ -34,7 +34,7 @@
                                     </li>
 
                                     <li class="price">
-                                        $<%= product.price %>
+                                        $<%= product.discount.discount != 0? ( product.price-(product.price*product.discount.discount)/100) :product.price%> <%= product.discount.discount !=0? "--" : ""%> <%= product.discount.discount !=0? product.discount.discount : "" %>  <%= product.discount.discount !=0? "% OFF" : ""%>
 
                                         
                                           <!-- <div>  </div>
