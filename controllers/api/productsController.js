@@ -5,7 +5,7 @@ const controller = {
   listAll: async function (req, res) {
     const products = await Product.findAll();
     res.set('Access-Control-Allow-Origin', '*');
-    res.json(products);
+    return res.status(200).json({products: products, count: products.length });
   },
   listDetailed: async function (req, res){
     const { id } = req.params
