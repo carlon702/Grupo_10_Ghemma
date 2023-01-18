@@ -58,8 +58,6 @@ app.use("/user", userRoutes);
 
 // Rutas API
 
-app.use(usersRoutes)
-
 app.use("/api/users", usersApiRoutes);
 app.use("/api/products", productsApiRoutes);
 app.use('/api/categorys', categorysApiRoutes)
