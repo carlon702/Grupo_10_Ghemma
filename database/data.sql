@@ -35,7 +35,7 @@ INSERT INTO products (id, name,price,color,description,image, discount_id,catego
 (13,"iPad Pro",49.000,'Plateado','Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tenetur accusantium sint et, perspiciatis aperiam dssitatibus? Molestias officia architecto ipsa eaque voluptas.','/images/tablets/ipads/ipad-pro.png',11,6),
 (14,"Galaxy Tab S8",409999,'Negro','Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tenetur accusantium sint et, perspiciatis aperiam dssitatibus? Molestias officia architecto ipsa eaque voluptas.','/images/tablets/samsung-tabs/samsung-s8.png',11,6),
 (15,"Galaxy Buds Live ",29701,'Cobre','Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tenetur accusantium sint et, perspiciatis aperiam dssitatibus? Molestias officia architecto ipsa eaque voluptas.','/images/headphones/samsung/buds-live.png',6,4),
-(16,"Galaxy Buds2",32999,'Purple','Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tenetur accusantium sint et, perspiciatis aperiam dssitatibus? Molestias officia architecto ipsa eaque voluptas.','/images/headphones/samsung/buds2-pro-2.png',3,4),
+(16,"Galaxy Buds2",32999,'Purple','Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tenetur accusantium sint et, perspiciatis aperiam dssitatibus? Molestias officia architecto ipsa eaque voluptas.','/images/headphones/samsung/buds2-pro-2.webp',3,4),
 (17,"AirPods Max",224900,'Negro','Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tenetur accusantium sint et, perspiciatis aperiam dssitatibus? Molestias officia architecto ipsa eaque voluptas.','/images/headphones/apple/airpods-max-2.jpg',11,4),
 (18,"AirPods Pro",47775,'Blanco','Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tenetur accusantium sint et, perspiciatis aperiam dssitatibus? Molestias officia architecto ipsa eaque voluptas.','/images/headphones/apple/airpods-pro-2.jpg',11,4),
 (19,"Macbook Air",349999,'Plata','Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tenetur accusantium sint et, perspiciatis aperiam dssitatibus? Molestias officia architecto ipsa eaque voluptas.','/images/computers/mac-air.png',11,2),
@@ -50,8 +50,8 @@ INSERT INTO products (id, name,price,color,description,image, discount_id,catego
 
 INSERT INTO users (id, name, lastName, email, password, admin, profileImage) values 
 
-(1, "carlos", "marchal", "carlos@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 1, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
-(2, "alberto", "pondreo", "alberto@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 0, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
-(3, "ricardo", "sander", "ricardo@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 0, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
-(4, "pedro", "lofter", "pedro@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 0, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
-(5, "ignacio", "sertul", "ignacio@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 1, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg");
+(1, "carlos", "marchal", "carlos@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 1, "/images/userImages/profileImage-1667344472626.jpg"),
+(2, "alberto", "pondreo", "alberto@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 0, "/images/userImages/profileImage-1667344712001.jpg"),
+(3, "ricardo", "sander", "ricardo@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 0, "/images/userImages/profileImage-1667344834689.jpg"),
+(4, "pedro", "lofter", "pedro@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 0, "/images/userImages/profileImage-1667345054589.jpg"),
+(5, "ignacio", "sertul", "ignacio@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 1, "/images/userImages/profileImage-1667345232063.jpg");

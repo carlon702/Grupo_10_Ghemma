@@ -10,6 +10,8 @@ const controller = {
   //
 
   home: function (req, res) {
+
+    
     res.render("home", {
       title: "Ghemma Store - Tienda oficial - Home",
       css: "/home.css",
@@ -27,20 +29,24 @@ const controller = {
   });
   },
   search: function(req, res){
-    const products = Product.findAll({
+    console.log(req.body.search)
+    Product.findAll({
       where: {
         name: {
-          [Op.like]:'%'+ req.body.search + '%'
+          [Op.like]:"%" + req.body.search + "%"
         }
-      }
+      }, include:['discount', 'category']
     }
-    ).then(product => {return product})
-    console.log(products)
-    res.render('product-list', {
+    ).then(products => {
+      console.log(products);
+      res.render('product-list', {
       title: "Ghemma Store - Tienda oficial",
       css: "/product-list.css", 
+      titlelist: "Resultado de la busqueda",
       products
-    })
+    })})
+    
+   
   }
 
 

@@ -65,16 +65,10 @@ const productsValidation = {
         .withMessage("Debes introducir un color"),
 
         body("price")
-        .isEmpty()
+        .notEmpty()
         .withMessage("Introduce un precio")
         .isNumeric()
         .withMessage("Introduce un valor numerico"),
-
-        body("discount")
-        .isNumeric()
-        .withMessage("Introduce un valor numerico")
-        .isLength({max: 2})
-        .withMessage("El descuento debe tener 2 caracteres como maximo"),
 
        ]
 

@@ -47,6 +47,7 @@ app.use(
 );
 
 app.use(profileImageLocals);
+
 //
 
 app.use("/", mainRoutes);

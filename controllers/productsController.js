@@ -166,7 +166,7 @@ const controller = {
       res.render("product-list", {
       title: "Ghemma Store - Tienda Oficial - Smartphones",
       css: "/product-list.css",
-      title:"Nuestros Smartphones",
+      titlelist:"Nuestros Smartphones",
       products: products,
       category : categories,
       discount : discounts
@@ -186,7 +186,7 @@ listTvs: function (req, res) {
     res.render("product-list", {
     title: "Ghemma Store - Tienda Oficial - Tvs",
     css: "/product-list.css",
-    title:"Nuestros Tvs",
+    titlelist:"Nuestros Tvs",
     products: products,
     category : categories,
     discount: discounts
@@ -206,7 +206,7 @@ listTablets: function (req, res) {
     res.render("product-list", {
     title: "Ghemma Store - Tienda Oficial - Tablets",
     css: "/product-list.css",
-    title:"Nuestras Tablets",
+    titlelist:"Nuestras Tablets",
     products: products,
     category : categories,
     discount : discounts
@@ -226,7 +226,7 @@ listNotebooks:function (req, res) {
     res.render("product-list", {
     title: "Ghemma Store - Tienda Oficial - Notebooks",
     css: "/product-list.css",
-    title:"Nuestras Notebooks",
+    titlelist:"Nuestras Notebooks",
     products: products,
     category : categories,
     discount: discounts
@@ -246,7 +246,7 @@ listSmartwatchs:function (req, res) {
     res.render("product-list", {
     title: "Ghemma Store - Tienda Oficial - Smartwatchs",
     css: "/product-list.css",
-    title:"Nuestros Smartwatchs",
+    titlelist:"Nuestros Smartwatchs",
     products: products,
     category : categories,
     discount: discounts

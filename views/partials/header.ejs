@@ -11,10 +11,11 @@
         <nav id="nav" class="main-nav" >
             <div class="nav-links" >
                 <input class="search" type="text" name="buscar" id="buscar" placeholder="Buscar producto">
-              <a class="link-item" href="#" >Tablets</a>
-              <a class="link-item" href="#" >Computadoras</a>
-              <a class="link-item" href="#" >Televisores</a>
-              <a class="link-item" href="#" >Celulares</a>
+              <a class="link-item" href="/products/list/tablets" >Tablets</a>
+              <a class="link-item" href="/products/list/notebooks" >Computadoras</a>
+              <a class="link-item" href="/products/list/tvs" >Televisores</a>
+              <a class="link-item" href="/products/list/smartphones" >Celulares</a>
+              <a class="link-item" href="/products/list/smartwatchs" >Smartwatchs</a>
               
             </div>
         </nav>
@@ -33,7 +34,7 @@
     <div class="search-bar">
         <form method="POST" action="/search">
         
-        <input class="search" type="search" name="buscar" id="buscar" placeholder="Buscar producto">
+        <input class="search" type="search" name="search" id="buscar" placeholder="Buscar producto">
         <button type="submit"><img class="search-icon icon-nav" src="icons/nav-icons/icons8-search.svg" alt=""></button>
        
         
@@ -84,7 +85,7 @@
 
                 <div class="profile-img">
 
-                    <img src="/images/userImages/<%= locals.usuario.profileImage  %>" alt="imagen de perfil de usuario">
+                    <img src="<%= locals.usuario.profileImage  %>" alt="imagen de perfil de usuario">
 
                     <div class="image-hover">
                         <form action="/user/logout" method="POST">
