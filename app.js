@@ -16,6 +16,7 @@ const productsRoutes = require("./routes/products.js");
 const usersApiRoutes = require("./routes/api/usersRoutes.js");
 const productsApiRoutes = require("./routes/api/productsRoutes.js")
 const categorysApiRoutes = require('./routes/api/categorysRoutes')
+const productsByCategory = require('./routes/api/productsByCategoryRoutes')
 
 //  require global middlewares
 const profileImageLocals = require("./middleware/profileImageLocals");
@@ -62,6 +63,8 @@ app.use("/user", userRoutes);
 app.use("/api/users", usersApiRoutes);
 app.use("/api/products", productsApiRoutes);
 app.use('/api/categorys', categorysApiRoutes)
+app.use('/api/pxc', productsByCategory)
+
 
 
 app.listen(3050, () => {
