@@ -65,7 +65,9 @@ app.use("/api/products", productsApiRoutes);
 app.use('/api/categorys', categorysApiRoutes)
 app.use('/api/pxc', productsByCategory)
 
-
+app.use(function (req, res) {
+  res.status(404).render("404");
+});
 
 app.listen(3050, () => {
   console.log(`
