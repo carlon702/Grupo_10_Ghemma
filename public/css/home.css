@@ -112,6 +112,7 @@ body {
   justify-content: space-between;
   background-color: unset;
   text-align: center;
+  z-index: 0;
 }
 .phone-section__title-product {
   margin: 10px;
