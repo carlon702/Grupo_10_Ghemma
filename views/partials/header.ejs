@@ -31,10 +31,13 @@
     
 
     <div class="search-bar">
+        <form method="POST" action="/search">
         
         <input class="search" type="search" name="buscar" id="buscar" placeholder="Buscar producto">
-       <!-- <img class="search-icon icon-nav" src="icons/nav-icons/icons8-search.svg" alt=""> -->
+        <button type="submit"><img class="search-icon icon-nav" src="icons/nav-icons/icons8-search.svg" alt=""></button>
+       
         
+        </form>
 
 
     </div>
@@ -46,13 +49,13 @@
 
       <!-- <a class="product-nav" href="/products/list">Productos</a> -->
 
-        <a class="product-nav" href="#">Tablets</a>
+        <a class="product-nav" href="/products/list/tablets">Tablets</a>
 
-        <a class="product-nav" href="#">Computadoras</a>
+        <a class="product-nav" href="/products/list/notebooks">Computadoras</a>
 
-        <a class="product-nav" href="#">Televisores</a>
+        <a class="product-nav" href="/products/list/tvs">Televisores</a>
 
-        <a class="product-nav" href="#">Celulares</a>
+        <a class="product-nav" href="/products/list/smartphones">Celulares</a>
 
 
     </nav>

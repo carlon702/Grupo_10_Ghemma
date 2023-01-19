@@ -1,7 +1,7 @@
 /* color purple r: #8677a9; */
 
 body {
-  background-color: #e8e8e8;
+  background-color: #e8e8e8
 }
 
 .title-product {
@@ -300,8 +300,8 @@ body {
   margin: 0;
 }
 
-.smg-tab-bottom div {
-}
+/* .smg-tab-bottom div {
+} */
 .black-btn {
   padding: 3vw;
   font-weight: 600;

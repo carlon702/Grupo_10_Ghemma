@@ -76,6 +76,7 @@ const controller = {
       });
     }
 
+<<<<<<< HEAD
     const userFound = await db.User.findOne({
       where: { email: req.body.email },
     });
@@ -162,6 +163,59 @@ const controller = {
   //       res.redirect('/');
   //     }
   // }},
+=======
+    // const users = findAll();
+    // const userFound = users.find(function (user) {
+    //   return (
+    //     user.email == req.body.email &&
+    //     bcryptjs.compareSync(req.body.password, user.password)
+    //   );
+    // });
+
+    // if (!userFound) {
+    //   return res.render("login", {
+    //     errorLogin: "Crendenciales invalidas",
+    //     title: "Ghemma Store - Tienda Oficial",
+    //     css: "/login.css",
+    //   });
+    // } else {
+    //   req.session.usuarioLogueado = {
+    //     id: userFound.id,
+    //     name: userFound.name,
+    //     email: userFound.email,
+    //     profileImage: userFound.profileImage,
+    //   };
+
+    // console.log(req.session.usuarioLogueado);
+
+    // if (req.body.remember) {
+    //   res.cookie("recordame", userFound.id);
+    // }
+
+    const userFound = await User.findOne({ where: { email: req.body.email } });
+
+    const user = userFound.dataValues;
+
+    // console.log(user);
+
+    if (bcryptjs.compareSync(req.body.password, user.password)) {
+      req.session.loggedUser = {
+        id: user.id,
+        name: user.name,
+        lastName: user.lastName,
+        email: user.email,
+        admin: user.admin,
+        profileImage: user.profileImage,
+      };
+
+      if (req.body.remember) {
+        res.cookie("recordame", user.id); // cookie por 5 minutos
+      }
+
+      res.redirect("/");
+    }
+  },
+>>>>>>> 2a9fc5fb3966c78e31298b94a8388ddfca186446
 
   logout: function (req, res) {
     req.session.destroy();

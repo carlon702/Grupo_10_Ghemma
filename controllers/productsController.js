@@ -1,4 +1,5 @@
 const { validationResult } = require("express-validator");
+const { where } = require("sequelize");
 const db = require("../database/models");
 const Product = db.Product;
 const Category = db.Category;
@@ -7,8 +8,9 @@ const Discount = db.Discount;
 const controller = {
   
   detail: async function (req, res) {
+
    
-    const product = await db.Product.findByPk(req.params.id)
+    const product = await db.Product.findByPk(req.params.id, {include:['discount', 'category']})
     
     res.render("product-detail", {
       title: "Ghemma Store - Tienda Oficial",
@@ -78,20 +80,27 @@ const controller = {
   },
 
   update: function (req, res) {
+
+    const error = validationResult(req);
+
+    let category = Category.findAll();
+    let discount = Discount.findAll();
+    let product = Product.findByPk(req.params.id);
+
+    Promise.all([product,discount, category])
+    .then(([product,discount, category]) => {
+
     if (!error.isEmpty()) {
       console.log(error);
-      return res.render("product-form-create", {
+      return res.render("product-form-edit", {
         errors: error.mapped(),
         title: "Ghemma Store - Tienda Oficial",
         css: "/product-form.css",
+        product,
+        discount,
+        category
       });
-    }
-
-    const product = Product.findByPk(req.params.id).then((element) => {
-      return element;
-    });
-
-    Product.update(
+    } else { Product.update(
       {
         name: req.body.product_name,
         description: req.body.description,
@@ -106,13 +115,15 @@ const controller = {
       }
     ).then(() => {
       res.redirect("/products/list");
-    });
+    });}});
+
+   
   },
 
   delete: function (req, res) {
     Product.destroy({
 
-      where: {id:req.params.id}
+      where: {id:req.params.id}, force: true
 
     })
     .then(() => {
@@ -123,15 +134,17 @@ const controller = {
   list: function (req, res) {
     let categories = Category.findAll();
     let discounts = Discount.findAll();
-    let products = Product.findAll();
+    let products = Product.findAll({include:['discount', 'category']});
 
     Promise.all([products,discounts, categories])
     .then(([products,discounts, categories]) =>  {
       
       console.log(discounts)
+      console.log(products)
       res.render("product-list", {
       title: "Ghemma Store - Tienda Oficial",
       css: "/product-list.css",
+      title:"Nuestras Productos",
       products: products,
       category : categories
     })} )
@@ -139,5 +152,88 @@ const controller = {
 
    
   },
-};
+
+  listSmartphones: function (req, res) {
+    let categories = Category.findAll();
+    let discounts = Discount.findAll();
+    let products = Product.findAll({ where:{category_id: 1}, include:['discount', 'category']});
+
+    Promise.all([products,discounts, categories])
+    .then(([products,discounts, categories]) =>  {
+      
+      console.log(discounts)
+      console.log(products)
+      res.render("product-list", {
+      title: "Ghemma Store - Tienda Oficial",
+      css: "/product-list.css",
+      title:"Nuestros Smartphones",
+      products: products,
+      category : categories,
+      discount : discounts
+    })} )
+},
+
+listTvs: function (req, res) {
+  let categories = Category.findAll();
+  let discounts = Discount.findAll();
+  let products = Product.findAll({ where:{category_id: 5}, include:['discount', 'category']});
+
+  Promise.all([products,discounts, categories])
+  .then(([products,discounts, categories]) =>  {
+    
+    console.log(discounts)
+    console.log(products)
+    res.render("product-list", {
+    title: "Ghemma Store - Tienda Oficial",
+    css: "/product-list.css",
+    title:"Nuestros Tvs",
+    products: products,
+    category : categories,
+    discount: discounts
+  })} )
+},
+
+listTablets: function (req, res) {
+  let categories = Category.findAll();
+  let discounts = Discount.findAll();
+  let products = Product.findAll({ where:{category_id: 6}, include:['discount', 'category']});
+
+  Promise.all([products,discounts, categories])
+  .then(([products,discounts, categories]) =>  {
+    
+    console.log(discounts)
+    console.log(products)
+    res.render("product-list", {
+    title: "Ghemma Store - Tienda Oficial",
+    css: "/product-list.css",
+    title:"Nuestras Tablets",
+    products: products,
+    category : categories,
+    discount : discounts
+  })} )
+},
+
+listNotebooks:function (req, res) {
+  let categories = Category.findAll();
+  let discounts = Discount.findAll();
+  let products = Product.findAll({ where:{category_id: 2}, include:['discount', 'category']});
+
+  Promise.all([products,discounts, categories])
+  .then(([products,discounts, categories]) =>  {
+    
+    console.log(categories)
+   
+    res.render("product-list", {
+    title: "Ghemma Store - Tienda Oficial",
+    css: "/product-list.css",
+    title:"Nuestras Notebooks",
+    products: products,
+    category : categories,
+    discount: discounts
+  })} )
+},
+
+}
+
+
 module.exports = controller;
