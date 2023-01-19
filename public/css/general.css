@@ -3,13 +3,8 @@
   font-family: "Montserrat", sans-serif;
 }
 
-<<<<<<< HEAD
 #logo {
-  width: 10em;
-=======
-#logo{
   width: 25%;
->>>>>>> 2a9fc5fb3966c78e31298b94a8388ddfca186446
   transition: all 200ms;
   margin-top: 1em;
 }
@@ -50,7 +45,6 @@ header {
   width: 100%;
   z-index: 233;
   top: 0;
-  
 }
 
 .product-nav {

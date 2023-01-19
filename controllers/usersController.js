@@ -76,94 +76,6 @@ const controller = {
       });
     }
 
-<<<<<<< HEAD
-    const userFound = await db.User.findOne({
-      where: { email: req.body.email },
-    });
-
-    // const user = userFound.dataValues;
-
-    if (userFound === null) {
-      res.render("login", {
-        title: "Ghemma Store - Tienda Oficial",
-        css: "/login.css",
-        errors: "Email incorrecto",
-      });
-    } else {
-      console.log(userFound.dataValues);
-
-      if (
-        bcryptjs.compareSync(req.body.password, userFound.dataValues.password)
-      ) {
-        req.session.loggedUser = {
-          id: userFound.dataValues.id,
-          name: userFound.dataValues.name,
-          lastName: userFound.dataValues.lastName,
-          email: userFound.dataValues.email,
-          admin: userFound.dataValues.admin,
-          profileImage: userFound.dataValues.profileImage,
-        };
-        if (req.body.remember) {
-          res.cookie("recordame", userFound.dataValues.id);
-        }
-
-        res.redirect("/");
-      } else {
-        res.render("login", {
-          title: "Ghemma Store - Tienda Oficial",
-          css: "/login.css",
-          errors: "Password Incorrecto",
-        });
-      }
-    }
-  },
-
-  // async (req, res) => {
-  //     const error = validationResult(req);
-  //     if (!error.isEmpty()) {
-  //       return res.render('login', {
-  //         errors: error.mapped(),
-  //         old: req.body
-  //       });
-  //     };
-  //     const userFound =  await User.findOne({
-  //       where: {
-  //         email: req.body.email
-  //       }
-  //     });
-  //     let user = userFound.dataValues
-
-  //     console.log(user)
-  //     console.log(req.body.password)
-
-  //     if (!user) {
-  //       return res.render('login', { title: "Ghemma Store - Tienda Oficial",
-  //       css: "/login.css", errors: 'Email incorrecto' });
-  //     } else {
-
-  //     const match =  await bcrypt.compare(req.body.password, user.password);
-  //     console.log(match)
-
-  //     if (!match) {
-  //       res.render('login', {title: "Ghemma Store - Tienda Oficial",
-  //       css: "/login.css", errors: 'Password/email incorrecto' });
-  //     } else {
-  //       req.session.loggedUser = {
-  //                 id: user.id,
-  //                 name: user.name,
-  //                 lastName: user.lastName,
-  //                 email: user.email,
-  //                 admin: user.admin,
-  //                 profileImage: user.profileImage
-
-  //       };
-  //       if (req.body.remember) {
-  //         res.cookie('recordame', userFound.id);
-  //       }
-  //       res.redirect('/');
-  //     }
-  // }},
-=======
     // const users = findAll();
     // const userFound = users.find(function (user) {
     //   return (
@@ -215,7 +127,6 @@ const controller = {
       res.redirect("/");
     }
   },
->>>>>>> 2a9fc5fb3966c78e31298b94a8388ddfca186446
 
   logout: function (req, res) {
     req.session.destroy();
