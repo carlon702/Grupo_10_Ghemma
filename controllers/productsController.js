@@ -164,7 +164,7 @@ const controller = {
       console.log(discounts)
       console.log(products)
       res.render("product-list", {
-      title: "Ghemma Store - Tienda Oficial",
+      title: "Ghemma Store - Tienda Oficial - Smartphones",
       css: "/product-list.css",
       title:"Nuestros Smartphones",
       products: products,
@@ -184,7 +184,7 @@ listTvs: function (req, res) {
     console.log(discounts)
     console.log(products)
     res.render("product-list", {
-    title: "Ghemma Store - Tienda Oficial",
+    title: "Ghemma Store - Tienda Oficial - Tvs",
     css: "/product-list.css",
     title:"Nuestros Tvs",
     products: products,
@@ -204,7 +204,7 @@ listTablets: function (req, res) {
     console.log(discounts)
     console.log(products)
     res.render("product-list", {
-    title: "Ghemma Store - Tienda Oficial",
+    title: "Ghemma Store - Tienda Oficial - Tablets",
     css: "/product-list.css",
     title:"Nuestras Tablets",
     products: products,
@@ -224,7 +224,7 @@ listNotebooks:function (req, res) {
     console.log(categories)
    
     res.render("product-list", {
-    title: "Ghemma Store - Tienda Oficial",
+    title: "Ghemma Store - Tienda Oficial - Notebooks",
     css: "/product-list.css",
     title:"Nuestras Notebooks",
     products: products,
@@ -232,6 +232,26 @@ listNotebooks:function (req, res) {
     discount: discounts
   })} )
 },
+
+listSmartwatchs:function (req, res) {
+  let categories = Category.findAll();
+  let discounts = Discount.findAll();
+  let products = Product.findAll({ where:{category_id: 3}, include:['discount', 'category']});
+
+  Promise.all([products,discounts, categories])
+  .then(([products,discounts, categories]) =>  {
+    
+    console.log(categories)
+   
+    res.render("product-list", {
+    title: "Ghemma Store - Tienda Oficial - Smartwatchs",
+    css: "/product-list.css",
+    title:"Nuestros Smartwatchs",
+    products: products,
+    category : categories,
+    discount: discounts
+  })} )
+}
 
 }
 

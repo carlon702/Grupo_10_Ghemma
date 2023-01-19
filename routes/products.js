@@ -35,6 +35,7 @@ router.get("/list/smartphones", controller.listSmartphones);
 router.get("/list/notebooks", controller.listNotebooks);
 router.get("/list/tvs", controller.listTvs);
 router.get("/list/tablets", controller.listTablets);
+router.get("/list/smartwatchs", controller.listSmartwatchs);
 
 
 

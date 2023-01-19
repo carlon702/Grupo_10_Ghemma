@@ -20,7 +20,7 @@
                         <img src="<%= product.image || 'airpods.jpg' %>" alt="prod">
                         <div class="content">
                             <h3><%= product.name %></h3>
-                            <h4 class="price"><%= product.discount.discount != 0? product.price-((product.price*product.discount.discount)/100):product.price%> <%= product.discount.discount !=0? "--" : ""%> <%= product.discount.discount !=0? product.discount.discount : "" %>  <%= product.discount.discount !=0? "% OFF" : ""%></h4>
+                            <h4 class="price">$<%= product.discount.discount != 0? product.price-((product.price*product.discount.discount)/100):product.price%> <%= product.discount.discount !=0? "--" : ""%> <%= product.discount.discount !=0? product.discount.discount : "" %>  <%= product.discount.discount !=0? "% OFF" : ""%></h4>
                             <h4>Descripcion:</h4>
                             <p class="description">
                                <%= product.description %>
