@@ -16,6 +16,7 @@
               <a class="link-item" href="/products/list/tvs" >Televisores</a>
               <a class="link-item" href="/products/list/smartphones" >Celulares</a>
               <a class="link-item" href="/products/list/smartwatchs" >Smartwatchs</a>
+              <% if(locals.usuario && locals.usuario.admin === 1) {%> <a class="link-item" href="/products/create">Crear Producto</a> <%}%>
               
             </div>
         </nav>
@@ -32,11 +33,10 @@
     
 
     <div class="search-bar">
-        <form method="POST" action="/search">
+        <form class="search-cont" method="POST" action="/search">
         
-        <input class="search" type="search" name="search" id="buscar" placeholder="Buscar producto">
-        <button type="submit"><img class="search-icon icon-nav" src="icons/nav-icons/icons8-search.svg" alt=""></button>
-       
+        <input class="search" type="search" name="search" id="buscar" placeholder="Buscar producto"><button class="button-search" type="submit"><i class="bot-search fa-solid fa-magnifying-glass"></i></button>
+        
         
         </form>
 
@@ -60,7 +60,7 @@
 
         <a class="product-nav" href="/products/list/smartwatchs">Smartwatchs</a>
 
-
+        <% if(locals.usuario && locals.usuario.admin === 1) {%> <a class="link-item" href="/products/create">Crear Producto</a> <%}%>
 
 
     </nav>
@@ -85,7 +85,7 @@
 
                 <div class="profile-img">
 
-                    <img src="<%= locals.usuario.profileImage  %>" alt="imagen de perfil de usuario">
+                    <img src="/images/userImages/<%= locals.usuario.profileImage  %>" alt="imagen de perfil de usuario">
 
                     <div class="image-hover">
                         <form action="/user/logout" method="POST">

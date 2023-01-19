@@ -328,7 +328,7 @@ a {
     padding: 5px;
     border-radius: 10px;
   }
-
+  
   /*                          */
   /*        header            */
 
@@ -525,6 +525,10 @@ a {
   }
   .designers img {
     width: 16px;
+  }
+
+  .search{
+    width: 80%;
   }
 }
 

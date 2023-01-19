@@ -23,6 +23,7 @@ const controller = {
 
     let discount = Discount.findAll();
     let category = Category.findAll();
+    console.log(discount)
 
     Promise.all([discount, category])
     .then(([discount, category]) => {
@@ -35,15 +36,27 @@ const controller = {
   },
 
   store: function (req, res) {
+    let discount = Discount.findAll();
+    let category = Category.findAll();
+    console.log(discount)
+
+    Promise.all([discount, category])
+    .then(([discount, category]) => {
+
     const error = validationResult(req);
+
     if (!error.isEmpty()) {
       console.log(error);
       return res.render("product-form-create", {
         errors: error.mapped(),
         title: "Ghemma Store - Tienda Oficial",
         css: "/product-form.css",
+        discount:discount,
+        category:category
       });
     } else {
+
+      console.log(req.file.filename)
 
 
     db.Product.create({
@@ -55,9 +68,9 @@ const controller = {
       image: req.file.filename,
       discount_id: req.body.discount,
     })
-      res.redirect("/products/list");
+      res.redirect("/");
     
-  }},
+  }})},
 
   edit: function (req, res) {
 
@@ -114,7 +127,7 @@ const controller = {
         where: { id: req.params.id },
       }
     ).then(() => {
-      res.redirect("/products/list");
+      res.redirect("/");
     });}});
 
    
@@ -127,7 +140,7 @@ const controller = {
 
     })
     .then(() => {
-      res.redirect('/products/list')
+      res.redirect('/')
     })
   },
 

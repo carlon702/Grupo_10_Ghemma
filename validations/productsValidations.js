@@ -22,7 +22,7 @@ const productsValidation = {
         .withMessage("Deber introducir un nombre")
         .custom(async function (value, { req }) {
           const product = await Product.findOne({ where: { name: value } });
-          if (!product) {
+          if (product) {
             return Promise.reject(new Error('Producto ya registrado'));
           }
         }).withMessage('Producto ya registrado'),

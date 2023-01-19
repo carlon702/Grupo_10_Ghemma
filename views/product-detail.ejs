@@ -17,7 +17,7 @@
             <div class="product-container">
                 <div class="box">
                     <div class="product">
-                        <img src="<%= product.image || 'airpods.jpg' %>" alt="prod">
+                        <img src="/images/<%= product.image || 'airpods.jpg' %>" alt="prod">
                         <div class="content">
                             <h3><%= product.name %></h3>
                             <h4 class="price">$<%= product.discount.discount != 0? product.price-((product.price*product.discount.discount)/100):product.price%> <%= product.discount.discount !=0? "--" : ""%> <%= product.discount.discount !=0? product.discount.discount : "" %>  <%= product.discount.discount !=0? "% OFF" : ""%></h4>
@@ -34,8 +34,9 @@
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span class="cart-button">Agregar al Carrito</span>
                     </p>
-                </div>
+                </div><% if(locals.usuario && locals.usuario.admin === 1) {%> 
                 <a href="../edit/<%=product.id%>"><i class="fa-solid fa-pen"></i></a>
+            <%}%>
             </div>
 
         

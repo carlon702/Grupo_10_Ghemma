@@ -94,7 +94,7 @@ main {
     list-style-type: none;
   }
 
-  button {
+  .button-list {
     background-color: rgba(246, 232, 232, 1);
     border: #ddddddb4;
     color: BLACK;
