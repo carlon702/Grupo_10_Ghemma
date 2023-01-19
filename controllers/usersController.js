@@ -111,7 +111,7 @@ const controller = {
     // console.log(user);
 
     if (bcryptjs.compareSync(req.body.password, user.password)) {
-      req.session.usuarioLogeado = {
+      req.session.loggedUser = {
         id: user.id,
         name: user.name,
         lastName: user.lastName,
