@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const db = require('../database/models');
 const User = db.User;
+const bcryptjs = require("bcryptjs");
 
 
 
@@ -45,11 +46,7 @@ loginValidation: [
   body("password")
   .notEmpty()
   .withMessage("Campo password incompleto")
-  .custom(async function (value, { req }) {
-      const user = await User.findOne({ where: { password: value } });
-      if (!user) {
-        return Promise.reject(new Error('Password invalido'));
-      }
-    }).withMessage('Password invalido'),
-]
+],
+
+
 }

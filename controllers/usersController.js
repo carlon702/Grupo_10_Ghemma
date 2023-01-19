@@ -23,6 +23,8 @@ function writeFile(data) {
 }
 
 const controller = {
+
+  
   register: (req, res) => {
     res.render("register", {
       title: "Ghemma Store - Tienda Oficial",
@@ -67,12 +69,13 @@ const controller = {
 
   sendLogin: async (req, res) => {
     const error = validationResult(req);
+    console.log(error)
 
     if (!error.isEmpty()) {
       return res.render("login", {
         title: "Ghemma Store - Tienda Oficial",
         css: "/login.css",
-        errors: "Password/email incorrecto",
+        locals: error,
       });
     }
 

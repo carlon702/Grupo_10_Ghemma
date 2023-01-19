@@ -1,6 +1,10 @@
 const { body } = require("express-validator");
 const fs = require('fs');
 const path = require('path');
+const db = require("../database/models");
+const Product = db.Product;
+const Category = db.Category;
+const Discount = db.Discount;
 
 
 function findAll() {
@@ -16,19 +20,12 @@ const productsValidation = {
         body("name")
         .notEmpty()
         .withMessage("Deber introducir un nombre")
-        .custom(function(value, req){
-        const products = findAll()
-
-    const foundProduct =  products.find(function(product){
-        return product.name == value
-      })
-      if(foundProduct){
-        return false
-      }else{
-        return true
-      }
-      
-    }).withMessage('Producto ya registrado'),
+        .custom(async function (value, { req }) {
+          const product = await Product.findOne({ where: { name: value } });
+          if (!product) {
+            return Promise.reject(new Error('Producto ya registrado'));
+          }
+        }).withMessage('Producto ya registrado'),
 
         body("description")
         .notEmpty()

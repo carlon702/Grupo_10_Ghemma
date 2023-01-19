@@ -50,8 +50,8 @@ INSERT INTO products (id, name,price,color,description,image, discount_id,catego
 
 INSERT INTO users (id, name, lastName, email, password, admin, profileImage) values 
 
-(1, "carlos", "marchal", "carlos@gmail.com", "12345", 1, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
-(2, "alberto", "pondreo", "alberto@gmail.com", "12345", 0, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
-(3, "ricardo", "sander", "ricardo@gmail.com", "12345", 0, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
-(4, "pedro", "lofter", "pedro@gmail.com", "12345", 0, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
-(5, "ignacio", "sertul", "ignacio@gmail.com", "12345", 1, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg");
+(1, "carlos", "marchal", "carlos@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 1, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
+(2, "alberto", "pondreo", "alberto@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 0, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
+(3, "ricardo", "sander", "ricardo@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 0, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
+(4, "pedro", "lofter", "pedro@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 0, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg"),
+(5, "ignacio", "sertul", "ignacio@gmail.com", "$2a$10$4l2fkXecvACebyp/KyYCVe3Y2aR/8o2L6SFK2g8kG0crg99SHHu5y", 1, "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg");
